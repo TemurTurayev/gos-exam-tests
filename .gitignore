@@ -1,5 +1,8 @@
 sources/with_answers/
 sources/without_answers/*.pdf
 sources/without_answers/*.doc
+sources/without_answers/*.docx
 scripts/_docx_conv/
+scripts/*.tmp
 .DS_Store
+__pycache__/

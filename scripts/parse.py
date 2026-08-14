@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-"""Parse the 16 source test files (with known answer keys) into unified JSON."""
+"""Parse the source test files (with known answer keys) into unified JSON.
+
+Каждый исходник размечает правильный ответ по-своему, поэтому здесь несколько
+парсеров. Нумерованные форматы (C/D/E/F) используют общий алгоритм
+`parse_numbered`, который устойчив к «грязной» разметке:
+
+* номер вопроса может быть без точки (`23   Текст`);
+* метка варианта может быть `А.`, `А)` или `А   ` (буква + пробелы);
+* строки-продолжения приклеиваются к предыдущему варианту, а не создают новый;
+* новый вопрос принимается только если его номер продолжает нумерацию —
+  это защищает от строк вроде «30-32», которые иначе выглядят как «вопрос 30».
+"""
 import json
 import re
 import subprocess
@@ -13,17 +24,22 @@ SRC = ROOT / "sources" / "with_answers"
 DATA = ROOT / "data"
 DATA.mkdir(exist_ok=True)
 
-LETTER_LABEL = re.compile(
-    r"^\s*[#@*]*\s*\d*[\.\)]?\s*[A-Za-zА-Яа-яЁёЎўҚқҒғҲҳ]{1,2}[\.\)]\s*", re.UNICODE
-)
-QNUM = re.compile(r"^\s*\*?\s*\d+[\.\)]\s*")
+CYR_LAT = "A-Za-zА-Яа-яЁёЎўҚқҒғҲҳ"
+
+# "1. текст", "23   текст", "*5) текст"
+Q_START = re.compile(r"^\s*[*#]?\s*(\d{1,4})\s*[.)]?\s*(.*)$")
+# "А. текст", "#б) текст", "*А) текст", "Г    текст"
+OPT_LABEL = re.compile(rf"^\s*([#*+]?)\s*([{CYR_LAT}])\s*(?:[.)]\s*|\s{{2,}})(.*)$")
+# "B текст" — метка заглавной буквой через один пробел, без точки.
+# Ограничиваем набором реальных меток вариантов, иначе под шаблон попадёт
+# обычный текст, начинающийся с заглавной буквы.
+OPT_LABEL_LOOSE = re.compile(r"^\s*([#*+]?)\s*([ABCDEFGАБВГДЕЖ])\s(\S.*)$")
+# лишние маркеры в начале строки
+LEAD_MARK = re.compile(r"^\s*[#*+\-]+\s*")
 
 
-def clean_option(text, strip_leading_hash=False):
-    t = text.strip()
-    if strip_leading_hash and t.startswith("#"):
-        t = t[1:].strip()
-    t = LETTER_LABEL.sub("", t, count=1)
+def strip_marks(text):
+    t = LEAD_MARK.sub("", text).strip()
     t = t.rstrip("*").strip()
     return t
 
@@ -40,366 +56,485 @@ def lines_of(text):
     return [l for l in (x.strip() for x in text.splitlines()) if l]
 
 
+def bold_ratio(paragraph):
+    """Доля жирного текста в абзаце — так надёжнее, чем any(run.bold)."""
+    total = bold = 0
+    for r in paragraph.runs:
+        n = len(r.text.strip())
+        if not n:
+            continue
+        total += n
+        if r.bold:
+            bold += n
+    return (bold / total) if total else 0.0
+
+
+# ---------------------------------------------------------------- generic ----
+BULLET = re.compile(r"^\s*[••·]\s*")
+
+
+def parse_numbered(items, is_correct, gap=6, opt_mode="labeled", bullets=False):
+    """items: список (text, meta). is_correct(raw_text, meta) -> bool.
+
+    opt_mode="labeled" — варианты помечены буквой (`А.`, `б)`, `Г   `);
+    opt_mode="any"     — вариантом считается любая строка, не начавшая вопрос.
+    """
+    questions = []
+    cur = None
+    last_num = 0
+
+    def flush():
+        nonlocal cur
+        if cur and cur["options"]:
+            questions.append(cur)
+        cur = None
+
+    def start(text):
+        nonlocal cur
+        flush()
+        cur = {"q": text.strip(), "options": [], "correct": []}
+
+    def add_option(raw, body, meta):
+        if is_correct(raw, meta):
+            cur["correct"].append(len(cur["options"]))
+        cur["options"].append(strip_marks(body))
+
+    for raw, meta in items:
+        text = raw.strip()
+        if not text or text.startswith("@"):
+            continue
+
+        if bullets and BULLET.match(text):
+            start(BULLET.sub("", text))
+            continue
+
+        # 1) помеченный вариант ответа — проверяем ДО номера вопроса,
+        #    иначе строка вида "А 30-32" может сойти за начало вопроса
+        om = None
+        if opt_mode == "labeled":
+            om = OPT_LABEL.match(text)
+            # «B текст» принимаем только если у вопроса уже есть варианты —
+            # так строка вопроса не будет принята за вариант
+            if not om and cur is not None and cur["options"]:
+                om = OPT_LABEL_LOOSE.match(text)
+        if om and om.group(3).strip() and cur is not None:
+            add_option(text, om.group(3), meta)
+            continue
+
+        # 2) начало нового вопроса
+        m = Q_START.match(text)
+        if m and m.group(2).strip():
+            num = int(m.group(1))
+            has_opts = bool(cur and len(cur["options"]) >= 2)
+            # обычный шаг нумерации, небольшой пропуск, либо ресинхронизация
+            # после большого пропуска (в исходниках часть вопросов вырезана)
+            if (num == last_num + 1
+                    or last_num < num < last_num + gap
+                    or (opt_mode == "labeled" and has_opts and num > last_num)):
+                start(m.group(2))
+                last_num = num
+                continue
+
+        if cur is None:
+            continue
+
+        # 3) непомеченный вариант ответа
+        if opt_mode == "any" and cur["q"]:
+            add_option(text, text, meta)
+            continue
+
+        # 4) продолжение предыдущей строки
+        if cur["options"]:
+            cur["options"][-1] += " " + strip_marks(text)
+        else:
+            cur["q"] += " " + text
+
+    flush()
+    return questions
+
+
 # ---------- Format A: "#question" / "+correct" / "-wrong" ----------
 def parse_format_a(lines):
     questions = []
     cur = None
-    for l in lines:
+    for idx, l in enumerate(lines):
+        # у части вопросов в исходнике потерян ведущий «#»: распознаём их по
+        # тому, что строка без маркера идёт перед строкой варианта «+»/«-»
+        if (not l.startswith(("#", "+", "-"))
+                and cur is not None and cur["options"]
+                and idx + 1 < len(lines) and lines[idx + 1].startswith(("+", "-"))):
+            questions.append(cur)
+            cur = {"q": l.strip(), "options": [], "correct": []}
+            continue
         if l.startswith("#"):
             if cur and cur["options"]:
                 questions.append(cur)
-            cur = {"q": l[1:].strip(), "options": [], "correct": None}
+            cur = {"q": l[1:].strip(), "options": [], "correct": []}
         elif l.startswith("+"):
             if cur is None:
                 continue
-            cur["correct"] = len(cur["options"])
+            cur["correct"].append(len(cur["options"]))
             cur["options"].append(l[1:].strip().rstrip("*").strip())
         elif l.startswith("-"):
             if cur is None:
                 continue
             cur["options"].append(l[1:].strip().rstrip("*").strip())
         else:
-            # continuation of question text (wrapped line)
-            if cur is not None and not cur["options"]:
+            if cur is None:
+                continue
+            if cur["options"]:
+                cur["options"][-1] += " " + l.strip()
+            else:
                 cur["q"] += " " + l
     if cur and cur["options"]:
         questions.append(cur)
     return questions
 
 
-# ---------- Format B: docx table [difficulty, question, correct, wrong, wrong, wrong] ----------
+# ---------- Format B: docx-таблица [сложность, вопрос, верный, неверные...] ----
 def parse_format_b(path):
     d = docx.Document(str(path))
     questions = []
     for t in d.tables:
-        rows = t.rows
         header_skipped = False
-        for r in rows:
+        for r in t.rows:
             cells = [c.text.strip() for c in r.cells]
             if not header_skipped:
                 header_skipped = True
-                if "Тесты" in cells[1] or "тест" in cells[1].lower():
+                if len(cells) > 1 and "тест" in cells[1].lower():
                     continue
-            if len(cells) < 3 or not cells[1]:
+            if len(cells) < 3 or not cells[1] or not cells[2]:
                 continue
-            q = cells[1]
-            correct = cells[2]
-            wrongs = [c for c in cells[3:] if c]
-            if not correct:
-                continue
-            options = [correct] + wrongs
-            questions.append({"q": q, "options": options, "correct": 0})
+            options = [cells[2]] + [c for c in cells[3:] if c]
+            questions.append({"q": cells[1], "options": options, "correct": [0]})
     return questions
 
 
-# ---------- Format C: "*N. question" / "#opt" correct / "letter." wrong / "@x" ignore ----------
-def parse_format_c(lines):
+# ---------- Format G: PDF "Правильный ответ: X. текст" ----------
+def parse_format_g(path):
+    doc = fitz.open(str(path))
+    lines = lines_of("\n".join(page.get_text() for page in doc))
     questions = []
     cur = None
+    correct_letter = correct_text = None
+
+    def close():
+        nonlocal cur
+        if cur and cur["options"]:
+            questions.append(cur)
+        cur = None
+
     for l in lines:
-        if QNUM.match(l) and l.lstrip().startswith("*"):
-            if cur and cur["options"]:
-                questions.append(cur)
-            q_text = QNUM.sub("", l, count=1).strip()
-            cur = {"q": q_text, "options": [], "correct": None}
-        elif l.startswith("@"):
+        m = re.match(r"^Правильный ответ:\s*([A-ZА-ЯЁ])\.?\s*(.*)$", l)
+        if m:
+            correct_letter, correct_text = m.group(1), m.group(2).strip()
+            # в этом PDF ключ идёт ПОСЛЕ строки вопроса, а не перед ней
+            if cur is not None and cur["_letter"] is None:
+                cur["_letter"], cur["_text"] = correct_letter, correct_text
             continue
-        elif l.startswith("#"):
-            if cur is None:
-                continue
-            cur["correct"] = len(cur["options"])
-            cur["options"].append(clean_option(l, strip_leading_hash=True))
-        elif LETTER_LABEL.match(l):
-            if cur is None:
-                continue
-            cur["options"].append(clean_option(l))
-        else:
-            if cur is not None and not cur["options"]:
-                cur["q"] += " " + l
-    if cur and cur["options"]:
-        questions.append(cur)
-    return questions
-
-
-# ---------- Format D: "N. question" / option lines, correct ends with "*" ----------
-def parse_format_d(lines):
-    questions = []
-    cur = None
-    for l in lines:
-        if QNUM.match(l) and not l.lstrip().startswith("*"):
-            if cur and cur["options"]:
-                questions.append(cur)
-            q_text = QNUM.sub("", l, count=1).strip()
-            cur = {"q": q_text, "options": [], "correct": None}
-        elif LETTER_LABEL.match(l) or (cur and cur["q"] and l):
-            if cur is None:
-                continue
-            is_correct = l.rstrip().endswith("*")
-            opt = clean_option(l)
-            if is_correct:
-                cur["correct"] = len(cur["options"])
-            cur["options"].append(opt)
-    if cur and cur["options"]:
-        questions.append(cur)
-    return questions
-
-
-# ---------- Format E: bullet question "•" / options "*A) correct" or "A) wrong" ----------
-BULLET = re.compile(r"^[••]\s*")
-
-
-def parse_format_e(lines):
-    questions = []
-    cur = None
-    for l in lines:
-        is_bullet_q = bool(BULLET.match(l))
-        is_num_q = bool(QNUM.match(l)) and not l.lstrip().startswith("*")
-        if is_bullet_q or is_num_q:
-            if cur and cur["options"]:
-                questions.append(cur)
-            q_text = BULLET.sub("", l).strip()
-            q_text = QNUM.sub("", q_text, count=1).strip()
-            cur = {"q": q_text, "options": [], "correct": None}
-        else:
-            if cur is None:
-                continue
-            is_correct = l.lstrip().startswith("*")
-            opt = clean_option(l)
-            if not opt:
-                continue
-            if is_correct:
-                cur["correct"] = len(cur["options"])
-            cur["options"].append(opt)
-    if cur and cur["options"]:
-        questions.append(cur)
-    return questions
-
-
-# ---------- Format F: bold run marks correct answer (needs .doc -> .docx conversion) ----------
-def parse_format_f(docx_path):
-    d = docx.Document(str(docx_path))
-    questions = []
-    cur = None
-    for p in d.paragraphs:
-        text = p.text.strip()
-        if not text:
-            continue
-        is_bold = any(r.bold for r in p.runs if r.text.strip())
-        is_qstart = bool(QNUM.match(text))
-        if is_qstart:
-            if cur and cur["options"]:
-                questions.append(cur)
-            q_text = QNUM.sub("", text, count=1).strip()
-            cur = {"q": q_text, "options": [], "correct": None}
+        qm = re.match(r"^(\d{1,4})\.\s+(.*)$", l)
+        if qm:
+            close()
+            # ключ в этом PDF идёт строкой ПОСЛЕ вопроса, поэтому новый вопрос
+            # всегда стартует без буквы — иначе он унаследует ответ соседа
+            cur = {"q": qm.group(2).strip(), "options": [], "correct": [],
+                   "_letter": None, "_text": None}
+            correct_letter = correct_text = None
             continue
         if cur is None:
             continue
-        if LETTER_LABEL.match(text) or len(cur["options"]) > 0 or True:
-            opt = clean_option(text)
-            if not opt:
-                continue
-            if is_bold:
-                cur["correct"] = len(cur["options"])
-            cur["options"].append(opt)
-    if cur and cur["options"]:
-        questions.append(cur)
+        om = re.match(rf"^\s*([{CYR_LAT}])\s*[.)]\s*(.*)$", l)
+        if om and om.group(2).strip():
+            letter, body = om.group(1), om.group(2).strip()
+            # второй вид ключа в этом PDF: «... ←правильный ответ» в строке варианта
+            if "←" in body:
+                cur["correct"].append(len(cur["options"]))
+                body = body.split("←")[0].strip()
+            elif cur["_letter"] and letter == cur["_letter"]:
+                cur["correct"].append(len(cur["options"]))
+            cur["options"].append(body)
+        elif cur["options"]:
+            cur["options"][-1] += " " + l.strip()
+        else:
+            cur["q"] += " " + l.strip()
+    close()
+    for q in questions:
+        q.pop("_letter", None)
+        q.pop("_text", None)
     return questions
 
 
-# ---------- Format G: PDF "Правильный ответ: X. text" then options ----------
-def parse_format_g(path):
-    doc = fitz.open(str(path))
-    full_text = "\n".join(page.get_text() for page in doc)
-    lines = lines_of(full_text)
-    questions = []
-    cur = None
-    correct_letter = None
-    correct_text = None
-    for l in lines:
-        m = re.match(r"^Правильный ответ:\s*([A-ZА-ЯЁ])\.\s*(.*)$", l)
-        if m:
-            correct_letter, correct_text = m.group(1), m.group(2).strip()
-            continue
-        if re.match(r"^\d+\.\s", l):
-            if cur and cur["options"]:
-                # resolve correct index
-                if correct_letter:
-                    for i, o in enumerate(cur["options"]):
-                        if o.startswith(correct_letter + ".") or o == correct_text:
-                            cur["correct"] = i
-                            break
-                questions.append(cur)
-            q_text = re.sub(r"^\d+\.\s*", "", l)
-            cur = {"q": q_text, "options": [], "correct": None}
-            correct_letter, correct_text = None, None
-            continue
-        if LETTER_LABEL.match(l) and cur is not None:
-            label_m = re.match(r"^([A-ZА-ЯЁ])[\.\)]", l)
-            letter = label_m.group(1) if label_m else None
-            opt = clean_option(l)
-            idx = len(cur["options"])
-            cur["options"].append(opt)
-            if correct_letter and letter == correct_letter:
-                cur["correct"] = idx
-        elif cur is not None and not cur["options"]:
-            cur["q"] += " " + l
-    if cur and cur["options"]:
-        if correct_letter:
-            for i, o in enumerate(cur["options"]):
-                if o == correct_text:
-                    cur["correct"] = i
-                    break
-        questions.append(cur)
-    return questions
+def finalize(questions, min_options=2, max_options=12):
+    """Отбрасывает мусор разбора и перенумеровывает ответы после чистки вариантов.
 
-
-def finalize(questions, min_options=2):
+    `correct` — список индексов: часть вопросов («перечислите 5 форм…»)
+    имеет несколько правильных ответов.
+    """
     out = []
     for q in questions:
-        if q["correct"] is None:
+        correct = q["correct"]
+        if not correct or not q["q"].strip():
             continue
-        # drop empty options, remapping the correct index by position
         options = q["options"]
-        if q["correct"] >= len(options):
+        if max(correct) >= len(options):
             continue
-        kept = [(i, o) for i, o in enumerate(options) if o.strip()]
-        new_correct = next((j for j, (i, o) in enumerate(kept) if i == q["correct"]), None)
-        if new_correct is None:
+
+        kept = [(i, o.strip()) for i, o in enumerate(options) if o.strip()]
+        old_to_new = {old: new for new, (old, _) in enumerate(kept)}
+        new_correct = sorted({old_to_new[i] for i in correct if i in old_to_new})
+        if not new_correct:
             continue
-        q["options"] = [o for _, o in kept]
-        q["correct"] = new_correct
-        if len(q["options"]) < min_options:
+
+        opts = [" ".join(o.split()) for _, o in kept]
+        if not (min_options <= len(opts) <= max_options):
             continue
-        if not q["q"].strip():
+        if len(set(opts)) != len(opts):          # дубли вариантов = мусор разбора
             continue
-        out.append(q)
+        if len(new_correct) >= len(opts):        # «правильно всё» — тоже мусор
+            continue
+
+        out.append({"q": " ".join(q["q"].split()),
+                    "options": opts,
+                    "correct": new_correct})
     return out
 
 
-FILES = [
-    dict(id="ped-ambulator-ru", title="Педиатрия — Амбулаторно-поликлиническая (рус.)",
-         subject="Педиатрия", language="ru", fmt="a",
-         file="Ambulator-poliklinik pediatriya RUS.txt"),
-    dict(id="ped-1000-uz", title="Педиатрия — 1000 тестов (узб.)",
-         subject="Педиатрия", language="uz", fmt="a",
-         file="pediatriya 1000 full.txt"),
-    dict(id="child-surg-hospital-uz", title="Госпитальная детская хирургия (узб.)",
-         subject="Детская хирургия", language="uz", fmt="c",
-         file="Госпитал болалар хирургияси.doc"),
-    dict(id="child-surg-ru", title="Детская хирургия (рус.)",
-         subject="Детская хирургия", language="ru", fmt="f",
-         file="Детская хирургия.doc"),
-    dict(id="therapy-internal-ru", title="Внутренние болезни (рус.)",
-         subject="Терапия", language="ru", fmt="c",
-         file="Ички касалликлар (Рус).doc"),
-    dict(id="ped-1000-2-uz", title="Педиатрия — тесты (узб., docx)",
-         subject="Педиатрия", language="uz", fmt="d",
-         file="Педиатрия-1000.docx"),
-    dict(id="therapy-1000-uz", title="Терапия — 1000 тестов (узб.)",
-         subject="Терапия", language="uz", fmt="f",
-         file="Терапия - 1000.doc"),
-    dict(id="therapy-ecg-ru", title="Терапия — ЭКГ и кардиология (рус.)",
-         subject="Терапия", language="ru", fmt="g",
-         file="Терапия ....✓.pdf"),
-    dict(id="therapy-table-ru", title="Терапия — тесты по темам (рус.)",
-         subject="Терапия", language="ru", fmt="b",
-         file="Терапия русс с ответами.docx"),
-    dict(id="therapy-test-ru", title="Терапия — тест (рус.)",
-         subject="Терапия", language="ru", fmt="a_doc",
-         file="Терапия тест.doc"),
-    dict(id="surg-facult-ru", title="Факультетская хирургия (рус.)",
-         subject="Хирургия", language="ru", fmt="d",
-         file="Фак. хирургия.doc"),
-    dict(id="child-surg-facult-uz", title="Факультетская детская хирургия (узб.)",
-         subject="Детская хирургия", language="uz", fmt="c",
-         file="Факультет_болалар_хирургияси_Рус.doc"),
-    dict(id="surg-hospital-ru", title="Госпитальная хирургия (рус.)",
-         subject="Хирургия", language="ru", fmt="a_docx",
-         file="Хирургия тест.docx"),
-    dict(id="obgyn-ru", title="Акушерство и гинекология (рус.)",
-         subject="Акушерство и гинекология", language="ru", fmt="d",
-         file="акушерлик ва гинекология рус.doc"),
-    dict(id="ped-facult-ru", title="Факультетская педиатрия (рус.)",
-         subject="Педиатрия", language="ru", fmt="e",
-         file="педиатрия  рус.doc"),
-    dict(id="surg-1000-uz", title="Хирургия — 1000 тестов (узб.)",
-         subject="Хирургия", language="uz", fmt="f",
-         file="хирургия - 1000.doc"),
-]
+
+# ---------------------------------------------------- проверка ключей ----
+# Отдельная от парсера логика: заново собирает из исходника множество
+# текстов, помеченных как правильные. Используется и при сборке (фильтр),
+# и в verify.py (отчёт).
+LABEL = re.compile(rf"^\s*[#*+\-]*\s*(?:[{CYR_LAT}]\s*[.)]|[{CYR_LAT}]\s{{2,}})\s*")
 
 
-def load_docx_paragraph_texts(path):
-    d = docx.Document(str(path))
-    return [p.text for p in d.paragraphs]
+def norm(s):
+    """Нормализуем текст для сравнения: регистр, пунктуация, пробелы."""
+    s = LABEL.sub("", s.strip())
+    s = re.sub(r"[^\w\s]", " ", s.lower())
+    return " ".join(s.split())
+
+
+def marked_texts(spec):
+    """Множество нормализованных текстов, помеченных в исходнике как верные."""
+    path = SRC / spec["file"]
+    fmt = spec["fmt"]
+    marked = set()
+
+    if fmt in ("a", "a_doc", "a_docx"):
+        if fmt == "a_docx":
+            lines = [p.text.strip() for p in docx.Document(str(path)).paragraphs if p.text.strip()]
+        elif path.suffix == ".txt":
+            lines = lines_of(path.read_text(encoding="utf-8-sig"))
+        else:
+            lines = lines_of(textutil_txt(path))
+        for l in lines:
+            if l.startswith("+"):
+                marked.add(norm(l[1:].rstrip("*")))
+
+    elif fmt == "b":
+        for t in docx.Document(str(path)).tables:
+            for r in t.rows:
+                cells = [c.text.strip() for c in r.cells]
+                if len(cells) >= 3 and cells[2]:
+                    marked.add(norm(cells[2]))
+
+    elif fmt == "num_hash":
+        for l in lines_of(textutil_txt(path)):
+            if l.lstrip().startswith("#"):
+                marked.add(norm(l))
+
+    elif fmt in ("num_star", "num_star_plain"):
+        if path.suffix == ".docx":
+            lines = [p.text.strip() for p in docx.Document(str(path)).paragraphs if p.text.strip()]
+        else:
+            lines = lines_of(textutil_txt(path))
+        for l in lines:
+            s = l.strip()
+            if s.startswith("*") or s.rstrip().endswith("*"):
+                marked.add(norm(s.strip("*")))
+
+    elif fmt == "num_bold":
+        p = path if path.suffix == ".docx" else convert_doc_to_docx(path, ROOT / "scripts" / "_docx_conv")
+        for para in docx.Document(str(p)).paragraphs:
+            if para.text.strip() and bold_ratio(para) > 0.5:
+                marked.add(norm(para.text))
+
+    elif fmt == "g":
+        doc = fitz.open(str(path))
+        lines = lines_of("\n".join(pg.get_text() for pg in doc))
+        pending = None
+        for l in lines:
+            m = re.match(r"^Правильный ответ:\s*([A-ZА-ЯЁ])\.?\s*(.*)$", l)
+            if m:
+                pending = m.group(1)
+                if m.group(2).strip():
+                    marked.add(norm(m.group(2)))
+                continue
+            if "←" in l:
+                marked.add(norm(l.split("←")[0]))
+                continue
+            om = re.match(rf"^\s*([{CYR_LAT}])\s*[.)]\s*(.*)$", l)
+            if om and pending and om.group(1) == pending:
+                marked.add(norm(om.group(2)))
+                pending = None
+    return marked
 
 
 def convert_doc_to_docx(doc_path: Path, out_dir: Path) -> Path:
     out_dir.mkdir(parents=True, exist_ok=True)
+    target = out_dir / (doc_path.stem + ".docx")
     subprocess.run(
-        ["textutil", "-convert", "docx", "-output",
-         str(out_dir / (doc_path.stem + ".docx")), str(doc_path)],
+        ["textutil", "-convert", "docx", "-output", str(target), str(doc_path)],
         capture_output=True, text=True,
     )
-    return out_dir / (doc_path.stem + ".docx")
+    return target
+
+
+def items_from_lines(lines):
+    return [(l, None) for l in lines]
+
+
+def items_from_docx(path):
+    d = docx.Document(str(path))
+    return [(p.text, bold_ratio(p)) for p in d.paragraphs if p.text.strip()]
+
+
+# детекторы правильного ответа для нумерованных форматов
+def correct_by_hash(raw, meta):
+    return raw.lstrip().startswith("#")
+
+
+def correct_by_star(raw, meta):
+    s = raw.strip()
+    return s.startswith("*") or s.rstrip().endswith("*")
+
+
+def correct_by_bold(raw, meta):
+    return (meta or 0) > 0.5
+
+
+FILES = [
+    dict(id="ped-ambulator-ru", title="Педиатрия — амбулаторно-поликлиническая",
+         subject="Педиатрия", language="ru", fmt="a",
+         file="Ambulator-poliklinik pediatriya RUS.txt"),
+    dict(id="ped-1000-uz", title="Педиатрия — 1000 тестов",
+         subject="Педиатрия", language="uz", fmt="a",
+         file="pediatriya 1000 full.txt"),
+    dict(id="child-surg-hospital-uz", title="Госпитальная детская хирургия",
+         subject="Детская хирургия", language="uz", fmt="num_hash",
+         file="Госпитал болалар хирургияси.doc"),
+    dict(id="child-surg-ru", title="Детская хирургия",
+         subject="Детская хирургия", language="ru", fmt="num_bold",
+         file="Детская хирургия.doc"),
+    dict(id="therapy-internal-ru", title="Внутренние болезни",
+         subject="Терапия", language="ru", fmt="num_hash",
+         file="Ички касалликлар (Рус).doc"),
+    dict(id="ped-1000-2-uz", title="Педиатрия — расширенный банк",
+         subject="Педиатрия", language="uz", fmt="num_star",
+         file="Педиатрия-1000.docx"),
+    dict(id="therapy-1000-uz", title="Терапия — 1000 тестов",
+         subject="Терапия", language="uz", fmt="num_bold",
+         file="Терапия - 1000.doc"),
+    dict(id="therapy-ecg-ru", title="Терапия — ЭКГ и кардиология",
+         subject="Терапия", language="ru", fmt="g",
+         file="Терапия ....✓.pdf"),
+    dict(id="therapy-table-ru", title="Терапия — тесты по темам",
+         subject="Терапия", language="ru", fmt="b",
+         file="Терапия русс с ответами.docx"),
+    dict(id="therapy-test-ru", title="Терапия — факультетская",
+         subject="Терапия", language="ru", fmt="a_doc",
+         file="Терапия тест.doc"),
+    dict(id="surg-facult-ru", title="Факультетская хирургия",
+         subject="Хирургия", language="ru", fmt="num_star",
+         file="Фак. хирургия.doc"),
+    dict(id="child-surg-facult-uz", title="Факультетская детская хирургия",
+         subject="Детская хирургия", language="uz", fmt="num_hash",
+         file="Факультет_болалар_хирургияси_Рус.doc"),
+    dict(id="surg-hospital-ru", title="Госпитальная хирургия",
+         subject="Хирургия", language="ru", fmt="a_docx",
+         file="Хирургия тест.docx"),
+    dict(id="obgyn-ru", title="Акушерство и гинекология",
+         subject="Акушерство и гинекология", language="ru", fmt="num_star_plain",
+         file="акушерлик ва гинекология рус.doc"),
+    dict(id="ped-facult-ru", title="Факультетская педиатрия",
+         subject="Педиатрия", language="ru", fmt="num_star",
+         file="педиатрия  рус.doc"),
+    dict(id="surg-1000-uz", title="Хирургия — 1000 тестов",
+         subject="Хирургия", language="uz", fmt="num_bold",
+         file="хирургия - 1000.doc"),
+]
+
+
+def parse_one(spec, conv_dir):
+    path = SRC / spec["file"]
+    fmt = spec["fmt"]
+
+    if fmt == "a":
+        text = path.read_text(encoding="utf-8-sig") if path.suffix == ".txt" else textutil_txt(path)
+        return parse_format_a(lines_of(text))
+    if fmt == "a_doc":
+        return parse_format_a(lines_of(textutil_txt(path)))
+    if fmt == "a_docx":
+        return parse_format_a([t.strip() for t, _ in items_from_docx(path) if t.strip()])
+    if fmt == "b":
+        return parse_format_b(path)
+    if fmt == "g":
+        return parse_format_g(path)
+    if fmt == "num_hash":
+        return parse_numbered(items_from_lines(lines_of(textutil_txt(path))), correct_by_hash)
+    if fmt == "num_star":
+        if path.suffix == ".docx":
+            items = [(t, None) for t, _ in items_from_docx(path)]
+        else:
+            items = items_from_lines(lines_of(textutil_txt(path)))
+        return parse_numbered(items, correct_by_star, bullets=True)
+    if fmt == "num_star_plain":
+        items = items_from_lines(lines_of(textutil_txt(path)))
+        return parse_numbered(items, correct_by_star, opt_mode="any")
+    if fmt == "num_bold":
+        docx_path = path if path.suffix == ".docx" else convert_doc_to_docx(path, conv_dir)
+        return parse_numbered(items_from_docx(docx_path), correct_by_bold)
+    raise ValueError(fmt)
+
+
+def keep_verified(questions, marked):
+    """Оставляет только вопросы, чей правильный ответ подтверждён исходником.
+
+    Медицинский тренажёр не должен показывать неподтверждённый ответ как
+    верный, поэтому спорные вопросы лучше потерять, чем опубликовать.
+    """
+    ok = []
+    for q in questions:
+        if all(norm(q["options"][i]) in marked for i in q["correct"]):
+            ok.append(q)
+    return ok
 
 
 def main():
     conv_dir = ROOT / "scripts" / "_docx_conv"
     manifest = []
-    for spec in FILES:
-        path = SRC / spec["file"]
-        fmt = spec["fmt"]
-        if fmt == "a":
-            text = path.read_text(encoding="utf-8-sig") if path.suffix == ".txt" else textutil_txt(path)
-            qs = parse_format_a(lines_of(text))
-        elif fmt == "a_doc":
-            text = textutil_txt(path)
-            qs = parse_format_a(lines_of(text))
-        elif fmt == "a_docx":
-            texts = load_docx_paragraph_texts(path)
-            qs = parse_format_a([t.strip() for t in texts if t.strip()])
-        elif fmt == "b":
-            qs = parse_format_b(path)
-        elif fmt == "c":
-            text = textutil_txt(path)
-            qs = parse_format_c(lines_of(text))
-        elif fmt == "d":
-            if path.suffix == ".docx":
-                texts = [t.strip() for t in load_docx_paragraph_texts(path) if t.strip()]
-            else:
-                texts = lines_of(textutil_txt(path))
-            qs = parse_format_d(texts)
-        elif fmt == "e":
-            text = textutil_txt(path)
-            qs = parse_format_e(lines_of(text))
-        elif fmt == "f":
-            docx_path = convert_doc_to_docx(path, conv_dir)
-            qs = parse_format_f(docx_path)
-        elif fmt == "g":
-            qs = parse_format_g(path)
-        else:
-            raise ValueError(fmt)
+    dropped_total = 0
 
-        qs = finalize(qs)
-        out = {
-            "id": spec["id"],
-            "title": spec["title"],
-            "subject": spec["subject"],
-            "language": spec["language"],
-            "questions": qs,
-        }
-        out_path = DATA / f"{spec['id']}.json"
-        out_path.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-        manifest.append({
-            "id": spec["id"], "title": spec["title"], "subject": spec["subject"],
-            "language": spec["language"], "count": len(qs),
-        })
-        print(f"{spec['id']:28s} {len(qs):5d} questions   <- {spec['file']}")
+    for spec in FILES:
+        parsed = finalize(parse_one(spec, conv_dir))
+        qs = keep_verified(parsed, marked_texts(spec))
+        dropped = len(parsed) - len(qs)
+        dropped_total += dropped
+
+        out = {"id": spec["id"], "title": spec["title"], "subject": spec["subject"],
+               "language": spec["language"], "questions": qs}
+        (DATA / f"{spec['id']}.json").write_text(
+            json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+        manifest.append({"id": spec["id"], "title": spec["title"],
+                         "subject": spec["subject"], "language": spec["language"],
+                         "count": len(qs)})
+        note = f"  (отброшено непроверенных: {dropped})" if dropped else ""
+        print(f"{spec['id']:24s} {len(qs):5d}  <- {spec['file']}{note}")
 
     (DATA / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8"
-    )
-    print("\nTotal:", sum(m["count"] for m in manifest))
+        json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"\nВсего: {sum(m['count'] for m in manifest)}"
+          f"  (отброшено непроверенных: {dropped_total})")
 
 
 if __name__ == "__main__":

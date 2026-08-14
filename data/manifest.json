@@ -1,114 +1,114 @@
 [
  {
   "id": "ped-ambulator-ru",
-  "title": "Педиатрия — Амбулаторно-поликлиническая (рус.)",
+  "title": "Педиатрия — амбулаторно-поликлиническая",
   "subject": "Педиатрия",
   "language": "ru",
-  "count": 200
+  "count": 199
  },
  {
   "id": "ped-1000-uz",
-  "title": "Педиатрия — 1000 тестов (узб.)",
+  "title": "Педиатрия — 1000 тестов",
   "subject": "Педиатрия",
   "language": "uz",
-  "count": 997
+  "count": 995
  },
  {
   "id": "child-surg-hospital-uz",
-  "title": "Госпитальная детская хирургия (узб.)",
+  "title": "Госпитальная детская хирургия",
   "subject": "Детская хирургия",
   "language": "uz",
-  "count": 99
+  "count": 94
  },
  {
   "id": "child-surg-ru",
-  "title": "Детская хирургия (рус.)",
+  "title": "Детская хирургия",
   "subject": "Детская хирургия",
   "language": "ru",
-  "count": 98
+  "count": 97
  },
  {
   "id": "therapy-internal-ru",
-  "title": "Внутренние болезни (рус.)",
+  "title": "Внутренние болезни",
   "subject": "Терапия",
   "language": "ru",
-  "count": 98
+  "count": 97
  },
  {
   "id": "ped-1000-2-uz",
-  "title": "Педиатрия — тесты (узб., docx)",
+  "title": "Педиатрия — расширенный банк",
   "subject": "Педиатрия",
   "language": "uz",
-  "count": 874
+  "count": 776
  },
  {
   "id": "therapy-1000-uz",
-  "title": "Терапия — 1000 тестов (узб.)",
+  "title": "Терапия — 1000 тестов",
   "subject": "Терапия",
   "language": "uz",
-  "count": 969
+  "count": 954
  },
  {
   "id": "therapy-ecg-ru",
-  "title": "Терапия — ЭКГ и кардиология (рус.)",
+  "title": "Терапия — ЭКГ и кардиология",
   "subject": "Терапия",
   "language": "ru",
-  "count": 50
+  "count": 80
  },
  {
   "id": "therapy-table-ru",
-  "title": "Терапия — тесты по темам (рус.)",
+  "title": "Терапия — тесты по темам",
   "subject": "Терапия",
   "language": "ru",
-  "count": 151
+  "count": 149
  },
  {
   "id": "therapy-test-ru",
-  "title": "Терапия — тест (рус.)",
+  "title": "Терапия — факультетская",
   "subject": "Терапия",
   "language": "ru",
-  "count": 312
+  "count": 311
  },
  {
   "id": "surg-facult-ru",
-  "title": "Факультетская хирургия (рус.)",
+  "title": "Факультетская хирургия",
   "subject": "Хирургия",
   "language": "ru",
-  "count": 90
+  "count": 99
  },
  {
   "id": "child-surg-facult-uz",
-  "title": "Факультетская детская хирургия (узб.)",
+  "title": "Факультетская детская хирургия",
   "subject": "Детская хирургия",
   "language": "uz",
-  "count": 100
+  "count": 96
  },
  {
   "id": "surg-hospital-ru",
-  "title": "Госпитальная хирургия (рус.)",
+  "title": "Госпитальная хирургия",
   "subject": "Хирургия",
   "language": "ru",
-  "count": 996
+  "count": 995
  },
  {
   "id": "obgyn-ru",
-  "title": "Акушерство и гинекология (рус.)",
+  "title": "Акушерство и гинекология",
   "subject": "Акушерство и гинекология",
   "language": "ru",
-  "count": 98
+  "count": 82
  },
  {
   "id": "ped-facult-ru",
-  "title": "Факультетская педиатрия (рус.)",
+  "title": "Факультетская педиатрия",
   "subject": "Педиатрия",
   "language": "ru",
   "count": 100
  },
  {
   "id": "surg-1000-uz",
-  "title": "Хирургия — 1000 тестов (узб.)",
+  "title": "Хирургия — 1000 тестов",
   "subject": "Хирургия",
   "language": "uz",
-  "count": 708
+  "count": 623
  }
 ]
