@@ -1,0 +1,5 @@
+sources/with_answers/
+sources/without_answers/*.pdf
+sources/without_answers/*.doc
+scripts/_docx_conv/
+.DS_Store

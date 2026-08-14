@@ -1,0 +1,114 @@
+[
+ {
+  "id": "ped-ambulator-ru",
+  "title": "Педиатрия — Амбулаторно-поликлиническая (рус.)",
+  "subject": "Педиатрия",
+  "language": "ru",
+  "count": 200
+ },
+ {
+  "id": "ped-1000-uz",
+  "title": "Педиатрия — 1000 тестов (узб.)",
+  "subject": "Педиатрия",
+  "language": "uz",
+  "count": 997
+ },
+ {
+  "id": "child-surg-hospital-uz",
+  "title": "Госпитальная детская хирургия (узб.)",
+  "subject": "Детская хирургия",
+  "language": "uz",
+  "count": 99
+ },
+ {
+  "id": "child-surg-ru",
+  "title": "Детская хирургия (рус.)",
+  "subject": "Детская хирургия",
+  "language": "ru",
+  "count": 98
+ },
+ {
+  "id": "therapy-internal-ru",
+  "title": "Внутренние болезни (рус.)",
+  "subject": "Терапия",
+  "language": "ru",
+  "count": 98
+ },
+ {
+  "id": "ped-1000-2-uz",
+  "title": "Педиатрия — тесты (узб., docx)",
+  "subject": "Педиатрия",
+  "language": "uz",
+  "count": 874
+ },
+ {
+  "id": "therapy-1000-uz",
+  "title": "Терапия — 1000 тестов (узб.)",
+  "subject": "Терапия",
+  "language": "uz",
+  "count": 969
+ },
+ {
+  "id": "therapy-ecg-ru",
+  "title": "Терапия — ЭКГ и кардиология (рус.)",
+  "subject": "Терапия",
+  "language": "ru",
+  "count": 50
+ },
+ {
+  "id": "therapy-table-ru",
+  "title": "Терапия — тесты по темам (рус.)",
+  "subject": "Терапия",
+  "language": "ru",
+  "count": 151
+ },
+ {
+  "id": "therapy-test-ru",
+  "title": "Терапия — тест (рус.)",
+  "subject": "Терапия",
+  "language": "ru",
+  "count": 312
+ },
+ {
+  "id": "surg-facult-ru",
+  "title": "Факультетская хирургия (рус.)",
+  "subject": "Хирургия",
+  "language": "ru",
+  "count": 90
+ },
+ {
+  "id": "child-surg-facult-uz",
+  "title": "Факультетская детская хирургия (узб.)",
+  "subject": "Детская хирургия",
+  "language": "uz",
+  "count": 100
+ },
+ {
+  "id": "surg-hospital-ru",
+  "title": "Госпитальная хирургия (рус.)",
+  "subject": "Хирургия",
+  "language": "ru",
+  "count": 996
+ },
+ {
+  "id": "obgyn-ru",
+  "title": "Акушерство и гинекология (рус.)",
+  "subject": "Акушерство и гинекология",
+  "language": "ru",
+  "count": 98
+ },
+ {
+  "id": "ped-facult-ru",
+  "title": "Факультетская педиатрия (рус.)",
+  "subject": "Педиатрия",
+  "language": "ru",
+  "count": 100
+ },
+ {
+  "id": "surg-1000-uz",
+  "title": "Хирургия — 1000 тестов (узб.)",
+  "subject": "Хирургия",
+  "language": "uz",
+  "count": 708
+ }
+]
