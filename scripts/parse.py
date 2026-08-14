@@ -497,44 +497,37 @@ def parse_one(spec, conv_dir):
     raise ValueError(fmt)
 
 
-def keep_verified(questions, marked):
-    """Оставляет только вопросы, чей правильный ответ подтверждён исходником.
+def apply_tags(questions, marked):
+    """Помечает вопросы: verified — ответ подтверждён исходником, disputed — нет.
 
-    Медицинский тренажёр не должен показывать неподтверждённый ответ как
-    верный, поэтому спорные вопросы лучше потерять, чем опубликовать.
+    Разметка в файле есть у всех этих вопросов, но независимая проверка
+    сходится не всегда; такие вопросы не выбрасываем, а показываем с пометкой.
     """
-    ok = []
+    out = []
     for q in questions:
-        if all(norm(q["options"][i]) in marked for i in q["correct"]):
-            ok.append(q)
-    return ok
+        ok = all(norm(q["options"][i]) in marked for i in q["correct"])
+        out.append({**q, "tag": "verified" if ok else "disputed"})
+    return out
+
+
+def build_core():
+    """Наборы из файлов, где правильный ответ размечен в самом документе."""
+    conv_dir = ROOT / "scripts" / "_docx_conv"
+    sets = {}
+    for spec in FILES:
+        questions = apply_tags(finalize(parse_one(spec, conv_dir)), marked_texts(spec))
+        sets[spec["id"]] = {"id": spec["id"], "title": spec["title"],
+                            "subject": spec["subject"], "language": spec["language"],
+                            "questions": questions}
+    return sets
 
 
 def main():
-    conv_dir = ROOT / "scripts" / "_docx_conv"
-    manifest = []
-    dropped_total = 0
-
-    for spec in FILES:
-        parsed = finalize(parse_one(spec, conv_dir))
-        qs = keep_verified(parsed, marked_texts(spec))
-        dropped = len(parsed) - len(qs)
-        dropped_total += dropped
-
-        out = {"id": spec["id"], "title": spec["title"], "subject": spec["subject"],
-               "language": spec["language"], "questions": qs}
-        (DATA / f"{spec['id']}.json").write_text(
-            json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-        manifest.append({"id": spec["id"], "title": spec["title"],
-                         "subject": spec["subject"], "language": spec["language"],
-                         "count": len(qs)})
-        note = f"  (отброшено непроверенных: {dropped})" if dropped else ""
-        print(f"{spec['id']:24s} {len(qs):5d}  <- {spec['file']}{note}")
-
-    (DATA / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"\nВсего: {sum(m['count'] for m in manifest)}"
-          f"  (отброшено непроверенных: {dropped_total})")
+    for sid, data in build_core().items():
+        tags = {}
+        for q in data["questions"]:
+            tags[q["tag"]] = tags.get(q["tag"], 0) + 1
+        print(f"{sid:24s} {len(data['questions']):5d}  {tags}")
 
 
 if __name__ == "__main__":

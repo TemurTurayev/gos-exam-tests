@@ -1,0 +1,4045 @@
+{
+ "id": "child-surg-uz-lat",
+ "title": "Детская хирургия — банк вопросов",
+ "subject": "Детская хирургия",
+ "language": "uz",
+ "questions": [
+  {
+   "q": "Kriptorxizmda operatsiya muddati:",
+   "options": [
+    "1 yoshdan",
+    "5 yoshdan keyin",
+    "Tug’ilgan zahoti",
+    "8 yoshdan keyin"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Gidroadenit - bu:",
+   "options": [
+    "kapsulaga ega bo’lgan chegaralangan yiringdon",
+    "terining bazal qatlamlarining nekrozi",
+    "ter bezining yallig’lanishi",
+    "soch follikulasi hududidagi yiringli-nekrotik jarayon"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Omfalotsele sinonimi:",
+   "options": [
+    "Kindik tizimchasi churrasi",
+    "Kindik churrasi",
+    "Kindik noto’liq oqmasi",
+    "To’g’ri javob yo’q"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Piotoraksning davosida ko’zda tutiladi:",
+   "options": [
+    "O’choqqa ta’sir qilmasdan intensive davo",
+    "Plevra bo’shlig’ini Byulau bo’yicha drenajlash",
+    "Plevra bo’shlig’ini aktivaspiratsiya usulida drenajlash",
+    "Plevra bo’shlig’i punksiyasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qiz bolalar epispadiyasining klassifikatsiyasi:",
+   "options": [
+    "Klitorli, subsimfizar, total",
+    "Klitorli, vaginal",
+    "Subtotal, total",
+    "Subtotal, subsimfizar, vestibulyar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Varikosele nima:",
+   "options": [
+    "Urug’ tizimchasi venalarining varikoz kengayishi",
+    "Oyoq venalarining varikoz kengayishi",
+    "Qo’l venalarining varikoz kengayishi",
+    "Qorin oldingi devori venalarining varikoz kengayishi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Varikotseleda operatsiya muddati:",
+   "options": [
+    "Tashhis qo’yilgandan so’ng",
+    "1-3 yosh",
+    "5-10 yosh",
+    "10-15 yosh"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda moyak buralishini qanday davolaymiz:",
+   "options": [
+    "Shoshilinch operatsiya",
+    "Rejali operatsiya",
+    "Konservativ terapiya",
+    "Fizioterapiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda pilorostenozni davosi - bu:",
+   "options": [
+    "Fred-Ramshted bo’yicha piloromiotomiya",
+    "Soave-Lenyushkin bo’yicha qorin oraliq proktoplastika",
+    "Stoun-Bens bo’yicha oraliq proktoplastika",
+    "Blekmor zondi bilan ballondilatatsiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Tarkibiga ko’ra qanday siydik toshlari farqlanadi:",
+   "options": [
+    "Oqsilli, yog’li",
+    "Oksalat, fosfat, urat",
+    "Medikamentoz, uglevodli",
+    "To’g’ri javob yo’q"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Miksion sistoureterografiya usuli ko’proq ma’lumot beradi:",
+   "options": [
+    "Urug’ bo’rtmasi gipertrofiyasida",
+    "Uretra strikturasida",
+    "Siydik qopi bo’yni sklerozida",
+    "Orqa uretra obliteratsiyasida"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda birtomonlama makrogematuriyada patognomik simptom bo’lib hisoblanadi:",
+   "options": [
+    "Verlgof kasalligida",
+    "Tugunchali periarteretitda",
+    "Buyrak o’smalarida",
+    "O’tkir glomerulonefritda"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir siydik tutilishi chaqiruvchi quyidagi patologiyada kateterizatsiya mumkin emas:",
+   "options": [
+    "Fimozda",
+    "Siydik qopi o’smasida",
+    "Siydik qopi toshida",
+    "Uretra yorilishida"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Orqa uretra klapani diagnostikasida qaysi tekshiruv usuli qo’llaniladi:",
+   "options": [
+    "ko’tariluvchi uretrografiya",
+    "miksion sistouretrografiya",
+    "infuzio nurografiya",
+    "sistoskopiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Quyidagilardan qaysi toshlar rentgen kontrast hisoblanadi:",
+   "options": [
+    "oksalatlar",
+    "fosfatlar",
+    "uratlar",
+    "karbonatlar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda qaysi rivojlanish nuqsonida to’liq siydik tutaolmaslik kuzatiladi:",
+   "options": [
+    "oraliqgipospadiya",
+    "totalepispadiya",
+    "subsimfiza repispadiya",
+    "ektopikureterotsele"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Quyidagi tekshiruv usullaridan qaysi biri buyraklar jarohatida ko’proq ma’lumot beradi:",
+   "options": [
+    "reorenografiya",
+    "sistoureterografiya",
+    "ekskretoru rografiya",
+    "polipozitsionsistografiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda to’liq uretra yorilishida patognom sindrom-bu:",
+   "options": [
+    "gematuriya",
+    "O’tkir siydik tutilishi",
+    "dizuriya",
+    "proteinuriya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Moyakning yolg’on retensiyasi sababi:",
+   "options": [
+    "moyakning yorg’oqqa tushishi jarayonini buzilishi",
+    "gormonal disbalans",
+    "kremasterreflekslarining qo’zg’aluvchanligini oshishi",
+    "gipofiz - gipotalamus sohada gormonal regulyatsiyani buzilishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda orqa uretra klapani diagnostikasida qaysi tekshiruv usuli qo’llaniladi:",
+   "options": [
+    "sistoskopiya",
+    "uretroskopiya",
+    "sistouretrografiya",
+    "polipozitsion sistografiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda makrogematuriyada shoshilinch holatda nima qilish kerak:",
+   "options": [
+    "retrogradpielografiya",
+    "ekskretorurografiya",
+    "sistoskopiya",
+    "radioizotop tekshiruv"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Uretra toshiga xos simptom-bu:",
+   "options": [
+    "Og’riqlisiyish",
+    "Gematuriya",
+    "Proteinuriya",
+    "O’tkir siydik tutilishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Girshprung kasalligining kam uchraydigan formasi – bu:",
+   "options": [
+    "Rektal",
+    "Total",
+    "Subtotal",
+    "Rektosigmoidal"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Girshprung kasalligining kechki asorati - bu:",
+   "options": [
+    "Surunkali ahlatli intoksikatsiya",
+    "Meteorizm",
+    "Parodoksal ich ketishi",
+    "Qonaralash qusish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda Girshprung kasalligida ich qotishi boshlanishi vaqti - bu:",
+   "options": [
+    "1 yoshdan keyin",
+    "6 oylik gacha",
+    "3 yoshdan keyin",
+    "Ichak infeksiyasi o’tkazgandan keyin"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Megakolon nima:",
+   "options": [
+    "Yo’g’on ichak kaltaligi",
+    "Yo’g’on ichakni uzayishi",
+    "Yo’g’on ichak devorlarini kengayishi",
+    "Sigmasimon ichak uzayishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Megadolixosigma nima:",
+   "options": [
+    "Yo’g’on ichak devori gipertrofiyasi",
+    "Yo’g’on ichakni uzayishi",
+    "Sigmasimon ichak uzayishi",
+    "Sigmasimon ichak kengayishi va uzayishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Sigmasimon ichak uzayishi – bu:",
+   "options": [
+    "Megacolon",
+    "Dolixosigma",
+    "Girshprung kasalligi",
+    "Tug`ri javob yuq"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda surunkali qabziyat qaysi kasallikning asosiy simptomi bo’ladi:",
+   "options": [
+    "Qorin oldingi devori mushaklari aplaziyasida",
+    "Oshqozon-ichak traktidiskineziyasida",
+    "Girshprung kasalligida",
+    "Fermentopatiyada"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Yo’g’on ichak agangliozini aniqlaydi:",
+   "options": [
+    "Kompyuter tomografiya",
+    "Bariy bilan irrigografiya",
+    "UTT",
+    "Qorin bo’shlig’i a’zolari tasviriy rentgenografiyasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Girshprung kasalligida “ahlatli tiqin”ni bartaraf etishda qo’llaniladi:",
+   "options": [
+    "Oddiy tozalovchi ho’qna",
+    "Yog’li ho’qna",
+    "Gipertonik eritmali sifonli ho’qna",
+    "Xona haroratidagi oddiy suvda sifonli ho’qna"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qaysi usul endoskopik tekshiruv usuli emas:",
+   "options": [
+    "kolonoskopiya",
+    "laparoskopiya",
+    "ezofagoskopiya",
+    "irrigografiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kolonoskopiya -qaysia’zonitekshiradi:",
+   "options": [
+    "Ingichkaichakni",
+    "Yo’g’onichakni",
+    "Qizilo’ngachni",
+    "Oshqozonni"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak dezinvaginatsiyasini konservativ o’tkazishga ko’rsatma:",
+   "options": [
+    "Bir yoshgacha bo’lgan bolalar",
+    "Kasallik boshlanganiga 24soatdan ortiq vaqt o’tishi",
+    "Ichak invaginatsiyasi 12 soatgacha",
+    "Bir yoshdan Katta bolalar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak dezinvaginatsiyasini operativ o’tkazishga ko’rsatma:",
+   "options": [
+    "Ichak invaginatsiyasi 12 soatdan kam vaqt bo’lishi",
+    "Kasallik boshlanganiga 12 soatdan ko`p vaqt bo’lishi",
+    "Bir yoshgacha bo’lgan bolalar",
+    "To’g’ri javobyo’q"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chandiqli ichak tutilishini qanday turlari farqlanadi:",
+   "options": [
+    "Erta va kechikkan shakli",
+    "Terminal va toksik shakli",
+    "Strangulyatsion va ichak shakli",
+    "Oshqozon va oshqozonosti shakli"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda dinamik ichak tutilishini qanday turlari farqlanadi:",
+   "options": [
+    "Strangulyatsion va obturatsion",
+    "Toksik va peptik",
+    "Spastik va paralitik",
+    "Oshqozon va oshqozonosti shakli"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda mexanik ichak tutilishini qanday turlari farqlanadi:",
+   "options": [
+    "Spastik va paralitik",
+    "Strangulyatsion, obturatsion va aralash",
+    "Toksik va peptik",
+    "Oshqozon va oshqozonosti shakli"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda orttirilgan ichak tutilishini qanday turlari farqlanadi:",
+   "options": [
+    "Ledda sindromi, ingichka ichak atreziyasi",
+    "Toksik va peptik",
+    "Oshqozon va oshqozonosti shakli",
+    "Mexanik va dinamik"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Iichak tutilishini qanday turlari farqlanadi:",
+   "options": [
+    "Spastik va o`tkir",
+    "Toksik va peptik",
+    "Yuqori va pastki",
+    "O’tkir va o’tkir osti"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "3 yoshgacha bo’lgan bolalarda o’tkir appenditsitning qaysi belgisi uyqu paytida aniqlanadi:",
+   "options": [
+    "Qorin old devoir mushaklarining passiv taranglashishi",
+    "Qorin olddevori mushaklarining faol taranglashishi",
+    "Rovzing simptomi",
+    "\"yo’tal turtkisi\" belgisi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsitda o’lim darajasi:",
+   "options": [
+    "1,2-1,5%",
+    "0,6-1,2%",
+    "0,2-0,4%",
+    "1,5-1,8%"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kichik (3 yoshgacha) yoshdagi bolalarda o’tkir appenditsit quyidagilar bilan namoyon bo’ladi:",
+   "options": [
+    "bir marta qusish , diareya, giperleykotsitoz",
+    "bezovtalik, ko’p marta qusish, diareya, yuqori isitma",
+    "ko’p marta qusish , past darajadagi isitma, ich qotishi",
+    "bezovtalik, normal harorat, diareya, giperleykotsitoz"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsit bilan qiyoslanishi shart bo’lgan yuqumli kasalliklarni ko’rsating:",
+   "options": [
+    "o’tkir dizenteriya",
+    "qorinbo’shlig’iiersiniozi",
+    "barchasanabo’tilgankasalliklar",
+    "infeksiongepatit"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Koprostazni o’tkir appenditsitda n farqlash imkonini beruvchi diagnostika texnikasini ko’rsating:",
+   "options": [
+    "Qonning immunologik ko’rsatkichlari",
+    "Tozalovchi huqna",
+    "Qonning biokimyoviy tahlili",
+    "termometriya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Katta yoshdagi bolalarda o’tkir appenditsitda og’riq sindromining tipik variantlarini ko’rsating:",
+   "options": [
+    "davriy",
+    "xurujsimon",
+    "doimiy",
+    "og’riqkuzatilmaydi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chuvalchangsimon o’simtaning qaysi joylashuvi kuzatilmaydi:",
+   "options": [
+    "medial",
+    "oshqozonosti",
+    "retrotsekal",
+    "chanoqli"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsit qaysi kasallik bilan qiyoslanmaydi:",
+   "options": [
+    "koprostaz",
+    "zotiljam",
+    "varikoselle",
+    "o`tkir xolesistit"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chuvalchangsimon o’simtaning chap tomonda joylashishi quyidagi sabablarga ko’ra yuzaga keladi:",
+   "options": [
+    "Payr sindromi",
+    "Ichakning tugallanmagan buralishlarida jarrohlik aralashuvlar paytida ichak nifiksatsiyalash oqibatida",
+    "Chanoqli joylashuvida",
+    "qorin bo’shlig’i a’zolarining teskari joylashuvi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chuvalchangsimon o’simtaning qaysi joylashuvida o’tkir appenditsit klinik manzarasi siydik tizimining patologiyasiga o’xashi mumkin:",
+   "options": [
+    "lateral",
+    "retrotsekal, retroperitoneal",
+    "ko’richakgumbaziningbalandjoylashishi",
+    "medial"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chuvalchangsimon o’simtaning chanoqli joylashuvidagi o’tkir appenditsit uchun xos bo’lmagan klinik belgini ko’rsating:",
+   "options": [
+    "qorinning pastki sohalaridagi og’riq",
+    "diareya",
+    "qorinning chap sohalaridagi og’riq",
+    "dizurik buzilishlar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Dinamik ichak tutilishi- bu:",
+   "options": [
+    "Ichak peristaltikasini buzilishi bilan kechadigan ichak tutilishi",
+    "Ichak tutqich tomirlarini strangulyatsiyasi bilan kechadigan ichak tutilishi",
+    "Ichak bo’shlig’ini tiqilishi bilan kechadigan ichak tutilishi",
+    "To’g’ri javob yo’q"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qizilo’ngach axalaziyasining asosiy simptomlari bu:",
+   "options": [
+    "Fontansimon qusish",
+    "Disfagiya va regurgitatsiya",
+    "Yorqin davrli og’riq",
+    "Safro aralash qusish"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qizilo’ngach axalaziyasini asosiy tekshiruv usulini ayting:",
+   "options": [
+    "Qizilo’ngachni kontrastli tekshirish, ezofagoskopiya",
+    "Kolonoskopiya, rektoromanoskopiya",
+    "Ezofagoskopiya, fistulografiya",
+    "Kompyuter tomografiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qizilo’ngach axalaziyasini davosi - bu:",
+   "options": [
+    "Konservativ, operativ",
+    "Konservativ, fizioterapiya",
+    "Operativ, fizioterapiya",
+    "To’g’ri javob yo’q"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Sariqlik yo’lini qaysi anomaliya turlarini bilasiz:",
+   "options": [
+    "Kindik churrasi, chov churrasi, son churrasi",
+    "Kindik oqmalari, Mekkel divertikuli, enterokistoma",
+    "Kindik oqmalari, o’t yo’li atreziyasi, Mekkeldivertikuli",
+    "O’t yo’li kistasi, o’t qopi ikkilanishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kindik oqmalarini qanday turlarini bilasiz:",
+   "options": [
+    "To’liq, surunkali",
+    "Ochiq, yopiq",
+    "O’tkir , surunkali",
+    "To’liq, noto’liq"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Hajmiga qarab omfalotseleni qanday turlari farqlanadi:",
+   "options": [
+    "Kichik, o’rta, Katta",
+    "Siqilgan, siqilmagan",
+    "Yallig’langan, yallig’lanmagan",
+    "Gigant, karlik"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qaysi yoshda ichak invaginatsiyasi ko’proq uchraydi:",
+   "options": [
+    "4-6 oylik",
+    "1-3 yosh",
+    "1-3 oylik",
+    "5 yoshdan Katta"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Invaginatsiyani qaysi turi ko’proq uchraydi:",
+   "options": [
+    "Yonbosh-chambar",
+    "Ingichka ichak",
+    "Yo’g’on ichak",
+    "Yonbosh-ingichka ichak"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiyasini qanday davolaymiz:",
+   "options": [
+    "Konservativ, operativ",
+    "Konservativ",
+    "Operativ",
+    "Medikamentoz, fizioterapiya, DJT"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Buyrak shikastlanishida asosiy tekshiruv usuli:",
+   "options": [
+    "FEGDS",
+    "Tasviriy rentgenografiya",
+    "ekskretorurografiya",
+    "xromotsistografiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Gidradenit ko’pincha joylashadi:",
+   "options": [
+    "chov burmalarida",
+    "qo’ltiq osti chuqurchasida",
+    "bo’yin sohasida",
+    "orqa sohada"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalardagi quyidagi kasalliklardan qaysi biri ko’pincha yiringli infeksiya bilan asoratlanadi:",
+   "options": [
+    "Yurak nuqsoni",
+    "surunkali buyrak yettishmovchiligi",
+    "bosh miya yopiq jarohati",
+    "Anemiya va gipotrofiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir ichak tutilishiga gumon bo’lganda birinchi navbatda bajariladi:",
+   "options": [
+    "Qonning bioximiyaviy tahlili",
+    "ezofagogastroduodenoskopiya",
+    "Qorin bo’shlig’ining umumiy rentgenografiyasi",
+    "oshqozon ichak traktini bariy bilan passaji"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qaysi ichak tutilish turida ichaklarda qon aylanishi buzilishi kuzatiladi:",
+   "options": [
+    "Paralitik",
+    "Strangulyatsiya",
+    "Spastik",
+    "Obturatsiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ikkilamchi megakolonning rivojlanish sababini ko’rsating:",
+   "options": [
+    "to’g’ri ichak poliplari",
+    "orqa chiqaruv teshigi atrofini yorilishi",
+    "yo’g’on ichakni distal sohasini torayishi",
+    "gemorroy"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Girshprung kasalligida yakuniy tashxis qo’yish usulini ko’rsating:",
+   "options": [
+    "Manometrik tekshiruv",
+    "Morfogistologik tekshiruv",
+    "Immunoferment tekshiruv",
+    "Rentgenologik tekshiruv"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda chap tomonlama diafragma churrasining siqilishida transportirovka paytidagi bolaning xolati:",
+   "options": [
+    "Chap yonboshga yotgan xolatda",
+    "Vertikal xolatda",
+    "Qorini bilan yotgan xolatda",
+    "o’ng yonboshga yotgan xolatda"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kindikdan davriy ravishda har xil miqdorda siydik ajralib turishi qaysi kasalikka xos:",
+   "options": [
+    "epispadiya",
+    "Uraxusning to’liq oqmasi",
+    "siydik qopi ekstrofiyasi",
+    "siydik qopi divertikuli"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda chov churralarining rivojlanish sababini ko’rsating:",
+   "options": [
+    "Chov sohasidagi mushak va aponevrozning kuchsiz rivojlanishi",
+    "Chov kanali tashqi halqasining kengligi",
+    "Qorin parda qin o’simtasining obliteratsiyaga uchramasligi",
+    "Qorin ichki bosimining oshishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda son churrasiga xos belgini ko’rsating:",
+   "options": [
+    "Chov sohasidagi og’riq",
+    "Pupart boylamidan pastda elastik hosila",
+    "ko’ngil aynishi va qusish",
+    "surunkali qabziyat"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qorin oq chizig’I churrasi uchun xos belgi:",
+   "options": [
+    "qorindagi xurujsimon og’riqlar",
+    "ko’ngil aynishi va qusish",
+    "giperemiya va shishsimon hosilaning mavjudligi",
+    "o’rta chiziq bo’ylab aponevrotik defekt mavjudligi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Moyak pardalari istisqosining turiga kirmaydi:",
+   "options": [
+    "Fiziologik",
+    "Posttravmatik",
+    "Tutashmagan",
+    "Tutashgan"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ortner simptomi -bu:",
+   "options": [
+    "o’t qopi sohaga bosganda og’riq bo’lishi",
+    "qon aralash qusish",
+    "o’t qopi joylashgan sohada qovurg’a ravog’iga urganda og’riq bo’lishi",
+    "bo’yin sohaga bosganda og’riq bo’lishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kulenkampf simptomi -bu:",
+   "options": [
+    "Taxtasimon qorin",
+    "Qorinni paypaslaganda og’riq bo’lishi va mushak tarangligini bo’lmasligi",
+    "Kindikni bosganda jigar sohada og’riq bo’lishi",
+    "Tana haroratini oshishi bilan kechuvchi ko’plab qusish"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Jigar shikastlanishida qonda qanday o’zgarishlar bo’ladi:",
+   "options": [
+    "Amilaza miqdori oshadi",
+    "Glyukoza miqdori oshadi",
+    "Kreatinin miqdori oshadi",
+    "Transaminazalar miqdori oshadi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Noto’liq kindik oqmasi diagnostikasi:",
+   "options": [
+    "FEGDS",
+    "Rentgenografiya",
+    "Zondlash",
+    "UTT"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiya ko’proq qaysi yoshda kuzatiladi:",
+   "options": [
+    "Yangi tug’ilgan chaqaloqlarda",
+    "4 oylikdan 9 oylikgacha",
+    "1 oylikdan 3 oylikgacha",
+    "1 yoshdan 4 yoshgacha"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiyasining qaysi shakli ko’proq uchraydi:",
+   "options": [
+    "ingichka-ingichkaichak",
+    "tolsto-tolstokishechnaya",
+    "yonbosh-chambarichak",
+    "retrogradnoe vnedrenie tolstoy kishki"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chandiqli ichak tutilishi bolalarda ko’proq nimadan keyin rivojlanadi:",
+   "options": [
+    "surunkaliappenditsit",
+    "gangrenoz-perforativappenditsit",
+    "kataral appenditsit",
+    "birlamchi peritonit"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiyasining rivojlanish sababini ko’rsating:",
+   "options": [
+    "bolalar ratsioniga ma’lum bir yosh uchun odatiy bo’lmagan ovqatlarni kiritish",
+    "bir yoshgacha bo’lgan bolalarda qo’shimcha ovqatlar va qo’shimchalarni noto’g’ri kiritish",
+    "ko’rsatilganlarning birontasi sabab bo’lishi mumkin",
+    "ichak infeksiyalari"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "1 yoshdan oshgan bolalarda ichak invaginatsiyasi quyidagi qaysi sababga ko’ra rivojlanmaydi:",
+   "options": [
+    "divertikullar",
+    "yotjismlar",
+    "enteroviruslar",
+    "mezadenit"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "8 oylik bolada to’satdan qorinda og’riq, qusish paydo bo’ldi. Qorinni shishmagan, yumshoq. O’ngda og’riqli, harakatchan, o’lchamlari 3x4 sm bo’lgan o’simtasimon hosila paypaslanadi. Kasallik davomiyligi 4 soat. Najasi shilliq aralash. Eng ehtimoliy tashxis nima:",
+   "options": [
+    "o’tkir appenditsit",
+    "divertikulit",
+    "ichakinvaginatsiyasi",
+    "o’tkir mezadenit"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiyasiga xos qorindagi og’riq xususiyatini ko’rsating:",
+   "options": [
+    "asta-sekin kuchayib boruvchi",
+    "qorinda doimiy o’tkir og’riq",
+    "qorin bo’ylab uchuvchi og’riq",
+    "xurujsimon, yorqin davrlar bilan"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiyasi uchun xos bo’lgan axlat xususiyatini ko’rsating:",
+   "options": [
+    "najas, alohida qon laxtalari mavjud",
+    "“malina jelesi”ga o’xshash najas",
+    "najas, shilliq",
+    "suyuq najas"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "8 oylik bolada ichak invaginatsiyasi klinikasi mavju Kasallikning davomiyligi 9 soat. Optimal tekshirish usulini ko’rsating:",
+   "options": [
+    "kolonoskopiya",
+    "laparoskopiya",
+    "havo bilan irrigografiya",
+    "bariy suspenziyasi bilan irrigografiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Invaginatsiyaning eng erta va doimiy belgilaridan biri:",
+   "options": [
+    "bola doimiy yig’laydi",
+    "qonli najas",
+    "suyuq najas",
+    "yo’g’on ichak bo’ylab o’smasimon hosilaning mavjudligi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiyasi uchun xos bo’lgan simptomni ko’rsating:",
+   "options": [
+    "Shyotkin-Blyumberg simptomi",
+    "Obuxov kasalxonasi simptomi",
+    "Voskresenskiy simptomi",
+    "Mondortriadasi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qaysi hollarda ichakinvaginatsiyasida invaginatni paypaslash qiyin bo’ladi:",
+   "options": [
+    "invagiant o’ng qovurg’a ostida joylashganda",
+    "invagiant chap qovurg’a ostida joylashganda",
+    "ingichka-ingichka ichak invaginatsiyasi",
+    "yon bosh-chambar ichak invaginatsiyasida"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "100% hollarda ichak invaginatsiyasini aniqlashga imkon beruvchi invaziv bo’lmagan maxsus diagnostika usuli:",
+   "options": [
+    "contrast moddaning oshqozon-ichak trakti bo’ylab o’tishi",
+    "sonografiya",
+    "laparoskopiya",
+    "umumiy rentgenografiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Pnevmoirrigografiyada ichak invaginatsiyasi uchun xos bo’lmagan belgini ko’rsating:",
+   "options": [
+    "to’lish nuqsoni",
+    "\"tirnoq\" alomati",
+    "Kloyberg kosachalari",
+    "\"hilol\" (yarimoy) belgisi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ko’ndalang kesimdagi sonografiyada ichak invaginatsiyasi uchun xos belgini ko’rsating:",
+   "options": [
+    "«yolg’on buyrak» simptomi",
+    "Yon bosh ichak terminal qismining qalinlashishi",
+    "«nishon» simptomi",
+    "Invagiant tashqi silindrini qalinlashishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bo’ylama kesimdagi sonografiyada ichak invaginatsiyasi uchun xos belgini ko’rsating:",
+   "options": [
+    "«nishon» simptomi",
+    "«yolg’on buyrak» simptomi",
+    "Yon bosh ichak terminal qismining qalinlashishi",
+    "Invagiant tashqi silindrini qalinlashishi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiya quyidagi qaysi kasallik bilan qiyoslanmaydi:",
+   "options": [
+    "o’tkir ichburug’",
+    "yo’g’on ichak polipozi",
+    "to’g’ri ichak shilliq qavatining tushishi",
+    "paraproktit"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kasallik boshlanganidan boshlab qaysi muddatda invaginatsiyada konservativ davo o’tkazish mumkin:",
+   "options": [
+    "kasallikning boshlanishidan boshlab birinchi 48 soat ichida",
+    "kasallikning boshlanishidan boshlab dastlabki 12 soat ichida",
+    "3 kundan keyin",
+    "Invaginatsiyani konservativ davolash o’tkazilmaydi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "7 oylik bolada ichak invaginatsiy Kasallik boshlanishidan o’tgan muddat",
+   "options": [
+    "11 soat. Davo taktikasini aniqlang:",
+    "Rejali ravishda operativ davolash",
+    "kuzatuv",
+    "Konservativ davolash",
+    "shoshilinch operatsiya"
+   ],
+   "correct": [
+    4
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "6 yoshli bolada ingichka ichak invaginatsiyasi aniqlandi. Kasallik 6 soat oldin boshlangan. Davo taktikasini aniqlang:",
+   "options": [
+    "bariy bilan kontrast tekshirish",
+    "kuzatuv",
+    "konservativ davolash",
+    "shoshilinch operatsiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Peritonit bilan invaginat nekrozida qanday jarrohlik aralashuvi amalga oshiriladi:",
+   "options": [
+    "Invaginatni rezeksiya qilish va ichak anastomozi",
+    "Invaginatni rezeksiya qilish, ileostomiya qo’yish",
+    "Qorin bo’shlig’ini drenajlash",
+    "laparostomiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qaysi o’tkir ichak tutilishi konservativ davo o’tkazishga ko’rsatma bo’ladi:",
+   "options": [
+    "Tugun hosil bo’lishi bilan ichak tutilishida",
+    "Ichaklarning siqilishida",
+    "Dinamik ichak tutilishi",
+    "o’t toshlari bilan obturatsion ichak tutilishida"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kelib chiqish mexanizmiga qarab mexanik ichak tutilishi qaysi turlarga bo’linadi:",
+   "options": [
+    "o’tkir va surunkali",
+    "yo’g’on ichak, ingichka ichak tutilishi va aralash turi",
+    "obturatsion, strangulyatsion va aralash",
+    "paralitik va spastik"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "“Kofe quyqasi” simon qusish qaysi holda kuzatiladi:",
+   "options": [
+    "me’da shirasi bilan aralashgan yutilgan qon",
+    "oshqozonda shilliq ishlab chiqarishning kuchayishida",
+    "Oshqozondan qon ketishida",
+    "ingichka ichakdan qon ketishida"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda oshqozon va 12-barmoqli ichak yara kasalligining qaysi asorati ko’proq uchraydi:",
+   "options": [
+    "Oshqozon va 12-barmoqli ichak devori perforatsiyasi",
+    "Oshqozon va 12-barmoqli ichakdan qonketishi",
+    "Yara penetratsiyasi",
+    "Oshqozon pilorik qismi stenozi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qanday hollarda oshqozon-ichak traktidan qon ketishi boshqa tizim yoki a’zo kasalliklarining asorati hisoblanadi:",
+   "options": [
+    "Oshqozon va 12-barmoqli ichak yarasi",
+    "Gemorragik gastrit",
+    "Portal gipertenziya",
+    "Mellori-Veys sindromi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda peritonitning eng ko’p sababi bo’lib hisoblanadi:",
+   "options": [
+    "yara perforatsiyasi",
+    "salpingit",
+    "ingichka ichak strangulyatsiyasi",
+    "o’tkir appenditsit"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Oshqozon ichak traktidan qon ketishi sabablariga kirmaydi:",
+   "options": [
+    "Mekkeldi vertikuli",
+    "embrional churra",
+    "Peyts-Yegers sindrom",
+    "Eozinofilligastroenteropatiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir flegmonoz appenditsitda quyidagi simptomlar aniqlanadi (noto’g’ri javobni toping):",
+   "options": [
+    "Shetkin-Blyumberg",
+    "Bartome-Mixelson",
+    "Koxer-Volkovich",
+    "Merfi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gangrenoz appenditsitga xos belgilar (noto’g’ri javobni toping):",
+   "options": [
+    "og’riqning kamayishi",
+    "taxikardiya",
+    "chap yonbosh sohada keskin og’riq",
+    "o’ng yonbosh soxada og’riq"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsitda aniqlanadigan simptomlar (noto’g’ri javobni toping):",
+   "options": [
+    "Volkovich-Koxer",
+    "Rovzing",
+    "Kulenkamf",
+    "Bartome-Mixelson"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Appendektomiyadan keyingi Duglas bo’shlig’i abssessiga xos belgilar (noto’g’ri javobni toping):",
+   "options": [
+    "Gektik xarorat",
+    "Chanoq chukurligida og’riq va tenezm",
+    "Qin devori yoki to’g’ri ichak oldingi devori osilishi",
+    "Diafragma harakatining chegaralanishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsitda operatsiyadan keyingi kechki asoratlarni ko’rsating (noto’g’ri javobni toping):",
+   "options": [
+    "Ligaturali oqma",
+    "Upkaabssessi",
+    "Strangulyatsion ichak tutilishi",
+    "Ventral churra"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qaysi kasallikda chaqaloq bezovtalanganda sianoz kuzatiladi:",
+   "options": [
+    "ko’krak qafasining voronkosimon deformatsiyasi",
+    "Diafragmal churra",
+    "subduralgematoma",
+    "Traxeo-qizilo’ngach oqmasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Quyidagi kasalliklardan qaysi biri klinik jihatdan o’tkir appenditsitga o’xshab kechishi mumkin (noto’g’ri javobni toping):",
+   "options": [
+    "Gijja invaziyasi",
+    "siydik-tosh kasalligi",
+    "embrional churra",
+    "adenovirusli infeksiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak invaginatsiyasining diagnostik usullari (noto’g’ri javobni toping):",
+   "options": [
+    "Pnevmo irrigografiya",
+    "Oshqozon ichak trakti passaji",
+    "UTT",
+    "To’g’ri ichakni rektal tekshiruv"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir ichak tutilishida degidratatsiya nima sababdan rivojlanadi (to’g’ri javobni toping):",
+   "options": [
+    "Qusish",
+    "Diurezning kuchayishi",
+    "Yo’tal",
+    "Ter ajralishining kuchayishi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Obturatsion ichak tutilishining sabablari bo’lishi mumkin (noto’g’ri javobni toping):",
+   "options": [
+    "Polip",
+    "Axlat toshlari",
+    "Ichak tutqichi tomirlarining trombozi",
+    "Ichaklarning bir-biriga kirib qolishi (invaginatsiya)"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ichak tutilishiga moyillik tugdiradigan omillarni ko’rsating (noto’g’ri javobni toping):",
+   "options": [
+    "Ichaklar anomaliyasi",
+    "Embrional churra",
+    "Mekkeldi vertikuli",
+    "Ichak tutqichi anomaliyasi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Mexanik ichak tutilishlarining rivojlanish sabablari bo’lishi mumkin (noto’g’ri javobni toping):",
+   "options": [
+    "Siqilgan churra",
+    "Ichaklar falaji",
+    "oshqozon-ichak traktidagi yot jismlar",
+    "gijja invaziyasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "To’liq ichak tutilishining ikkita eng asosiy klinik belgilari bo’lib hisoblanadi (to’g’ri javobni toping):",
+   "options": [
+    "qorin asimmetriyasi",
+    "Ich ketishi",
+    "axlat va gazlarning chiqmasligi",
+    "Qorinning dam bo’lishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Paralitik ichak tutilishi rivojlanish sabablarini ko’rsating (noto’g’ri javobni toping):",
+   "options": [
+    "Markaziy asab sistemasi kasalliklari va shikastlanishlari",
+    "Uremiya",
+    "Axlat toshlari",
+    "Antixolinergik vositalarini qo’llash"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Oshqozon yara kasalligi patogenezida rol o’ynaydigan omillarni ko’rsating (noto’g’ri javobni toping):",
+   "options": [
+    "Oshqozon motorikasining pasayishi",
+    "Refluks-ezofagit",
+    "Duodenogastral refluks",
+    "Shilliq qavat himoya xususiyatining buzilishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Yara kasalligi asoratlari ichida har doim shoshilinch operatsiyaga ko’rsatma bo’ladigan holatlarni ko’rsating (to’g’ri javobni toping):",
+   "options": [
+    "Pilorusning dekompensatsiyalangan stenozi",
+    "Qusish",
+    "Perforatsiya",
+    "Penetratsiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Oshqozon yarasi perforatsiyasiga xos bo’lgan simptomlarini ko’rsating (noto’g’ri javobni toping):",
+   "options": [
+    "«xanjarsimon» og’riq",
+    "\"taxtasimon\" qorin",
+    "Kupmartalab qusish",
+    "Jigar to’mtoqligining yo’qolishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "12-barmoqli ichak yarasidan qon ketishida quyidagi belgilar xos (to’g’ri javobni toping):",
+   "options": [
+    "Qorinda og’riqning kuchayishi",
+    "\"Kofe quyqasi\"simon qusish",
+    "Og’riq sindromining keskin kuchayishi",
+    "Bradikardiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Quyidagi simptomlarning qaysi biri yara perforatsiyasida kuzatiladi (noto’g’ri javobni toping):",
+   "options": [
+    "Shetkin-Blyumberg simptomi musbat",
+    "Jigar tumtoqligining yo’qolishi",
+    "qorinda \"xanjarsimon\" og’riq",
+    "Yengillik olib kelmaydigan ko’p martalab qusish"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Oshqozon ichaklardan qon ketishda diagnostika maqsadida qo’llaniladigan usullarni ko’rsating (to’g’ri javobni toping):",
+   "options": [
+    "oshqozon ichak trakti passaji",
+    "gastroduodenoskopiya",
+    "peshobning klinik tahlili",
+    "oshqozon rentgenoskopiyasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Garre sklerozlanuvchi osteomielitining rentgenologik belgilarini ko’rsating:",
+   "options": [
+    "metafizning fokalosteo sklerozi",
+    "kortikal qatlamning fokusli qalinlashishi",
+    "suyak sklerozi, kortikal qatlamning qalinlashishi, medullar kanalining torayishi, suyakning strukturasiz ko’rinishi",
+    "suyakning umumiy osteoporozi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qaysi kasallik birlamchi surunkali osteomielitga kirmaydi:",
+   "options": [
+    "Brodi abssessi",
+    "Pertes kasalligi",
+    "Garre sklerozlanuvchi osteomieliti",
+    "antibiotikli osteomieliti"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Epifizar osteomielit ko’proq qaysi yoshda uchraydi:",
+   "options": [
+    "5 yoshdan oshgan bolalarda",
+    "10-12 yoshda",
+    "yangi tug’ilgan chaqaloqlarda yoki ko’krak yoshidagi bolalarda",
+    "6-8 yoshda"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen osteomielit quyidagi sanalganlarning qaysi bilan qiyoslanmaydi:",
+   "options": [
+    "suyak o’smasi",
+    "suyak sili",
+    "fil oyoq kasalligi",
+    "suyak shikastlanishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen osteomielitning qaysi shakli hushini yo’qotish, kollaptoid holat, alahsirash, yuqori isitma (40-410gacha) bilan kechadi:",
+   "options": [
+    "septikopiemik shakli",
+    "toksik shakli",
+    "osteomielitning atipik shakli",
+    "epifizar osteomielit"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "7 yoshli bola 3 kundan beri kasal. Son suyagining o’tkir gematogen osteomieliti tashxisi qo’yildi. Qanday davolash usuli qo’llaniladi:",
+   "options": [
+    "sekvestrektomiya",
+    "osteomielitik flegmonani ochish",
+    "konservativ davo",
+    "suyako steoperforatsiyasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen osteomielitning qaysi shakli 400S gacha yuqori harorat, sovuq ter bilan isitma va a’zolarda yiringli metastatik o’choqning mavjudligi bilan xarakterlanadi:",
+   "options": [
+    "toksik shakli",
+    "osteomielitning atipik shakllari",
+    "septikopiemik shakli",
+    "epifizar osteomielit"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen osteomielitni septikopiemik shaklining klinik belgilariga quyidagilardan qaysi biri xos emas:",
+   "options": [
+    "og’ir intoksikatsiya",
+    "mahalliy simptomlarning ustunligi",
+    "eyforiya, alahsirash",
+    "turli a’zolarda metastatik yiringli o’choqlar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen osteomielitning toksik shaklining klinik belgilariga quyidagilardan qaysi biri xos emas:",
+   "options": [
+    "yuqori harorat",
+    "endotoksik shok",
+    "gemodinamika buzilishlari",
+    "piemik o’choqlar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Surunkali osteomielitni davolashda quyidagi qaysi jarrohlik usuli qo’llanilmaydi:",
+   "options": [
+    "osteoperforatsiya",
+    "sekvesroektomiya",
+    "suyakning qoldiq bo’shlig’ini to’ldirish",
+    "suyak bo’shlig’ini qoshiq bilan tozalash"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Surunkali osteomielitga xos klinik belgilarni ko’rsating:",
+   "options": [
+    "giperemiya, shish, flyuktuatsiya, palpatsiyada og’riqsizlik",
+    "shishli infiltratsiya, patologik harakatchanlik",
+    "yumshoq to’qimalarning shishishi, zararlangan oyoq-qo’llarning qalinlashishi, oqmalar va chandiqlar, yiring ajralib turishi",
+    "qizarish, shish, krepitatsiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Surunkali osteomielitning rentgenologik belgilari bo’lib hisoblanadi:",
+   "options": [
+    "chiziqli periostit, destruksiya o’choqlari",
+    "osteoporoz uchoqlari, yaqqol osteoskleroz, sekvestrlar",
+    "\"qandni erishi\" simptomi, tarqoq osteoporoz",
+    "igna ko’rinishidagi periostit"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen osteomielitning rentgenologik belgilari kasallik boshlanganidan keyin qaysi kunlarda aniqlanadi:",
+   "options": [
+    "1-7 kunlarda",
+    "7-14 kunlarda",
+    "21-25 kunlarda",
+    "14-21 kunlarda"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Epifiz osteomielitining rentgenologik belgilari kasallik boshlangandan keyin qaysi kunlarda aniqlanadi:",
+   "options": [
+    "8-10 kunlarda",
+    "1-2 kunlarda",
+    "2-4 kunlarda",
+    "5-7 kunlarda"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bola o’tkir gematogen osteomielit bilan og’ir ahvolda shifoxonaga yotqizildi. 2 kun davomida o’tkazilgan intensiv davo choralari effekt bermadi. Bemor vafot etdi. Kasallikning ushbu kechish turi qanday nomlanadi:",
+   "options": [
+    "septikopiemik turi",
+    "gipertoksik turi",
+    "yashin tezligidagi turi",
+    "cho’zilgan kechish turi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ko’krak yoshidagi bolalarda o’tkir epifizar osteomielit quyida sanab o’tilgan kasalliklarning qaysi bilan qiyoslanmaydi:",
+   "options": [
+    "artrit",
+    "limfangioma",
+    "travmatik epifizioliz",
+    "flegmona"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Epifizar osteomielitining eng erta rentgenologik belgisini ko’rsating:",
+   "options": [
+    "metafizda destruksiya o’choqlari",
+    "periosteal qatlamlar",
+    "patologik sinish",
+    "bo’g’im oralig’ning kengayishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kasallikning dastlabki bosqichlarida o’tkir gematogen osteomielitni tashxislashning eng ishonchli usulini ayting:",
+   "options": [
+    "elektro termometriya",
+    "elektro rentgenografiya",
+    "suyak ichidagi bosimni o’lchash",
+    "yumshoq to’qimalarni diagnostik punksiyasi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Brodi abssessi osteomielitning qaysi turiga tegishli:",
+   "options": [
+    "o’tkir gematogen osteomielitga",
+    "birlamchi-surunkali turiga",
+    "toksik turiga",
+    "radiatsiyadan keyingi osteomielitga"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bemor ahvoli og’ir, hansirash, lixoradka bor. Rentgenogrammada o’ng yuqori bo’lakda suyuqlik sathli bo’shliq va perifokal reaksiya aniqlanadi. Sizning tashhisingiz:",
+   "options": [
+    "piotoraks",
+    "mediastenal emfizema",
+    "o’pka absessi",
+    "piopnevmotoraks"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Rentgenogrammada plevra bo’shlig’ida total qorayish, ko’ks oralig’i sog’ tomonga siljigan. Taxminiy tashhisingiz:",
+   "options": [
+    "piopnevmotoraks",
+    "piotoraks",
+    "o’pkadestruksiyasinibullezshakli",
+    "pnevmotoraks"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Rentgenogrammada plevra bo’shlig’ida total qorayish, ko’ks oralig’I kasallangan tomonga siljigan. Taxminiy tashhisingiz:",
+   "options": [
+    "plevra total empiemasi",
+    "plashsimon plevrit",
+    "o’pka atelektazi",
+    "piotoraks"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Destruksiyani bullyoz shaklida eng yaxshi usul:",
+   "options": [
+    "Bulla punksiyasi",
+    "Bullani drenajlash",
+    "Bronxoskopik drenajlash",
+    "O’chog’ga tegmasdani ntensiv davo"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Rentgenogrammada o’ng gemitoraks sohada yopinchiqsimon qorayish aniqlanadi. Taxminiy tashhisingiz:",
+   "options": [
+    "o’pka destruksiyasini bullez shakli",
+    "Plashsimon plevrit",
+    "sumkali plevrit",
+    "plevra total empiemasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Piopnevmotoraksda quyidagilardan qaysi bir belgi to’g’ri emas:",
+   "options": [
+    "Inqillabnafasolishvahansirash",
+    "Ko’krakqafasiassimetriyasi",
+    "Ahvoli o’rta og’ir",
+    "Zararlangantomondanafassusayishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka bakterial destruksiyasini o’pka shakliga nima kiradi:",
+   "options": [
+    "Piotoraks",
+    "Piopnevmotoraks",
+    "Pnevmotoraks",
+    "Mayda o’chog’li destruksiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Pnevmotoraksga xos auskultativ va perkutor belgilarni ko’rsating:",
+   "options": [
+    "Zararlangan tomonda perkutor tovushni qisqarishi va nafas susayishi",
+    "Bronxofoniya va qutichasimon tovush",
+    "Timpanit va nafas o’tmasligi",
+    "Bo’g’iqlashish va nafas o’tmasligi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka abssessiga gumon bo’lganda birinchi qaysi tekshiruvni o’tkazish kerak:",
+   "options": [
+    "Bronxoskopiya",
+    "O’pka rentgenoskopiyasi ikkita proeksiyada",
+    "O’pkani perfuzion skanirlash",
+    "Angiopul’monografiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Rentgenogrammada to’qimada o’zgarishsiz aniq chegarali havoli bo’shliq aniqlanadi.Tashhis qo’ying:",
+   "options": [
+    "o’pkani ko’plab abssesslari",
+    "tug’ma kista",
+    "o’pka bakterial destruksiyasini ko’plab mayda o’chog’li shakli",
+    "o’pka bakterial destruksiyasini bullez shakli"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda o’pka va plevrani yiringli kasalliklari qo’zg’atuvchilari ko’proq qaysilar:",
+   "options": [
+    "Streptokokk",
+    "Ko’k yiring tayoqcha",
+    "Stafilokokk",
+    "Pnevmokokk"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Birlamchi o’pka bakterial destruksiyasida mikroblar qaysi yo’l bilan kiradi:",
+   "options": [
+    "Gematogen",
+    "Aerogen",
+    "Limfogen",
+    "Osteogen"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Piopnevmotoraksda qanday rentgen ko’rinish bo’ladi:",
+   "options": [
+    "Ko’ks oralig’ini siljituvchi katta gomogen qoraygan soya",
+    "Zararlangan tomonda plevra bo’shlig’ida total qorayish, o’pka qisman kollabirlangan",
+    "Zararlangan tomonda plevra bo’shlig’ida suyuqlik sathi, ustida havo",
+    "Zararlangan tomonda yuqori bo’lak intensiv gomogen qorayishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka drenirlangan abssessi rentgen ko’rinishi:",
+   "options": [
+    "Aniq chegarali yumaloq yorishish",
+    "Perifokal yallig’lanishli yumaloq gomogen qorayish, suyuqlik sathi bilan",
+    "Suyuqlik sathi bilan plevra bo’shlig’ini gomogen qorayishi",
+    "Ko’ks oralig’ini sog’ tomonga siljituvchi keng yumaloq gomogen soyalanish"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Taranglashgan piotoraksning rentgen ko’rinishi:",
+   "options": [
+    "Plevra bo’shlig’ida gorizontal suyuqlik sathi, ko’ks oralig’i siljimagan",
+    "Plevra bo’shlig’ida total yorishish, ko’ks oralig’i sog’ tomonga siljigan",
+    "Plevra bo’shlig’ida total qorayish, ko’ks oralig’i siljimagan",
+    "Plevra bo’shlig’ida total qorayish, ko’ks oralig’i sog’ tomonga siljigan"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka bakterial destruksiyasini bullyoz shaklining rentgenko’rinishi:",
+   "options": [
+    "O’pka to’qimasida yumaloq yorishish",
+    "O’pka to’qimasida yumaloq gomogen qorayish",
+    "Suyuqlik sathli yumaloq qorayish",
+    "O’pka to’qimasida ko’plab yumaloq qorayishlar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Plevra ichi bosimini oshishi sindromiga xos emas:",
+   "options": [
+    "Zararlangan tomonda ko’krak qafasi shishi",
+    "Ko’ks oraligi qarama-qarshi tomonga siljigan",
+    "Ko’ks oralig’ini zararlangan tomonga siljishi",
+    "Nafas susayishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Plevra surunkali empiemasida ko’krak qafasi shakli qanday bo’ladi:",
+   "options": [
+    "Zararlangan tomon shishgan, qovurg’alar orasi kengaygan",
+    "Zararlangan tomon puchayishi, qovurg’alar orasi yaqinlashishi",
+    "Silindrik shakl",
+    "Voronkasimon shakl"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chov va chov-yorg’oq churralari etiopatogenezi:",
+   "options": [
+    "Qorin oq chizig’i bitmasligi",
+    "Kindik halqasi bitmasligi",
+    "Hamma javob to’g’ri",
+    "Qorin parda qin o’simtasini bitmasligi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chov va chov-yorg’oq churralarini qanday turlari farqlanadi:",
+   "options": [
+    "To’g’rilanadigan, to’g’rilanmaydigan",
+    "To’g’rilanadigan, siqilgan",
+    "To’g’rilanadigan, to’g’rilanmaydigan, siqilgan",
+    "Siqilgan, to’g’rilanmaydigan"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Gidrotsele nima:",
+   "options": [
+    "Urug’ tizimchasi pardalari orasiga suyuqlik yig’ilishi",
+    "Moyak pardalari orasiga suyuqlik yig’ilishi",
+    "Boshmiyaga suyuqlik yig’ilishi",
+    "Tizza bo’g’imiga suyuqlik yig’ilishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Funikulotsele nima:",
+   "options": [
+    "Moyak pardalari orasiga suyuqlik yig’ilishi",
+    "Bosh miyaga suyuqlik yig’ilishi",
+    "Tizza bo’g’imiga suyuqlik yig’ilishi",
+    "Urug’ tizimchasi pardalari orasiga suyuqlik yig’ilishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Yiringli xirurgik infeksiyani davolash nechta komponentni o’z ichiga oladi:",
+   "options": [
+    "Mahalliy o’choqqa ta’sir, mikroorganizmga ta’sir, fizioterapiya",
+    "Mahalliy o’choqqa ta’sir, makroorganizmga ta’sir, immobilizatsiya",
+    "Mahalliy o’choqqa ta’sir, mikroorganizmga ta’sir, makroorganizmga ta’sir",
+    "Mikroorganizmga ta’sir, makroorganizmga ta’sir"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Panaritsiyani qanday turlari farqlanadi:",
+   "options": [
+    "O’tkir , surunkali, cho’ziluvchi",
+    "Teri, tirnoq, pay, suyak, pandaktilit",
+    "O’tkir , o’tkir osti, surunkali",
+    "Mahalliy, umumiy"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen osteomielitni qanday klinik kechishi bosqichlari farqlanadi:",
+   "options": [
+    "Toksik, septikopiemik, mahalliy",
+    "Toksik, notoksik",
+    "Septik, mahalliy",
+    "Umumiy, mahalliy, dinamik"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsit - bu:",
+   "options": [
+    "Siydik qopining o’tkir nospesifik yallig’lanishi",
+    "ko’richakning o’tkir nospesifik yallig’lanishi",
+    "ichak tutqichining o’tkir nospesifik yallig’lanishi",
+    "Chuvalchangsimon o’simtaning o’tkir nospesifik yallig’lanishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsitga xos bo’lgan simptomni aniqlang:",
+   "options": [
+    "Dans",
+    "Koxer-Volkovich",
+    "Kulenkampf",
+    "Val"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsit uchun xos bo’lmagan belginini ko’rsating:",
+   "options": [
+    "Rovzing",
+    "Sitkovskiy",
+    "Ortner",
+    "Razdolskiy"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsitda qusish xarakterini aniqlang:",
+   "options": [
+    "o’t aralash",
+    "ko’p marotaba",
+    "axlatli",
+    "bir-ikki marta"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsitda shoshilinch operativ davoga qarshi ko’rsatmani aniqlang:",
+   "options": [
+    "gemorragik diatez",
+    "tarqalgan peritonit",
+    "Appendikulyar infiltrat",
+    "glomerulonefrit"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda diafragma churrasining siqilishida tezlashtirilgan operativ muolajaga ko’rsatma bo’ladigan klinik simptomlarni aniqlang:",
+   "options": [
+    "Oksigenoterapiyadan qatiy nazar nafas yetishmovchiligining 3 darajasida saqlanib turishi",
+    "taxikardiya",
+    "ko’ks oralig’i siljishi",
+    "Barcha simptomlar birgalikda kelishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Birlamchi peritonitda qorin pardaning infeksion agent bilan zararlanish qanday amalga oshadi:",
+   "options": [
+    "Oshqozon yarasi teshilishi sababli",
+    "Gematogen yo’l bilan",
+    "Chuvalchangsimon o’simtaning teshilishi sababli",
+    "Ichakning jarohatlanishi tufayli"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Peritonitning eng asosiy va muhim mahalliy regional belgisini ko’rsating:",
+   "options": [
+    "Qorindagi og’riq",
+    "Qorinda perkutor tovushning qisqarishi",
+    "Mushaklar tarangligi",
+    "Qorin bo’shlig’ining cho’zilishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Siydik qopi shikastlanishlarida asosiy diagnostik usulni ko’rsating:",
+   "options": [
+    "Siydik qopi kateterizatsiyasi",
+    "sistoskopiya",
+    "Kontrast sistografiya",
+    "ekskretor urografiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kovak a’zo shikastlanishlarida xos bo’lgan rentgenologik belgini ko’rsating:",
+   "options": [
+    "o’smasimon hosila",
+    "Diafragma gumbazi ostidagi erkin havo",
+    "ikkita havoli pufak",
+    "Kloyberg kosachalari"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qaysi belgi o’ng yonbosh sohadagi yallig’lanish jarayoni mavjudligining ishonchli mezoni hisoblanadi:",
+   "options": [
+    "qorinning o’ng tomonida og’riq",
+    "ko’p marotaba qusish",
+    "qorin old devori mushaklarining passiv taranglashishi",
+    "periferik qonda leykotsitlar sonining ko’payishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Katta yoshli bolalarda o’tkir appenditsitda tana harorati odatda qaysi darajada bo’ladi:",
+   "options": [
+    "390Sgacha",
+    "400Sgacha",
+    "haroratko’tarilmaydi",
+    "380Sgacha"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Katta yoshdagi bolalarda o’tkir appenditsitda qusish xarakterini ko’rsating:",
+   "options": [
+    "birmarta, yengillikkeltiradi",
+    "reflektor, biryokiikkimarta",
+    "birmartaqonbilanaralash",
+    "ko’pmarta"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "6 yoshli bola to’satdan kasal bo’lib qoldi: chap yonbosh sohasida og’riq. Tekshiruvda chap yonbosh sohasida mushaklarning taranglashmagan. Eng ehtimoliy tashxis nima:",
+   "options": [
+    "sigmasimonichakdivertikuliti",
+    "yo’g’onichakpolipozi",
+    "koprostaz",
+    "sigmasimonichakburalishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Shenleyn-Genox kasalligida qorindagi og’riq sababini ko’rsating:",
+   "options": [
+    "ichak devorining yallig’lanishi natijasida",
+    "appendiksni siqilishi natijasida",
+    "ichak devori va qorin pardaga qon quyilishi natijasida",
+    "ichak tutqichining siqilishi natijasida"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir plevropnevmoniyada nima sababli qorinda og’riq kuzatiladi:",
+   "options": [
+    "nafas qisilishi",
+    "qovurg’alararo nervlar va plevraning ta’sirlanishi",
+    "aksirmoq",
+    "hiqichoq"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Tipik joylashuvli o’tkir appenditsitni o’tkir xolesistitdan farqlovchi belgini ko’rsating:",
+   "options": [
+    "chap yonbosh sohasidagi og’riq",
+    "Koxer simptomining mavjudligi",
+    "o’ng qovurg’a ostida qorin old devori mushaklarining taranglashuvi",
+    "Filatov simptomining mavjudligi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsit bilan og’rigan bemorda pnevmoniyaga shubha qilish imkonini beruvchi belgini ko’rsating:",
+   "options": [
+    "o’ng yon bosh sohasida qorin old devori mushaklarining passiv tarangligi",
+    "o’ng yon bosh sohasida qorin pardaning ta’sirlanish belgilarining mavjduligi",
+    "Koxer simptomining mavjudligi",
+    "Turli xil nam xirillashlar va zararlangan tomonida nafasning susayishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "12 yoshli bemorda tipik lokalizatsiyali o’tkir appenditsitni siydik tizimi infeksiyasidan yuqori aniqlik bilan istisno qilishga imkon beradigan simptomni ko’rsating:",
+   "options": [
+    "Dizurik o’zgarishlar",
+    "leykotsituriya",
+    "Koxer simptomi",
+    "bel sohasidagi “chayqatish” belgisi musbat"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Duglas bo’shlig’i abssessini ratsional davo usulini ko’rsating:",
+   "options": [
+    "operatsiya - laparotomiya va qorin bo’shlig’ini drenajlash",
+    "to’g’ri ichak orqali drenajlash",
+    "konservativ davo",
+    "oraliq orqali drenajlash"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Appendikulyar infiltratga xos bo’lmagan belgini ko’rsating:",
+   "options": [
+    "subfebril harorat",
+    "leykotsitoz",
+    "o’ng yon bosh sohasida paypaslanuvchi hosila",
+    "profuz ich ketishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Operatsiya vaqtida o’t yo’llarini tekshiruvchi usul qanday ataladi:",
+   "options": [
+    "Intraoperatsion xolangiografiya",
+    "MRT-xolangiografiya",
+    "Kontrastli xolangiografiya",
+    "Intraoperatsion ssintagrafiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Taloq shikastlanganda qaysi simptomlar aniqlanadi:",
+   "options": [
+    "Shetkin-Blyumberg, Filatov",
+    "Valya, Dansa",
+    "Pasternaskiy, Ortner",
+    "Kulenkampf, «vanka-vstanka»"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Klinik kechishiga ko’ra taloq izolyatsiyalangan jarohati bo’linadi:",
+   "options": [
+    "o’tkir, surunkali",
+    "birlamchi, ikkilamchi",
+    "Bir momentli, ikki momentli",
+    "og’riq sindromli, og’riq sindromisiz"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qorinni paypaslagan og’riq bo’lishi va mushak taranglanishini yo’qligi. Bu qaysi simptom:",
+   "options": [
+    "Vanka-vstanka simptomi",
+    "Pasternatskiy simptomi",
+    "Kulenkampf simptomi",
+    "Veynert sinamasi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen ostemielitning qaysi turi juda og’ir kechadi:",
+   "options": [
+    "maxalliy",
+    "toksik",
+    "septik",
+    "surunkali"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Yara perforatsiyasida eng ko’p ma’lumot beruvchi tekshirish usuli bu:",
+   "options": [
+    "Qorin bo’shlig’ining umumiy rentgenografiyasi",
+    "Qorin bo’shlig’I a’zolari UTT",
+    "ezofagogastroduodenoskopiya",
+    "pnevmoirrigografiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Piloroduodenal stenozda eng ko’p ma’lumot beruvchi tekshirish usuli bu:",
+   "options": [
+    "qorin bo’shlig’I a’zolari UTT",
+    "qorin bo’shlig’ining umumiy rentgenografiyasi",
+    "rentgenokontrast tekshirish",
+    "laborator ko’rsatkichlari"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir appenditsitda Sitkovskiy belgisi bu:",
+   "options": [
+    "Bemor ko’ylagi ustidan kindikdan o’ng yonboshga sirpanish paytida og’riqning kuzatilishi",
+    "Bemor chap yonbosh bilan yotganda o’ng yonbosh sohasidagi og’riqning kuchayishi",
+    "o’ng yonbosh sohani paypaslab, oyoqlarni ko’targan paytda og’riqning kuchayishi",
+    "sigmasimon ichak sohasini turtib paypaslaganda o’ng yonbosh sohada og’riqning kuchayishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Mexanik ichak tutilishida qo’llanilmaydi:",
+   "options": [
+    "Paranefral novokainli blokada",
+    "dezintoksikatsiya",
+    "Ichak peristaltikasini kuchaytiruvchi preparatlar",
+    "infuzion davo"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Peritonitning klinik kechish bosqichlarini (fazalarini) ko’rsating:",
+   "options": [
+    "latent, intoksikatsiya, rekonvalessent",
+    "reaktiv, toksik, terminal",
+    "o’tkir, o’tkir osti, surunkali",
+    "o’tkir, surunkali"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bemor bolada qorin bo’shlig’I kovak a’zolarining shikastlanishiga gumon bor. Tekshiruvni qaysi usuldan boshlash shart:",
+   "options": [
+    "angiografiya",
+    "ultratovush tekshirish",
+    "Qorin bo’shlig’ining umumiy rentgenografiyasi",
+    "laborator tahlillar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Oshqozon osti bezi shikastlanishiga xos o’zgarish:",
+   "options": [
+    "gipo- idisproteinemiya",
+    "Qonda va siydikda diastaza miqdorining oshishi",
+    "giper- igipoglikemiya",
+    "transaminaa faolligining oshishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Jigar va taloqning kapsula osti gematomalarida shifokor taktikasini aniqlang:",
+   "options": [
+    "Operativ davo",
+    "Gematomani punksiyasi",
+    "Poliklinika sharoitida bemor kuzatuvga olinadi",
+    "Statsionar sharoitida bemor kuzatuvga olinadi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qorinning yopiq shikastlanishi bilan bemorga umumiy rentgenografiyada qorin bo’shlig’ida erkin havo aniqlanadi. Tavsiya etiladi:",
+   "options": [
+    "Laparoskopiya",
+    "UTT",
+    "Laparotomiya",
+    "Dinamik kuzatuv"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Girshprung kasalligining rentgenologik belgisini ko’rsating:",
+   "options": [
+    "Ichaklar pnevmatozi",
+    "yo’g’on ichakning uzayishi",
+    "Toraygan soha va suprastenotik kengaygan qismning mavjudligi",
+    "Kloyberg kosachalari"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kontrastirrigogrammada yo’g’on ichakda toraygan soha va suprastenotik kengaygan qism aniqlanadi. Tashxis:",
+   "options": [
+    "dolixosigma",
+    "birlamchi megakolon",
+    "to’g’ri ichak stenozi",
+    "Girshprung kasalligi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolada barmog’ining tirnoq atrofidagi valikda shish va qizarish aniqlanadi. Tirnoq asosidagi teri ostida yiring aniqlanadi. Tashxis:",
+   "options": [
+    "panaritsiyaning teri turi",
+    "paronixiya",
+    "abssess",
+    "panaritsiyaning teri osti turi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda chov-yorg’oq churralari ko’pincha qiyoslanadi:",
+   "options": [
+    "orxitbilan",
+    "varikotsele bilan",
+    "Moyak pardalari istisqosi bilan",
+    "orxiepididimit bilan"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Soxta kriptorxizm sababini ko’rsating:",
+   "options": [
+    "Moyakning pastga tushish jarayonining buzilishi",
+    "Kremaster mushagi refleksining oshishi",
+    "Gormonal buzilishlar",
+    "Antenatal kasalliklar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chov churrasiga xos bo’lgan belgini ko’rsating:",
+   "options": [
+    "ko’ngil aynish va qusish",
+    "tana haroratining ko’tarilishi",
+    "Chov sohasida elastik shishsimon hosila",
+    "qorindagi og’riqlar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qachon “kindik” simptomi musbat hisoblanadi:",
+   "options": [
+    "yelkaga, kurakka og’riqni irradiatsiyalanishi",
+    "Kindik bosilganda jigar yumaloq boylami tortilishi hisobiga jigar sohada kuchli og’riq",
+    "bemorni majburiy holatdan boshqa holatga o’tkazganda yana eski holatini olishi",
+    "qorinni paypaslagan og’riq bo’lishi va mushak taranglanishini yo’qligi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "“Vanka-vstanka” simptomi qachon musbat deyiladi:",
+   "options": [
+    "Kindik bosilganda jigar yumaloq boylami tortilishi hisobiga jigar sohada kuchli og’riq",
+    "Bemorni majburiy holatdan boshqa holatga o’tkazganda yana eski holatini olishi",
+    "Qorinni paypaslagan og’riq bo’lishi va mushak taranglanishini yo’qligi",
+    "yelkaga, kurakka og’riqni irradiatsiyalanishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "2 yoshli bola tug’ilgandan beri surunkali qabziyat bilan aziyat chekadi. Ichi faqatgina huqnalar yordamida keladi. Tashxisga aniqlik kiritish uchun qo’llaniladi:",
+   "options": [
+    "laparoskopiya",
+    "havo bilan irrigografiya",
+    "Bariy bilan kontrast irrigografiya",
+    "kolonoskopiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "6 yoshli bolada ingichka-ingichka ichak invaginatsiyasi aniqlandi. Davo taktikasini aniqlang:",
+   "options": [
+    "Rejali operativ davo",
+    "Konservativ davo",
+    "kuzatuv",
+    "Shoshilinch operativ davo"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolada qorinning yopiq shikastlanishi, qorin ichki qon ketishi aniqlanadi, taloq shikastlangan. Gemodinamik ko’rsatkichlar stabil. Jarrohning eng to’g’ri taktikasini aniqlang:",
+   "options": [
+    "laparotomiya, qorin bo’shlig’I reviziyasi",
+    "laparotomiya, uzoq muddatli drenaj qo’yish",
+    "kuzatuv, konservativ davo",
+    "rejali operatsiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Quyidagi qatordan qaysisi qo’shma shikastlanish turiga kiradi:",
+   "options": [
+    "oshqozon, ingichka ichak va charvi shikastlanishlari",
+    "oshqozon, diafragma va o’pka shikastlanishlari",
+    "oshqozon, oshqozon osti bezi va taloq shikastlanishlari",
+    "oshqozon va jigar chap bo’lagining shikastlanishlari"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Jigar va taloq kapsula osti gematomasi kattalashmayotganda qanday taktika bo’ladi:",
+   "options": [
+    "Poliklinikada kuzatish",
+    "Gematoma punksiyasi",
+    "Shoshilinch operatsiya",
+    "Bemorni kasalxona sharoitida kuzatish uchun jo’natish"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kovak a’zolar shikastlanishida vrach pediatr taktikasi:",
+   "options": [
+    "Konservativ davo uchun rejali ravishda kasalxonaga jo’natish",
+    "Poliklinikada konservativ davo",
+    "Operatsiya uchun tezda kasalxonaga jo’natish",
+    "Uy sharoitida kuzatuv"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Buyrak shikastlanishiga qaysi triada simptom xos:",
+   "options": [
+    "ko’p marta qusish, qornida og’riq, siydik analizida o’t pigmentlari musbat",
+    "Bel sohasida og’riq, bel sohasida shish, gematuriya",
+    "siydik analizida o’t pigmentlari musbat, o’ng qovurg’a ostida og’riq, albuminuriya",
+    "qon aralash qusish, vaqti-vaqti bilan sarg’ayish, gipertermiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Poliklinika sharoitida qanday tekshiruvlar o’tkaziladi:",
+   "options": [
+    "Bronhografiya",
+    "Bronhoskopiya",
+    "Laborator tahlillar",
+    "Tomografiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chov va chov-yorg’oq churralari darejali operatsiya muddatlari:",
+   "options": [
+    "0-6 oy",
+    "1-2 yoshda",
+    "6-12 oylikda",
+    "2-4 yoshda"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Siydik tosh kasalligida operatsiyadan keyingi reabilitatsion chora tadbirlar:",
+   "options": [
+    "Vitaminoterapiya",
+    "Fizioterapiya",
+    "Dietoterapiya",
+    "Antibiotikoterapiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka bullasini plevra bo’shlig’iga yorilishida shoshilinch yordam nimadan iborat:",
+   "options": [
+    "Kislorod berish",
+    "Plevra bo’shlig’ini punksiyasi",
+    "Bemor nafas olishini yaxshilashga yo’naltirilgan medikamentoz davo",
+    "Yarim o’tirgan holatini ta’minlash"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Gregerson sinamasi – bu:",
+   "options": [
+    "Siydikda yashirin qon ketishini aniqlash",
+    "Ahlatda sterkobilinni aniqlash",
+    "Siydikda urobilinni aniqlash",
+    "Ahlatda yashirin qon ketishini aniqlash"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qizilungach kuyishida chandiqlanishni profilaktikasi nimadan iborat:",
+   "options": [
+    "Ezofagostomiya",
+    "Gastrostomiya",
+    "Erta bujlash",
+    "Medikamentoz davo"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qizilungachdan qon ketganda mehanik qon to’htatish usuli:",
+   "options": [
+    "Gemostatikterapiya",
+    "Petserkateterini yuborish",
+    "Oshqozonni sovuq suv bilan yuvish",
+    "Blekmor zondi yordamida"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Taranglashgan pnevmotoraksda birinchi yordam:",
+   "options": [
+    "Shoshilinch torakotomiya",
+    "Plevra bushlig’I punksiyasi",
+    "Bronxoskopiya",
+    "Laringoskopiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Qizilo’ngachni bujlashdan keyingi asorat.",
+   "options": [
+    "Pnevmotoraks",
+    "Xilotoraks",
+    "Qizilo’ngach perforatsiyasi",
+    "Qizilo’ngachdan qon ketish"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Tug’ma lobaremfizemaning asosiy sababi:",
+   "options": [
+    "Mekoniy aspiratsiyasi",
+    "Bo’lak bronx tog’ayi aplaziyasi, gipoplaziyasi",
+    "O’pka tomirlari anomal tarmoqlanishi",
+    "Ko’ks oralig’I o’smasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ko’krak qafasi ichi taranglashuv sindromi bilan chaqaloqni transportirovkasida uning holatini ko’rsating:",
+   "options": [
+    "Gorizontal",
+    "Boshi ko’tarilgan holda",
+    "Boshi ko’tarilgan, kasaltomonga yonboshlagan holda",
+    "Sog’ tomonda yonboshlagan holda"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Tug’ma emfizemada eng ko’p jarohatlanadi:",
+   "options": [
+    "Chap tomonlama pastki bo’lak",
+    "O’ng tomonlama yuqori bo’lak",
+    "O’ng tomonlama o’rta bo’lak",
+    "O’ng tomonlama pastki bo’lak"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "1 yoshli bolada lobaremfizema, subkompensatsiyalangan formasi tashhisi qo’yilgan. Taktikangiz:",
+   "options": [
+    "Konservativ davo",
+    "Shoshilinch operatsiya",
+    "Dispansernazorati",
+    "Rejali operatsiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chov-yorg’oq churrasi va moyak pardalari istisqosini qiyoslashda qo’llaniladi:",
+   "options": [
+    "Perkussiya",
+    "UTT",
+    "Diafanoskopiya",
+    "Rentgenoskopiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Yo’tal turtkisi simptomi bu:",
+   "options": [
+    "Bemor yo’talgan paytda churra halqasi paypaslanganda turtkining kuzatilishi",
+    "Churrani to’lqinsimon paypaslaganda yo’tal paydo bo’lishi",
+    "Bemor yo’tal paytda churrani paypaslaganda uning ichkariga botishi",
+    "Bir necha marta yo’talgandan so’ng churraning qorin bo’shlig’ida tug’irlanishi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Piopnevmortoraks uchun harakterli bo’lmagan klinik belgini ko’rsating:",
+   "options": [
+    "Hansirash",
+    "Umumiy ahvoli o’rtacha og’irlikda",
+    "Umumiysianoz",
+    "Ko’krak qafasi assimetriyasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka bakterial destruksiyasining o’pka shakliga nima kiradi:",
+   "options": [
+    "Piopnevmotoraks",
+    "Mediastenalemfizema",
+    "Mayda o’choqli destruksiya",
+    "Pnevmotoraks"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka bakterial destruksiyasining o’pka-plevra shakliga nima kiradi:",
+   "options": [
+    "O’pkaabssessi",
+    "Destruksiya oldi holati",
+    "Bronxoektaziya",
+    "Piotoroks"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Pnevmotoraksga hos belgilarni ko’rsating:",
+   "options": [
+    "Timpanit va nafasning yo’qligi",
+    "Jarohatlangan sohada perkutor tovushning qisqarishi va nafasning susayishi",
+    "Bronxofoniya va qutichasimon tovush",
+    "Perkussiyada tovushning bo’g’iqlashuvi va auskultatsiyada nafas yo’qligi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka abssessiga shubha qilinganda birinchi navbatda qanday tekshiruv utkaziladi.",
+   "options": [
+    "O’pkatomografiyasi",
+    "O’pkaning ikki proeksiyadagi rentgenoskopiyasi",
+    "Bronxoskopiya",
+    "O’pkani perfuzion skanerlash"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Destruktiv pnevmoniyaning dastlabki bosqichida rentgenologik belgilar:",
+   "options": [
+    "Yopinchiqsimon plevrit",
+    "Abssess",
+    "Infiltrat",
+    "Plevra bo’shlig’ida ekssudat"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Piopnevmotoraksning rentgenologik belgilarini ko’rsating:",
+   "options": [
+    "Zararlangan tomonda total yorishish, ko’ks a’zolari siljigan",
+    "Plevra bo’shlig’ida suyuqlik sathi va havo aniqlanadi, o’pka qisilgan",
+    "Plevra bo’shlig’ida suyuqlik sathi va havoa niqlangan, o’pka atelektazi",
+    "Butun o’pka maydoni bo’ylab ko’plab havoli bo’shliqlar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "A guruhi beta-gemolitikstreptokokklar keltirib chiqaradigan, qaytalanishga moyil, intoksikatsiya, isitma va terining cheklangan joylarining yallig’lanishi bilan tavsiflangan o’tkir yuqumli kasallik:",
+   "options": [
+    "Abssess",
+    "Gidradenit",
+    "Saramas",
+    "Barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Barmoqlar yoki oyoqlarning yumshoq to’qimalarida lokalizatsiya qilingan o’tkir yiringli yallig’lanish - bu:",
+   "options": [
+    "Panaritsiy",
+    "Terining aktinomikozi",
+    "Saramas",
+    "Barmoq flegmonasi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Panaritsiya shakllari, noto’g’ri javobni istisno qiling",
+   "options": [
+    "teri shakli",
+    "qorin shakli",
+    "teri osti shakli",
+    "suyak shakli"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Panaritsiya chuqur shaklini ko’rsating",
+   "options": [
+    "tirnoq atrofi",
+    "teri osti",
+    "tirnoq osti",
+    "bo’g’im shakli"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Osteomielitda oqma paydo bo’lishi nimani ko’rsatadi:",
+   "options": [
+    "shifo va tiklanish",
+    "sekvestrning shakllanishi",
+    "o’tkir osteomielitning surunkali holatga o’tishi",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Har xil lokalizatsiya va o’lchamdagi yumaloq shakldagi havo bo’shliqlari hosil bo’lgan O’BD turi deyiladi:",
+   "options": [
+    "abssesslar",
+    "o’pkakistalari",
+    "bullalar",
+    "o’pka amfizemasi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Exinokokkoz qo’zg’atuvchisi:",
+   "options": [
+    "Protoza",
+    "Tasmasimon lichinka",
+    "Lambliya",
+    "Araxnoetamozlar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Periferik qondagi qandayo’zgarishlar jigar exinokokkozida kuzatiladi:",
+   "options": [
+    "Neytrofilleykotsitoz",
+    "limfotsitoz",
+    "Eozinofiliya",
+    "Trombotsitopeniya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Tashxis qo’yish uchun qanday laboratoriya reaksiyalari qo’llaniladi:",
+   "options": [
+    "Serologik - RLA, RNGA",
+    "Kassonining reaksiyasi",
+    "Vasserman reaksiyasi",
+    "Vidalning reaksiyasi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Exinokokkozning asoratlari:",
+   "options": [
+    "Penetratsiya, qonketish",
+    "Yiringlash, teshilish, ohaklanish",
+    "Malignizatsiya, metastaz",
+    "Regressiya, avtoliz, sekvestr"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Jigar exinokokkozini konservativ davolashda qanday dori samarali:",
+   "options": [
+    "Plakvenil",
+    "Gentamitsin",
+    "Mebendazol",
+    "Biseptol"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’pka exinokokkozining qanday asorati ko’pincha anafilaktik shok chaqiradi:",
+   "options": [
+    "Bronx gakistaning yorilishi",
+    "Plevra bo’shlig’i gakistaning yorilishi",
+    "Yiringlash",
+    "Bronx gakistaning yorilishi va sog’lom o’pkaga aspiratsiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda buyrak usti beziga qon quyilishi klinik belgilari, noto’g’ri javobni toping:",
+   "options": [
+    "anemiya",
+    "yurak yetishmovchiligi",
+    "palpatsiyada qovurg’a osti va bel soxasida xosila aniqlanadi",
+    "qon-tomir yetishmovchiligi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Ko’p uchraydigan tug’riq travmani aniqlang:",
+   "options": [
+    "Son suyagi sinishi",
+    "Kalla suyagi sinishi",
+    "o’mrov suyagi sinishi",
+    "Yelka suyagi sinishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "3 kunlik chaqaloq o’ng tomonlama tepa soxasida katta kefalogematoma aniqlanadi. Sizning tavsiyangiz:",
+   "options": [
+    "Xosila so’rilishi uchun fizioterapiya o’tkazish, bola xayotining 9-10 kuniga kefalogematoma punksiyasi",
+    "Bola xayotining 5 kuniga kefalogematomani punksiyasi",
+    "Kefalogematoma soxasini kesish",
+    "Fizioterapiya o’tkazish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqda yiringlagan kefalogematomada kuzatilishi mumkin:",
+   "options": [
+    "Boshterisida katta defektni shakillanishi",
+    "sepsis",
+    "Kontaktli osteomielit",
+    "Xamma javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqda yiringli mediastinitning ko’p uchrashi sababi:",
+   "options": [
+    "destruktiv pnevmoniyaning asoratlari",
+    "bujlashdan keyingi qizilo’ngach perforatsiyasi",
+    "qizilo’ngach atreziyasini bartaraf etish operatsiyasidan keyingi qisman choklarning tutmasligi",
+    "qizilo’ngachdagi yot jisim"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Piopnevmotoraksning klinik belgilari, noto’g’ri javobni toping:",
+   "options": [
+    "nafas olishda ixrash va qiynalish",
+    "umumiy sianoz",
+    "ko’krakqafasi assimetriyasi",
+    "o’rta og’ir axvolda"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqda yiringlagan o’pka kistasini asosiy klinik-rentgenologik belgisini aniqlang:",
+   "options": [
+    "Dumaloq qora dog’ yoki bo’shliqda suyuqlik satxi rentgenologik belgilar",
+    "Nafas yetishmovchiligining ortishi",
+    "gipertermiya",
+    "namyo’tal"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqdan ekrotik enterokolitda, ichak yashirin perforatsiyasining tipik rentgenologik belgisini aniqlang:",
+   "options": [
+    "Ichak parezi",
+    "qorin bo’shlig’ida “sovun ko’pigi” simptomi (mayda xavo pufagchasi) belgisi",
+    "qorin bo’shlig’ida kam miqdorda suyuqlik aniqlanadi",
+    "Xamma javob to’g’ri"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqda ichak yashirin perforatsiyasi va chegaralangan peritonitning belgisini tanlang:",
+   "options": [
+    "Qayd qilish",
+    "Ichak parezi",
+    "qorinda “o’smasimon” xosila aniqlanadi",
+    "Aspiratsion sindrom"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda tarqoq peritonitning quyidagi kasalliklar bilan differensatsiya qilish:",
+   "options": [
+    "Nekrotik enterokolit bilan",
+    "Pnevmoniya bilan",
+    "Xamma javoblar to’g’ri",
+    "Kindik arteriyasi strombarteriti bilan"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlardan ekrotikenterokolitni III darajasida ichakning yashirin perforatsiyasini aniq rentgenologik belgisini toping:",
+   "options": [
+    "\"sovun ko’pigi\"simptomi, ichak deovri qalinlashishi",
+    "Ichakda pnevmatizatsiyaning kuchayishi",
+    "ko’plamchi xar xil turdagi suyuqlik satxlari",
+    "ko’plamchi bir xil turdagi suyuqlik satxlari va arkalari"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqda omfalitning kelib chiqish sabablari:",
+   "options": [
+    "Sariqlik yo’li to’liq va noto’liq oqmalari",
+    "Kindik qon-tomiri bo’shlig’I infitsirlangan tromblari",
+    "Uraxus yo’li to’liq va noto’liq oqmalari",
+    "Xamma javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Kindikdan yiringli ajralmada tezlashtirilgan tartibdagi gospitalizatsiyaga ko’rsatma:",
+   "options": [
+    "Kindik kalsinozi",
+    "Kindik arteriyasi trombarteriti",
+    "xamma javob to’g’ri",
+    "kindikto’liqoqmasi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda osteomielit kechuvida asosiy belgilar, noto’g’ri javobni tallang:",
+   "options": [
+    "ko’plamchi zararlanish",
+    "Asosiy flora - stafilokokk",
+    "Simmetrik zararlanish",
+    "\"quruq artrit\""
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda osteomielitning suyakdagi patologik o’choqni eng ko’p uchraydigan lokalizatsiyasi:",
+   "options": [
+    "Metaepifizar soxa",
+    "diafiz",
+    "epifiz",
+    "Suyaklarning total shikastlanishi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda osteomielitning eng ko’p uchraydigan turi:",
+   "options": [
+    "gipertoksik",
+    "maxalliy",
+    "surunkali",
+    "septikopiemik"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda osteomielitni uzun naysimon suyaklarning shikastlanishi erta klinik belgisini aniqlang:",
+   "options": [
+    "Teri giperemiyasi",
+    "ko’krakni sust emishi",
+    "\"psevdoparez\" klinikasi",
+    "Yumshoq to’qima, atrofqomirlar pastozligi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Osteomielitning kechuvini asosiy xususiyatlari:",
+   "options": [
+    "Maxalliy klinik ko’rinishining yashirinligi",
+    "suyak metaepifizar shikastlanishi",
+    "qo’shni bo’g’inlar shikastlanishi",
+    "Xamma javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda osteomielit kechishidagi xususiyatlarni kursating:",
+   "options": [
+    "Xomila ichi osteomieliti",
+    "Yassi suyaklar yallig’lanishini kuchayishi",
+    "Florani anaerob va gram-manfiy tomonga o’zgarishi",
+    "Xamma javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda osteomielitning yallig’lanish o’chog’ining eng ko’p uchraydigan lokalizatsiyasi:",
+   "options": [
+    "Son suyagi",
+    "Katta boldir suyagi",
+    "Yelka suyagi",
+    "Toz suyagi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda flegmonani variantlarda ko’rsatilgan qaysi kasallik bilan differensatsiya qilish mumkin:",
+   "options": [
+    "Nevus bilan",
+    "tug’ma teleangioektaziya bilan",
+    "Teri va teriosti qavati tug’riq travmasi bilan",
+    "Adiponekroz bilan"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda diafragma churrasining klinik belgilari, noto’g’ri javobni toping:",
+   "options": [
+    "Yurak qon-tomir yetishmovchiligi",
+    "sianoz",
+    "ko’ks oralig’ining siljishi",
+    "Qorni dam bo’lishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda flegmona tananing qaysi soxasida uchramaydi:",
+   "options": [
+    "Quloq oldi soxasi",
+    "bo’yin soxasi",
+    "qo’l va oyoq kaft soxalari",
+    "Boshning soch qismi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda flegmonaning maxalliy yallig’lanish jarayonini o’ziga xos xususiyatlari:",
+   "options": [
+    "limfostaz",
+    "giperemiya",
+    "qonquyilish",
+    "og’riqsizlanish"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda flegmonaning birlamchi yallig’lanish lokalizatsiyasi:",
+   "options": [
+    "Shilliq pardada",
+    "terida",
+    "Teri osti yog’ qavatida",
+    "Limfatik tomirda"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlardaflegmonani differensatsiyasi:",
+   "options": [
+    "tug’ma ksantomatozi bilan",
+    "Chaqaloqlar kalsinozi bilan",
+    "Eksfoliativ dermatit bilan",
+    "tug’ma ixtioz bilan"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda flegmonaning maxalliy yallig’lanishning tipik lokalizatsiyasi:",
+   "options": [
+    "Tananing orqa yuzasi",
+    "ko’krak qafasining old soxasi",
+    "Yuz soxasi",
+    "Kindik atrofi soxasi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "10 kunlik chaqaloqda chap tomonlama o’tkir yiringli mastit tashxisi qo’yilgan, flyuktuatsiya sust aniqlanadi. Bemorga zarur chora:",
+   "options": [
+    "antibiotikoterapiya",
+    "Malxamli bog’lam",
+    "Isituvchi kompress",
+    "Infiltrat ustidan, oreoladan qochkan xolda 1-3 radial kesiklar bajarish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "ko’krak yoshdagi bolalarda saramas kasalligining tipik yallig’lanish lokalizatsiyasi:",
+   "options": [
+    "Oraliq va jinsiy a’zolar",
+    "ko’krak qafasi",
+    "Yuz soxasi",
+    "Bel soxasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Sepsisning asosiy davo tamoyillari:",
+   "options": [
+    "Barcha ko’rsatib o’tilganlar",
+    "Immuno korreksiya",
+    "qo’zg’atuvchini pasaytirish",
+    "Gipokoagulyatsiyani boshqarish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda psevdofurunkulez kelib chiqish sabablaridan birini toping:",
+   "options": [
+    "Moylovchi bezlarining sust rivojlanishi",
+    "Teri bazal membranasining sust rivojlanishi",
+    "Ter chiqaruvchi bezlarning chala rivojlanishi",
+    "Epidermisning tez tez shikastlanishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Flegmonaning asosiy qo’zg’atuvchisi:",
+   "options": [
+    "virus",
+    "oddiy qo’zg’atuvchi",
+    "stafilokokklar",
+    "saprofitmuxit"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda flegmonani keltirib chiqish sababi:",
+   "options": [
+    "Kichik qon aylanish doirasining tiklanishi",
+    "kindik asosidan infeksiya yuqishi",
+    "Ter bezlarining chala rivojlanishi",
+    "Dermanimugiz qavatining sust rivojlanishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda sepsis rivojlanishining eng ko’p omillaridan biri:",
+   "options": [
+    "tug’riqdan keyingi reanimatsiya",
+    "Kindik qon-tomirlaridagi manipulyatsiyalar",
+    "Kindik yarasining uzoq muddat bitishi",
+    "ko’krak sutiga kech berilishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda eng ko’p uchraydigan sepsis o’chog’i:",
+   "options": [
+    "Chaqaloq flegmonasi",
+    "chaqaloq mastiti",
+    "Asoratlangan nekrotik enterokolit",
+    "Uzun naysimon suyak osteomieliti"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda sepsisning ko’p uchraydigan sababi:",
+   "options": [
+    "streptokokk",
+    "Aralash flora - gram-manfiy va gram-musbat",
+    "gram-manfiyflora",
+    "Antibiotikga chidamli polivalentflora"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Teratomaning xossalari:",
+   "options": [
+    "Tashxis qo’yilgandan so’ng tezda olib tashlash",
+    "Vaqt o’tishi bilan yomon sifatli to’qimalarga aylanishi",
+    "Qorin parda orti bo’shliqda joylashishi",
+    "Xamma javob to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda teratomaning shoshilinch tartibda operatsiya talab qiluvchi asorati:",
+   "options": [
+    "qisman ichak tutilishi",
+    "Bosim xisobiga urodinamikaning buzilishi",
+    "tug’riq paytida teratomaning qobig’I shikastlanishi va undan qon ketishi",
+    "Xosila bosishi xisobiga terining noziklanishi va infiltratsiyasi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Vilms osmasiga xos xolat:",
+   "options": [
+    "Qorin bo’shlig’ida paypaslanadigan xosila",
+    "makrogematuriya",
+    "Tana xaroratining to’lqinsimon ko’tarilishi",
+    "gipotrofiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Eng ko’p uchraydigan limfangioma turi:",
+   "options": [
+    "kapillyar (oddiy)",
+    "kistoz",
+    "kavernoz",
+    "aralash"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda qorin bo’shlig’I o’smasimon xosilasining kechish simptomlari:",
+   "options": [
+    "Ichak tutilishi klinik belgilari",
+    "anemiya",
+    "Siydik ajralishi buzilishi",
+    "Xamma javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda tug’ma o’pka kistasini eng ko’p uchraydigan asorati:",
+   "options": [
+    "qonketish",
+    "Kista taranglashishi",
+    "Kista yallig’lanishi",
+    "Kista yorilishi sababli pnevmotoraks kelib chiqishi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlarda lobar emfizemaning klinik belgisin itoping:",
+   "options": [
+    "Quruq yo’tal",
+    "sianoz",
+    "ko’krak qafasi perkussiyasida o’pka tovushining to’mtoqlashishi",
+    "ko’ks oralig’ining sog’lom tomonga siljishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Soxta diafragma churrasida diafragma plastikasidan so’ng qilish lozim. Noto’g’ri javobni toping:",
+   "options": [
+    "Oshqozonga dekompressiya maqsadida zond qo’yish",
+    "Plevra bo’shlig’ini drenajlash va aktiv aspiratsiyaga ulash",
+    "Plevra bo’shlig’ini drenajlash va passiv aspiratsiyaga ulash",
+    "ichak peristaltikasi stimulyatorlarini qo’llash"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Izolyatsiyalangan shikastlanish nima:",
+   "options": [
+    "Bitta a’zo yoki bitta anatomik bo’shliq a’zolari shikastlanishi",
+    "Bir joy yoki bir anatomik bo’shliqda ikkita yoki bir nechta a’zolar shikastlanishi",
+    "Har xil bo’shliqlarda ikki yoki bir nechta a’zolar shikastlanishi",
+    "Ichki a’zolar yoki skeletning mexanik yoki nomexanik shikastlanishlari"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Buyrak yorilishida ekskretorurografiyada aniqlanadi:",
+   "options": [
+    "Buyrak kosacha-jom sistemasini kattalashishi",
+    "Buyrak ekskretorfunksiyasini susayishi yoki yo’qolishi, kontrastni atrofga tarqalishi",
+    "“o’roq” simptomi",
+    "Kloyber kosachasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Chaqaloqlar mastitida operativ kesim:",
+   "options": [
+    "shaxmat tartibdagi ko’plab kesmalar",
+    "kenglampas kesmalar",
+    "Radial kesmalar",
+    "kontrapertura kesmalar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Bolalarda ichak invaginatsiyasi aksariyat hollarda qaysi kasallik bilan qiyoslanadi:",
+   "options": [
+    "Zotiljam",
+    "Pilorostenoz",
+    "To’g’riichakatreziyasi",
+    "Dizenteriya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Taranglashgan piotoraksning rentgenologik belgilarini ko’rsating:",
+   "options": [
+    "Birnechta yacheykali yorishish, ko’ks oralig’I a’zolari sog’ tomonga siljigan",
+    "Plevra bo’shlig’ida gorizontal suyuqlik sathi, ko’ks oralig’I a’zolari siljimagan",
+    "Plevra bo’shligida total qorayish, ko’ks oralig’I a’zolari sog’ tomonga siljigan",
+    "Plevra bo’shlig’ida total yorishish, ko’ks oralig’I a’zolari sog’tomonga siljigan"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Plevra ichi taranglashuvi sindromiga harakterli belgilar:",
+   "options": [
+    "Jarohatlangan ko’krak qafasining yarmi shishgan",
+    "Ko’ks oralig’I a’zolari qarama-qarshi tomonga siljigan",
+    "Jarohatlangan tomonda timpanit aniqlanadi",
+    "Ko’ks oralig’I a’zolari jarohatlangan tomonga siljigan"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Taranglashgan pnevmotoraksda birinchi yordam bo’lib hisoblanadi:",
+   "options": [
+    "Kislorod ingalyatsiyasi",
+    "Plevra bo’shlig’ini punksiya",
+    "Plevral punksiya",
+    "Sun’iy nafas berish"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "Trendlenburg holatidagi kontrast rentgenografiyada qizilo’ngachda kontrast moddasining to’planishi qaysi kasallikka xos:",
+   "options": [
+    "Qizilo’ngachning tug’ma torayishi",
+    "Qizilo’ngach ahaliziyasi",
+    "Kardiy axalaziyasi",
+    "Pilirostenoz"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "marked"
+  },
+  {
+   "q": "O’tkir gematogen osteomielit bilan ko’pincha qaysi suyak zararlanadi:",
+   "options": [
+    "boldir suyaklari",
+    "yelka suyaklari",
+    "bilak suyaklari",
+    "son suyagi"
+   ],
+   "correct": [
+    0,
+    3
+   ],
+   "tag": "disputed"
+  },
+  {
+   "q": "Taranglashgan pnevmotoraksda bolaga o’tkazish kerak:",
+   "options": [
+    "Operativ davo",
+    "bronxoskopiya",
+    "Plevral punksiya",
+    "plevra bo’shlig’ini aktiv drenajlash"
+   ],
+   "correct": [
+    0,
+    2
+   ],
+   "tag": "disputed"
+  },
+  {
+   "q": "Himik kuyishdan keyin qizilo’ngach chandiqli torayishi qaysi muddatlarda kuzatiladi:",
+   "options": [
+    "1-2 oydan keyin",
+    "5-10 kundan keyin",
+    "10-20 kundan keyin",
+    "5-6 oydan keyin"
+   ],
+   "correct": [
+    0,
+    1
+   ],
+   "tag": "disputed"
+  },
+  {
+   "q": "Exinokokkoz bilan kasallangan odam:",
+   "options": [
+    "definitiv egasi",
+    "asosiy egasi",
+    "ohirgi egasi",
+    "oraliq egasi"
+   ],
+   "correct": [
+    1,
+    3
+   ],
+   "tag": "disputed"
+  }
+ ],
+ "title_uz": "Bolalar xirurgiyasi — savollar banki",
+ "subject_uz": "Bolalar xirurgiyasi"
+}

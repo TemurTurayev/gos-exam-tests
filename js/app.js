@@ -1,15 +1,69 @@
-// Экраны приложения и роутинг. Состояния: главная -> настройка -> тест -> итоги.
+// Экраны приложения: вход по имени -> главная -> настройка -> тест -> итоги.
 
 const app = document.getElementById("app");
 const badge = document.getElementById("scoreBadge");
+const userChip = document.getElementById("userChip");
+const langSwitch = document.getElementById("langSwitch");
 
-const FILTERS = [
-  { value: "all", label: "Все вопросы" },
-  { value: "unsolved", label: "Только нерешённые" },
-  { value: "wrong", label: "Работа над ошибками" },
-];
+const TEST_LANG_KEY = "gos-exam-testlang";
 
-// ------------------------------------------------------------------ роутинг --
+const TestLang = {
+  get() {
+    try { return localStorage.getItem(TEST_LANG_KEY) || I18N.lang; } catch { return "ru"; }
+  },
+  set(v) {
+    try { localStorage.setItem(TEST_LANG_KEY, v); } catch { /* приватный режим */ }
+  },
+};
+
+const t = (...a) => I18N.t(...a);
+
+/** Название набора и предмета на языке интерфейса. */
+const setTitle = (s) => (I18N.lang === "uz" && s.title_uz) || s.title;
+const setSubject = (s) => (I18N.lang === "uz" && s.subject_uz) || s.subject;
+
+// ------------------------------------------------------------------ шапка --
+function renderChrome() {
+  document.documentElement.lang = I18N.lang;
+  document.getElementById("brandText").textContent = t("appName");
+  document.getElementById("footerText").textContent = t("footer");
+
+  // в офлайн-сборке файл уже у пользователя — ссылка на скачивание не нужна
+  const offline = document.getElementById("offlineLine");
+  if (!window.EMBEDDED_DATA) {
+    clear(offline);
+    const link = el("a", { href: "gos-exam-tests-offline.html", text: t("offline") });
+    link.setAttribute("download", "");
+    offline.appendChild(link);
+    offline.appendChild(document.createTextNode(" " + t("offlineSub")));
+  }
+
+  clear(langSwitch);
+  for (const code of ["ru", "uz"]) {
+    langSwitch.appendChild(el("button", {
+      className: "lang-btn" + (I18N.lang === code ? " active" : ""),
+      text: code === "ru" ? "RU" : "UZ",
+      attrs: { type: "button", title: code === "ru" ? "Русский" : "O‘zbekcha" },
+      onClick: () => { I18N.set(code); render(); },
+    }));
+  }
+
+  if (User.name) {
+    userChip.hidden = false;
+    userChip.textContent = User.name;
+    userChip.title = t("changeUser");
+    userChip.onclick = () => {
+      User.clear();
+      Progress.invalidate();
+      location.hash = "#/";
+      render();
+    };
+  } else {
+    userChip.hidden = true;
+  }
+}
+
+// ---------------------------------------------------------------- роутинг --
 function parseHash() {
   const raw = location.hash.replace(/^#\/?/, "");
   const [path, query] = raw.split("?");
@@ -18,7 +72,11 @@ function parseHash() {
 
 async function render() {
   badge.hidden = true;
+  renderChrome();
   clear(app);
+
+  if (!User.name) return renderWelcome();
+
   const { parts, params } = parseHash();
   try {
     if (!parts.length) await renderHome();
@@ -28,20 +86,67 @@ async function render() {
   } catch (err) {
     console.error(err);
     clear(app);
-    app.appendChild(el("div", { className: "empty-state", text: "Ошибка загрузки: " + err.message }));
+    app.appendChild(el("div", { className: "empty-state", text: String(err.message || err) }));
   }
 }
 
 function notFound() {
   app.appendChild(el("div", { className: "empty-state" }, [
-    el("p", { text: "Страница не найдена" }),
-    el("a", { className: "btn", href: "#/", text: "На главную" }),
+    el("p", { text: "404" }),
+    el("a", { className: "btn", href: "#/", text: t("toList") }),
   ]));
 }
 
-function loading(msg = "Загрузка…") {
+function loading(msg) {
   clear(app);
-  app.appendChild(el("div", { className: "empty-state", text: msg }));
+  app.appendChild(el("div", { className: "empty-state", text: msg || t("loading") }));
+}
+
+// -------------------------------------------------------------------- вход --
+function renderWelcome() {
+  const card = el("div", { className: "welcome-card" });
+  card.appendChild(el("div", { className: "welcome-mark", text: "🩺" }));
+  card.appendChild(el("h1", { text: t("welcomeTitle") }));
+  card.appendChild(el("p", { className: "welcome-sub", text: t("welcomeSub") }));
+
+  const label = el("label", { className: "welcome-label", text: t("nameLabel") });
+  const input = el("input", {
+    className: "text-input",
+    attrs: {
+      type: "text", id: "nameInput", maxlength: "30",
+      placeholder: t("namePlaceholder"), autocomplete: "off", spellcheck: "false",
+    },
+  });
+  const error = el("p", { className: "input-error" });
+  const submit = el("button", { className: "btn big", text: t("nameStart") });
+
+  const tryStart = () => {
+    const res = User.validate(input.value);
+    if (!res.ok) {
+      error.textContent = t(res.error);
+      input.classList.add("invalid");
+      input.focus();
+      return;
+    }
+    User.set(res.value);
+    Progress.invalidate();
+    location.hash = "#/";
+    render();
+  };
+
+  submit.addEventListener("click", tryStart);
+  input.addEventListener("keydown", (e) => { if (e.key === "Enter") tryStart(); });
+  input.addEventListener("input", () => {
+    error.textContent = "";
+    input.classList.remove("invalid");
+  });
+
+  card.appendChild(label);
+  card.appendChild(input);
+  card.appendChild(error);
+  card.appendChild(submit);
+  app.appendChild(card);
+  setTimeout(() => input.focus(), 50);
 }
 
 // ----------------------------------------------------------------- главная --
@@ -50,64 +155,72 @@ async function renderHome() {
   const manifest = await Data.loadManifest();
   clear(app);
 
-  const totals = Progress.totals(manifest);
+  const lang = TestLang.get();
+  const visible = manifest.filter((s) => lang === "all" || s.language === lang);
+  const totals = Progress.totals(visible);
   const pct = totals.total ? Math.round((totals.done / totals.total) * 100) : 0;
   const accuracy = totals.done ? Math.round((totals.right / totals.done) * 100) : 0;
 
-  // шапка с общим прогрессом
-  const hero = el("section", { className: "hero" }, [
-    progressRing(pct, `${pct}%`, "пройдено"),
+  app.appendChild(el("section", { className: "hero" }, [
+    progressRing(pct, `${pct}%`, t("passed")),
     el("div", { className: "hero-text" }, [
-      el("h1", { text: "Подготовка к госэкзамену" }),
+      el("h1", { text: `${t("hello")}, ${User.name}!` }),
       el("p", {
         className: "hero-sub",
-        text: `${manifest.length} наборов · ${totals.total.toLocaleString("ru-RU")} вопросов`,
+        text: `${visible.length} ${t("sets")} · ${totals.total.toLocaleString("ru-RU")} ${t("questions")}`,
       }),
       el("div", { className: "hero-stats" }, [
-        statChip("Решено", `${totals.done.toLocaleString("ru-RU")}`),
-        statChip("Правильно", totals.done ? `${accuracy}%` : "—"),
-        statChip("Осталось", `${(totals.total - totals.done).toLocaleString("ru-RU")}`),
+        statChip(t("statDone"), totals.done.toLocaleString("ru-RU")),
+        statChip(t("statRight"), totals.done ? `${accuracy}%` : "—"),
+        statChip(t("statLeft"), (totals.total - totals.done).toLocaleString("ru-RU")),
       ]),
     ]),
-  ]);
-  app.appendChild(hero);
+  ]));
 
-  // общий пул
-  const poolCard = el("a", { className: "pool-card", href: "#/setup/pool" }, [
+  // язык тестов
+  const langField = el("div", { className: "lang-field" });
+  langField.appendChild(el("span", { className: "lang-field-label", text: t("langOfTests") }));
+  const langTabs = chipGroup(
+    [
+      { value: "all", label: t("langAll") },
+      { value: "ru", label: t("langRu") },
+      { value: "uz", label: t("langUz") },
+    ],
+    lang,
+    (value) => { TestLang.set(value); renderHome(); }
+  );
+  langField.appendChild(langTabs.row);
+  app.appendChild(langField);
+
+  app.appendChild(el("a", { className: "pool-card", href: "#/setup/pool" }, [
     el("div", { className: "pool-icon", text: "🎲" }),
     el("div", { className: "pool-body" }, [
-      el("div", { className: "pool-title", text: "Общий пул" }),
-      el("div", {
-        className: "pool-sub",
-        text: "Все предметы вперемешку. Сайт помнит, что уже решено, и может выдавать только новые вопросы.",
-      }),
+      el("div", { className: "pool-title", text: t("poolTitle") }),
+      el("div", { className: "pool-sub", text: t("poolSub") }),
     ]),
     el("div", { className: "pool-go", text: "→" }),
-  ]);
-  app.appendChild(poolCard);
+  ]));
+
+  app.appendChild(tagLegend(visible));
 
   if (totals.done) {
     app.appendChild(el("div", { className: "row-actions" }, [
       el("button", {
         className: "btn ghost small",
-        text: "Сбросить весь прогресс",
+        text: t("resetAll"),
         onClick: () => {
-          if (confirm("Удалить статистику по всем тестам?")) {
-            Progress.reset();
-            render();
-          }
+          if (confirm(t("resetAllConfirm"))) { Progress.reset(); renderHome(); }
         },
       }),
     ]));
   }
 
-  // наборы по предметам
   const bySubject = new Map();
-  for (const set of manifest) {
-    if (!bySubject.has(set.subject)) bySubject.set(set.subject, []);
-    bySubject.get(set.subject).push(set);
+  for (const set of visible) {
+    const subject = setSubject(set);
+    if (!bySubject.has(subject)) bySubject.set(subject, []);
+    bySubject.get(subject).push(set);
   }
-
   for (const [subject, sets] of bySubject) {
     const section = el("section", { className: "subject-group" });
     section.appendChild(el("h2", { className: "subject-title", text: subject }));
@@ -125,25 +238,59 @@ function statChip(label, value) {
   ]);
 }
 
+/** Легенда тегов с количеством вопросов каждого вида. */
+function tagLegend(sets) {
+  const totals = {};
+  for (const s of sets) {
+    for (const [tag, n] of Object.entries(s.tags || {})) {
+      totals[tag] = (totals[tag] || 0) + n;
+    }
+  }
+  const box = el("details", { className: "legend" });
+  box.appendChild(el("summary", { text: t("tagsTitle") }));
+  const list = el("div", { className: "legend-list" });
+  for (const [tag, meta] of Object.entries(TAG_META)) {
+    if (!totals[tag]) continue;
+    list.appendChild(el("div", { className: "legend-item" }, [
+      el("span", { className: `tag ${meta.cls}`, text: `${meta.icon} ${t(meta.label)}` }),
+      el("span", { className: "legend-count", text: totals[tag].toLocaleString("ru-RU") }),
+      el("span", { className: "legend-hint", text: t(meta.hint) }),
+    ]));
+  }
+  box.appendChild(list);
+  return box;
+}
+
 function setCard(set) {
   const s = Progress.stats(set.id, set.count);
   const card = el("a", { className: "set-card", href: `#/setup/${set.id}` });
 
-  const head = el("div", { className: "set-head" }, [
-    el("div", { className: "set-title", text: set.title }),
+  card.appendChild(el("div", { className: "set-head" }, [
+    el("div", { className: "set-title", text: setTitle(set) }),
     el("span", { className: `pill lang-${set.language}`, text: set.language.toUpperCase() }),
-  ]);
+  ]));
 
-  const meta = el("div", { className: "set-meta" }, [
-    el("span", { text: `${set.count} вопросов` }),
+  const tags = el("div", { className: "set-tags" });
+  for (const [tag, meta] of Object.entries(TAG_META)) {
+    const n = (set.tags || {})[tag];
+    if (!n) continue;
+    tags.appendChild(el("span", {
+      className: `tag tiny ${meta.cls}`,
+      text: `${meta.icon} ${n}`,
+      title: t(meta.hint),
+    }));
+  }
+  card.appendChild(tags);
+
+  card.appendChild(el("div", { className: "set-meta" }, [
+    el("span", { text: `${set.count} ${t("questions")}` }),
     el("span", {
       className: s.done ? "set-done" : "set-done muted",
-      text: s.done ? `решено ${s.done} · верно ${Math.round((s.right / s.done) * 100)}%` : "не начат",
+      text: s.done
+        ? `${t("solved")} ${s.done} · ${t("correctShare")} ${Math.round((s.right / s.done) * 100)}%`
+        : t("notStarted"),
     }),
-  ]);
-
-  card.appendChild(head);
-  card.appendChild(meta);
+  ]));
   card.appendChild(progressBar(s.right, s.wrong, set.count));
   return card;
 }
@@ -156,105 +303,117 @@ async function renderSetup(scope) {
   const meta = isPool ? null : manifest.find((m) => m.id === scope);
   if (!isPool && !meta) return notFound();
 
-  const total = isPool ? manifest.reduce((s, m) => s + m.count, 0) : meta.count;
-  const title = isPool ? "Общий пул" : meta.title;
-  clear(app);
+  const testLang = TestLang.get();
+  const pooled = manifest.filter((m) => testLang === "all" || m.language === testLang);
+  const total = isPool ? pooled.reduce((s, m) => s + m.count, 0) : meta.count;
+  const stats = isPool ? Progress.totals(pooled) : Progress.stats(scope, total);
 
-  app.appendChild(el("a", { className: "back-link", href: "#/", text: "← Ко всем тестам" }));
+  clear(app);
+  app.appendChild(el("a", { className: "back-link", href: "#/", text: t("backToList") }));
 
   const card = el("div", { className: "setup-card" });
-  card.appendChild(el("h2", { text: title }));
-
-  const stats = isPool
-    ? Progress.totals(manifest)
-    : Progress.stats(scope, total);
+  card.appendChild(el("h2", { text: isPool ? t("poolTitle") : setTitle(meta) }));
   card.appendChild(el("p", {
     className: "setup-sub",
-    text: `${total.toLocaleString("ru-RU")} вопросов · решено ${stats.done.toLocaleString("ru-RU")}`,
+    text: `${total.toLocaleString("ru-RU")} ${t("questions")} · ${t("solved")} ${stats.done.toLocaleString("ru-RU")}`,
   }));
 
-  // фильтр
-  let filter = "all";
-  const available = el("p", { className: "available-note", text: "" });
-  const filterGroup = chipGroup(FILTERS, "all", async (value) => {
-    filter = value;
-    await refreshAvailable();
-  });
-  card.appendChild(field("Какие вопросы показывать", filterGroup.row));
-  card.appendChild(available);
+  let filter = "all", trust = "all", count = 20, order = "shuffle";
+  const note = el("p", { className: "available-note" });
 
-  // количество
-  let count = 20;
+  const filterGroup = chipGroup(
+    [
+      { value: "all", label: t("filterAll") },
+      { value: "unsolved", label: t("filterUnsolved") },
+      { value: "wrong", label: t("filterWrong") },
+    ],
+    "all",
+    (v) => { filter = v; refresh(); }
+  );
+  card.appendChild(field(t("whichQuestions"), filterGroup.row));
+
+  const trustGroup = chipGroup(
+    [
+      { value: "all", label: t("trustAll") },
+      { value: "strict", label: `✅ ${t("trustStrict")}` },
+      { value: "flagged", label: `⚠️ ${t("trustFlagged")}` },
+    ],
+    "all",
+    (v) => { trust = v; refresh(); }
+  );
+  card.appendChild(field(t("trust"), trustGroup.row));
+  card.appendChild(note);
+
   const countGroup = chipGroup(
-    [10, 20, 30, 50, 100].map((n) => ({ value: n, label: String(n) })).concat([{ value: 0, label: "Все" }]),
+    [10, 20, 30, 50, 100].map((n) => ({ value: n, label: String(n) }))
+      .concat([{ value: 0, label: t("all") }]),
     20,
-    (value) => { count = value; }
+    (v) => { count = v; }
   );
-  card.appendChild(field("Сколько вопросов за раз", countGroup.row));
+  card.appendChild(field(t("howMany"), countGroup.row));
 
-  // порядок
-  let order = "shuffle";
   const orderGroup = chipGroup(
-    [{ value: "shuffle", label: "Вперемешку" }, { value: "sequential", label: "По порядку" }],
+    [{ value: "shuffle", label: t("shuffle") }, { value: "sequential", label: t("sequential") }],
     "shuffle",
-    (value) => { order = value; }
+    (v) => { order = v; }
   );
-  card.appendChild(field("Порядок", orderGroup.row));
+  card.appendChild(field(t("order"), orderGroup.row));
 
   const startBtn = el("button", {
     className: "btn big",
-    text: "Начать тест →",
+    text: t("start"),
     onClick: () => {
       const n = count === 0 ? 99999 : count;
-      location.hash = `#/quiz/${scope}?count=${n}&order=${order}&filter=${filter}`;
+      location.hash = `#/quiz/${scope}?count=${n}&order=${order}&filter=${filter}&trust=${trust}`;
     },
   });
   card.appendChild(startBtn);
 
-  if (!isPool && stats.done) {
+  if (stats.done) {
     card.appendChild(el("button", {
       className: "btn ghost small",
-      text: "Сбросить прогресс этого набора",
+      text: isPool ? t("resetAll") : t("resetSet"),
       onClick: () => {
-        if (confirm("Удалить статистику этого набора?")) {
-          Progress.reset(scope);
+        if (confirm(isPool ? t("resetAllConfirm") : t("resetSetConfirm"))) {
+          Progress.reset(isPool ? undefined : scope);
           renderSetup(scope);
         }
       },
     }));
   }
-
   app.appendChild(card);
 
-  async function refreshAvailable() {
-    const n = await Data.countAvailable(scope, filter);
-    available.textContent =
-      filter === "all" ? "" : `Доступно по этому фильтру: ${n.toLocaleString("ru-RU")}`;
+  async function refresh() {
+    const n = await Data.countAvailable({ scope, filter, trust, testLang });
+    note.textContent = n === 0
+      ? t("nothingLeft")
+      : (filter === "all" && trust === "all" ? "" : `${t("available")}: ${n.toLocaleString("ru-RU")}`);
     startBtn.disabled = n === 0;
-    if (n === 0) available.textContent = "По этому фильтру вопросов не осталось 🎉";
   }
-  refreshAvailable();
+  refresh();
 }
 
 function field(labelText, control) {
   return el("div", { className: "field" }, [el("label", { text: labelText }), control]);
 }
 
-// ------------------------------------------------------------------- тест --
+// -------------------------------------------------------------------- тест --
 async function renderQuiz(scope, params) {
-  loading("Готовим вопросы…");
+  loading(t("preparing"));
   const questions = await Data.buildQuiz({
     scope,
     count: Number(params.get("count")) || 20,
     order: params.get("order") || "shuffle",
     filter: params.get("filter") || "all",
+    trust: params.get("trust") || "all",
+    testLang: TestLang.get(),
   });
   clear(app);
 
   if (!questions.length) {
     app.appendChild(el("div", { className: "empty-state" }, [
-      el("p", { text: "Для выбранного фильтра вопросов не нашлось." }),
-      el("a", { className: "btn", href: `#/setup/${scope}`, text: "Изменить настройки" }),
+      el("p", { text: t("noQuestions") }),
+      el("a", { className: "btn", href: `#/setup/${scope}`, text: t("changeSettings") }),
     ]));
     return;
   }
@@ -262,10 +421,8 @@ async function renderQuiz(scope, params) {
   const state = { i: 0, answers: new Array(questions.length).fill(null), score: 0 };
 
   const onKey = (e) => {
-    const q = questions[state.i];
     if (e.key >= "1" && e.key <= "9") {
-      const idx = Number(e.key) - 1;
-      const btn = app.querySelector(`.option-btn[data-i="${idx}"]`);
+      const btn = app.querySelector(`.option-btn[data-i="${Number(e.key) - 1}"]`);
       if (btn && !btn.disabled) btn.click();
     } else if (e.key === "Enter") {
       const next = document.getElementById("primaryBtn");
@@ -273,16 +430,17 @@ async function renderQuiz(scope, params) {
     }
   };
   document.addEventListener("keydown", onKey);
-  window.addEventListener("hashchange", () => document.removeEventListener("keydown", onKey), { once: true });
+  window.addEventListener("hashchange",
+    () => document.removeEventListener("keydown", onKey), { once: true });
 
   drawQuestion();
 
   function updateBadge() {
     const answered = state.answers.filter((a) => a !== null).length;
-    badge.hidden = answered === 0;          // до первого ответа счёт не нужен
+    badge.hidden = answered === 0;
     if (!answered) return;
     badge.textContent = `${state.score} / ${answered}`;
-    badge.className = "score-badge" + (answered && state.score / answered < 0.6 ? " low" : "");
+    badge.className = "score-badge" + (state.score / answered < 0.6 ? " low" : "");
   }
 
   function drawQuestion() {
@@ -290,27 +448,30 @@ async function renderQuiz(scope, params) {
     const idx = state.i;
     const q = questions[idx];
     const multi = q.correct.length > 1;
-    const answered = state.answers[idx];
     const picked = new Set();
 
-    app.appendChild(el("a", { className: "back-link", href: `#/setup/${scope}`, text: "← Настройки" }));
+    app.appendChild(el("a", { className: "back-link", href: `#/setup/${scope}`, text: t("backToSetup") }));
 
     const bar = el("div", { className: "quiz-progress" });
     bar.appendChild(el("span", { style: `width:${(idx / questions.length) * 100}%` }));
     app.appendChild(bar);
 
     const card = el("div", { className: "question-card" });
-    const head = el("div", { className: "question-head" }, [
-      el("span", { className: "question-index", text: `Вопрос ${idx + 1} из ${questions.length}` }),
-      scope === "pool" ? el("span", { className: "question-source", text: q.setTitle }) : null,
-    ]);
-    card.appendChild(head);
+    const tagMeta = TAG_META[q.tag] || TAG_META.verified;
+    card.appendChild(el("div", { className: "question-head" }, [
+      el("span", { className: "question-index", text: t("questionOf", idx + 1, questions.length) }),
+      el("span", {
+        className: `tag ${tagMeta.cls}`,
+        text: `${tagMeta.icon} ${t(tagMeta.label)}`,
+        title: t(tagMeta.hint),
+      }),
+    ]));
+    if (scope === "pool") {
+      card.appendChild(el("div", { className: "question-source", text: q.setTitle }));
+    }
     card.appendChild(el("div", { className: "question-text", text: q.text }));
     if (multi) {
-      card.appendChild(el("div", {
-        className: "multi-hint",
-        text: `Несколько верных ответов — выберите ${q.correct.length}`,
-      }));
+      card.appendChild(el("div", { className: "multi-hint", text: t("multiHint", q.correct.length) }));
     }
 
     const list = el("div", { className: "option-list" });
@@ -331,47 +492,29 @@ async function renderQuiz(scope, params) {
     const primary = el("button", {
       className: "btn",
       attrs: { id: "primaryBtn" },
-      text: multi ? "Проверить" : idx === questions.length - 1 ? "Результаты →" : "Дальше →",
+      text: multi ? t("check") : (idx === questions.length - 1 ? t("toResults") : t("next")),
       disabled: true,
-      onClick: () => (multi && state.answers[idx] === null ? check() : advance()),
+      onClick: () => (state.answers[idx] === null ? commit([...picked].sort((a, b) => a - b)) : advance()),
     });
     app.appendChild(el("div", { className: "quiz-actions" }, [primary]));
-
-    if (answered !== null) reveal(answered);
     updateBadge();
 
     function onPick(i, btn) {
       if (state.answers[idx] !== null) return;
-      if (multi) {
-        if (picked.has(i)) picked.delete(i);
-        else picked.add(i);
-        btn.classList.toggle("picked", picked.has(i));
-        primary.disabled = picked.size === 0;
-      } else {
-        commit([i]);
-      }
-    }
-
-    function check() {
-      commit([...picked].sort((a, b) => a - b));
+      if (!multi) return commit([i]);
+      if (picked.has(i)) picked.delete(i);
+      else picked.add(i);
+      btn.classList.toggle("picked", picked.has(i));
+      primary.disabled = picked.size === 0;
     }
 
     function commit(chosen) {
-      const isRight =
-        chosen.length === q.correct.length && chosen.every((c) => q.correct.includes(c));
+      if (!chosen.length) return;
+      const right = chosen.length === q.correct.length && chosen.every((c) => q.correct.includes(c));
       state.answers[idx] = chosen;
-      if (isRight) state.score++;
-      Progress.mark(q.setId, q.index, isRight);
-      reveal(chosen);
-      updateBadge();
-      primary.disabled = false;
-      // отдельный обработчик здесь не нужен: основной сам выберет advance(),
-      // как только у вопроса появился ответ. Иначе клик сработает дважды и
-      // тест перескочит через вопрос.
-      primary.textContent = idx === questions.length - 1 ? "Результаты →" : "Дальше →";
-    }
+      if (right) state.score++;
+      Progress.mark(q.setId, q.index, right);
 
-    function reveal(chosen) {
       list.querySelectorAll(".option-btn").forEach((b) => {
         const i = Number(b.dataset.i);
         b.disabled = true;
@@ -379,15 +522,15 @@ async function renderQuiz(scope, params) {
         if (q.correct.includes(i)) b.classList.add("correct");
         else if (chosen.includes(i)) b.classList.add("wrong");
       });
+
+      updateBadge();
       primary.disabled = false;
+      primary.textContent = idx === questions.length - 1 ? t("toResults") : t("next");
     }
 
     function advance() {
       if (idx === questions.length - 1) drawResults();
-      else {
-        state.i++;
-        drawQuestion();
-      }
+      else { state.i++; drawQuestion(); }
     }
   }
 
@@ -403,42 +546,43 @@ async function renderQuiz(scope, params) {
       .filter(({ q, chosen }) =>
         !(chosen.length === q.correct.length && chosen.every((c) => q.correct.includes(c))));
 
-    const verdict = pct >= 90 ? "Отличный результат" : pct >= 70 ? "Хороший результат" : "Есть над чем поработать";
-
     app.appendChild(el("div", { className: "result-card" }, [
-      progressRing(pct, `${pct}%`, `${state.score} из ${total}`),
-      el("h2", { text: verdict }),
+      progressRing(pct, `${pct}%`, `${state.score} / ${total}`),
+      el("h2", { text: pct >= 90 ? t("resultGreat") : pct >= 70 ? t("resultGood") : t("resultPoor") }),
       el("div", { className: "result-actions" }, [
-        el("a", { className: "btn", href: `#/setup/${scope}`, text: "Ещё раз" }),
+        el("a", { className: "btn", href: `#/setup/${scope}`, text: t("again") }),
         wrong.length
           ? el("a", {
               className: "btn secondary",
-              href: `#/quiz/${scope}?count=${wrong.length}&order=shuffle&filter=wrong`,
-              text: "Работа над ошибками",
+              href: `#/quiz/${scope}?count=${wrong.length}&order=shuffle&filter=wrong&trust=all`,
+              text: t("workOnMistakes"),
             })
           : null,
-        el("a", { className: "btn ghost", href: "#/", text: "К списку" }),
+        el("a", { className: "btn ghost", href: "#/", text: t("toList") }),
       ]),
     ]));
 
     if (!wrong.length) {
-      app.appendChild(el("p", { className: "all-right", text: "Все ответы верны 🎉" }));
+      app.appendChild(el("p", { className: "all-right", text: t("allRight") }));
       return;
     }
 
-    app.appendChild(el("h3", { className: "review-title", text: `Разбор ошибок (${wrong.length})` }));
+    app.appendChild(el("h3", { className: "review-title", text: t("mistakes", wrong.length) }));
     const list = el("div", { className: "review-list" });
     for (const { q, chosen } of wrong) {
+      const meta = TAG_META[q.tag] || TAG_META.verified;
       list.appendChild(el("div", { className: "review-item" }, [
         el("div", { className: "review-q", text: q.text }),
         el("div", {
           className: "review-your",
-          text: "Ваш ответ: " + (chosen.length ? chosen.map((i) => q.options[i]).join("; ") : "нет ответа"),
+          text: `${t("yourAnswer")}: ` +
+            (chosen.length ? chosen.map((i) => q.options[i]).join("; ") : t("noAnswer")),
         }),
         el("div", {
           className: "review-correct",
-          text: "Правильный: " + q.correct.map((i) => q.options[i]).join("; "),
+          text: `${t("correctAnswer")}: ` + q.correct.map((i) => q.options[i]).join("; "),
         }),
+        el("span", { className: `tag tiny ${meta.cls}`, text: `${meta.icon} ${t(meta.label)}` }),
       ]));
     }
     app.appendChild(list);

@@ -4,24 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Гос экзамен — тесты</title>
-<meta name="description" content="Тренажёр тестов для подготовки к государственному экзамену: терапия, педиатрия, хирургия, детская хирургия, акушерство и гинекология.">
+<meta name="description" content="Тренажёр тестов для подготовки к государственному экзамену: терапия, педиатрия, хирургия, детская хирургия, акушерство и гинекология. Русский и узбекский.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <div class="topbar-inner">
-    <a href="#/" class="brand"><span class="brand-mark">🩺</span> Гос экзамен</a>
-    <div id="scoreBadge" class="score-badge" hidden></div>
+    <a href="#/" class="brand"><span class="brand-mark">🩺</span> <span id="brandText">Гос экзамен</span></a>
+    <div class="topbar-right">
+      <div id="langSwitch" class="lang-switch"></div>
+      <button id="userChip" class="user-chip" type="button" hidden></button>
+      <div id="scoreBadge" class="score-badge" hidden></div>
+    </div>
   </div>
 </header>
 
 <main id="app" class="app"></main>
 
 <footer class="footer">
-  <p>Тренажёр для подготовки к госэкзамену. Прогресс хранится в вашем браузере.</p>
-  <p><a href="gos-exam-tests-offline.html" download>Скачать версию для компьютера</a> — один файл, работает без интернета.</p>
+  <p id="footerText"></p>
+  <p id="offlineLine"></p>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/data.js"></script>
 <script src="js/ui.js"></script>

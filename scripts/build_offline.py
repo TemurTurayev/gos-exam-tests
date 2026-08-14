@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "gos-exam-tests-offline.html"
 
-SCRIPTS = ["js/storage.js", "js/data.js", "js/ui.js", "js/app.js"]
+SCRIPTS = ["js/i18n.js", "js/storage.js", "js/data.js", "js/ui.js", "js/app.js"]
 
 
 def main():
@@ -42,15 +42,20 @@ def main():
 <body>
 <header class="topbar">
   <div class="topbar-inner">
-    <a href="#/" class="brand"><span class="brand-mark">🩺</span> Гос экзамен</a>
-    <div id="scoreBadge" class="score-badge" hidden></div>
+    <a href="#/" class="brand"><span class="brand-mark">🩺</span> <span id="brandText">Гос экзамен</span></a>
+    <div class="topbar-right">
+      <div id="langSwitch" class="lang-switch"></div>
+      <button id="userChip" class="user-chip" type="button" hidden></button>
+      <div id="scoreBadge" class="score-badge" hidden></div>
+    </div>
   </div>
 </header>
 
 <main id="app" class="app"></main>
 
 <footer class="footer">
-  <p>Офлайн-версия · {total} вопросов внутри файла · интернет не нужен</p>
+  <p id="footerText"></p>
+  <p id="offlineLine">Офлайн-версия · {total} вопросов внутри файла</p>
 </footer>
 
 <script>window.EMBEDDED_DATA = {embedded};</script>

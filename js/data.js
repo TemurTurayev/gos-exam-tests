@@ -1,4 +1,4 @@
-// Загрузка банков вопросов. В офлайн-сборке данные уже вшиты в страницу
+// Загрузка банков вопросов. В офлайн-сборке данные вшиты в страницу
 // (window.EMBEDDED_DATA), поэтому сеть не нужна и файл работает с диска.
 
 const Data = (() => {
@@ -22,44 +22,57 @@ const Data = (() => {
     return data;
   }
 
-  /** Все наборы разом — нужно для общего пула. */
-  async function loadAll() {
+  /** Наборы выбранного языка ("all" — любые). */
+  async function setsFor(scope, testLang) {
     const m = await loadManifest();
-    return Promise.all(m.map((s) => loadSet(s.id)));
+    if (scope !== "pool") return [await loadSet(scope)];
+    const wanted = m.filter((s) => testLang === "all" || s.language === testLang);
+    return Promise.all(wanted.map((s) => loadSet(s.id)));
   }
 
-  /**
-   * Собирает вопросы для прохождения.
-   * scope: id набора или "pool" (все наборы вперемешку).
-   * filter: "all" | "unsolved" | "wrong"
-   */
-  async function buildQuiz({ scope, count, order, filter }) {
-    const sets = scope === "pool" ? await loadAll() : [await loadSet(scope)];
+  function passesTrust(tag, trust) {
+    if (trust === "strict") return TRUSTED_TAGS.includes(tag);
+    if (trust === "flagged") return !TRUSTED_TAGS.includes(tag);
+    return true;
+  }
 
-    let items = [];
+  function passesProgress(state, filter) {
+    if (filter === "unsolved") return state === undefined;
+    if (filter === "wrong") return state === 0;
+    return true;
+  }
+
+  /** Плоский список вопросов, подходящих под фильтры. */
+  async function collect({ scope, filter, trust, testLang }) {
+    const sets = await setsFor(scope, testLang);
+    const items = [];
     for (const set of sets) {
       const answers = Progress.forSet(set.id);
       set.questions.forEach((q, index) => {
-        const state = answers[index];
-        if (filter === "unsolved" && state !== undefined) return;
-        if (filter === "wrong" && state !== 0) return;
-        items.push({ setId: set.id, setTitle: set.title, index, q });
+        if (!passesProgress(answers[index], filter)) return;
+        if (!passesTrust(q.tag, trust)) return;
+        items.push({ setId: set.id, setTitle: set.title, setTitleUz: set.title_uz, index, q });
       });
     }
+    return items;
+  }
 
+  /** Готовит вопросы к прохождению: порядок, перемешанные варианты. */
+  async function buildQuiz({ scope, count, order, filter, trust, testLang }) {
+    let items = await collect({ scope, filter, trust, testLang });
     if (order !== "sequential") items = shuffle(items);
     items = items.slice(0, Math.min(count, items.length));
 
-    // варианты тоже перемешиваем, иначе правильный часто стоит первым
     return items.map((item) => {
-      const order = shuffle(item.q.options.map((_, i) => i));
+      const mix = shuffle(item.q.options.map((_, i) => i));
       return {
         setId: item.setId,
-        setTitle: item.setTitle,
+        setTitle: (I18N.lang === "uz" && item.setTitleUz) || item.setTitle,
         index: item.index,
         text: item.q.q,
-        options: order.map((i) => item.q.options[i]),
-        correct: order
+        tag: item.q.tag,
+        options: mix.map((i) => item.q.options[i]),
+        correct: mix
           .map((orig, pos) => (item.q.correct.includes(orig) ? pos : -1))
           .filter((pos) => pos >= 0)
           .sort((a, b) => a - b),
@@ -67,20 +80,8 @@ const Data = (() => {
     });
   }
 
-  /** Сколько вопросов доступно при таком фильтре. */
-  async function countAvailable(scope, filter) {
-    const sets = scope === "pool" ? await loadAll() : [await loadSet(scope)];
-    let n = 0;
-    for (const set of sets) {
-      const answers = Progress.forSet(set.id);
-      set.questions.forEach((_, index) => {
-        const state = answers[index];
-        if (filter === "unsolved" && state !== undefined) return;
-        if (filter === "wrong" && state !== 0) return;
-        n++;
-      });
-    }
-    return n;
+  async function countAvailable(opts) {
+    return (await collect(opts)).length;
   }
 
   function shuffle(arr) {
@@ -92,5 +93,5 @@ const Data = (() => {
     return a;
   }
 
-  return { loadManifest, loadSet, loadAll, buildQuiz, countAvailable, shuffle };
+  return { loadManifest, loadSet, buildQuiz, countAvailable, shuffle };
 })();

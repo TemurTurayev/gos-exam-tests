@@ -1,114 +1,276 @@
 [
  {
-  "id": "ped-ambulator-ru",
-  "title": "Педиатрия — амбулаторно-поликлиническая",
-  "subject": "Педиатрия",
+  "id": "obgyn-ru",
+  "title": "Акушерство и гинекология",
+  "subject": "Акушерство и гинекология",
+  "title_uz": "Akusherlik va ginekologiya",
+  "subject_uz": "Akusherlik va ginekologiya",
   "language": "ru",
-  "count": 199
+  "count": 82,
+  "tags": {
+   "verified": 82
+  }
  },
  {
-  "id": "ped-1000-uz",
-  "title": "Педиатрия — 1000 тестов",
-  "subject": "Педиатрия",
-  "language": "uz",
-  "count": 995
- },
- {
-  "id": "child-surg-hospital-uz",
-  "title": "Госпитальная детская хирургия",
+  "id": "child-surg-hosp-ru2",
+  "title": "Госпитальная детская хирургия — с источниками",
   "subject": "Детская хирургия",
-  "language": "uz",
-  "count": 94
+  "title_uz": "Gospital bolalar xirurgiyasi — manbalari bilan",
+  "subject_uz": "Bolalar xirurgiyasi",
+  "language": "ru",
+  "count": 196,
+  "tags": {
+   "restored": 196
+  }
  },
  {
   "id": "child-surg-ru",
   "title": "Детская хирургия",
   "subject": "Детская хирургия",
+  "title_uz": "Bolalar xirurgiyasi",
+  "subject_uz": "Bolalar xirurgiyasi",
   "language": "ru",
-  "count": 97
+  "count": 97,
+  "tags": {
+   "verified": 97
+  }
  },
  {
-  "id": "therapy-internal-ru",
-  "title": "Внутренние болезни",
-  "subject": "Терапия",
+  "id": "child-surg-ru-bank",
+  "title": "Детская хирургия — перечень вопросов",
+  "subject": "Детская хирургия",
+  "title_uz": "Bolalar xirurgiyasi — savollar ro‘yxati",
+  "subject_uz": "Bolalar xirurgiyasi",
   "language": "ru",
-  "count": 97
+  "count": 122,
+  "tags": {
+   "ai": 122
+  }
  },
  {
-  "id": "ped-1000-2-uz",
-  "title": "Педиатрия — расширенный банк",
-  "subject": "Педиатрия",
+  "id": "child-surg-hospital-uz",
+  "title": "Госпитальная детская хирургия",
+  "subject": "Детская хирургия",
+  "title_uz": "Gospital bolalar xirurgiyasi",
+  "subject_uz": "Bolalar xirurgiyasi",
   "language": "uz",
-  "count": 776
+  "count": 98,
+  "tags": {
+   "verified": 94,
+   "disputed": 4
+  }
  },
  {
-  "id": "therapy-1000-uz",
-  "title": "Терапия — 1000 тестов",
-  "subject": "Терапия",
+  "id": "child-surg-uz-lat",
+  "title": "Детская хирургия — банк вопросов",
+  "subject": "Детская хирургия",
+  "title_uz": "Bolalar xirurgiyasi — savollar banki",
+  "subject_uz": "Bolalar xirurgiyasi",
   "language": "uz",
-  "count": 954
- },
- {
-  "id": "therapy-ecg-ru",
-  "title": "Терапия — ЭКГ и кардиология",
-  "subject": "Терапия",
-  "language": "ru",
-  "count": 80
- },
- {
-  "id": "therapy-table-ru",
-  "title": "Терапия — тесты по темам",
-  "subject": "Терапия",
-  "language": "ru",
-  "count": 149
- },
- {
-  "id": "therapy-test-ru",
-  "title": "Терапия — факультетская",
-  "subject": "Терапия",
-  "language": "ru",
-  "count": 311
- },
- {
-  "id": "surg-facult-ru",
-  "title": "Факультетская хирургия",
-  "subject": "Хирургия",
-  "language": "ru",
-  "count": 99
+  "count": 310,
+  "tags": {
+   "marked": 306,
+   "disputed": 4
+  }
  },
  {
   "id": "child-surg-facult-uz",
   "title": "Факультетская детская хирургия",
   "subject": "Детская хирургия",
+  "title_uz": "Fakultet bolalar xirurgiyasi",
+  "subject_uz": "Bolalar xirurgiyasi",
   "language": "uz",
-  "count": 96
+  "count": 99,
+  "tags": {
+   "verified": 96,
+   "disputed": 3
+  }
  },
  {
-  "id": "surg-hospital-ru",
-  "title": "Госпитальная хирургия",
-  "subject": "Хирургия",
+  "id": "ped-ambulator-ru",
+  "title": "Педиатрия — амбулаторно-поликлиническая",
+  "subject": "Педиатрия",
+  "title_uz": "Pediatriya — ambulator-poliklinika",
+  "subject_uz": "Pediatriya",
   "language": "ru",
-  "count": 995
+  "count": 199,
+  "tags": {
+   "verified": 199
+  }
  },
  {
-  "id": "obgyn-ru",
-  "title": "Акушерство и гинекология",
-  "subject": "Акушерство и гинекология",
+  "id": "ped-ru-sources",
+  "title": "Педиатрия — с источниками",
+  "subject": "Педиатрия",
+  "title_uz": "Pediatriya — manbalari bilan",
+  "subject_uz": "Pediatriya",
   "language": "ru",
-  "count": 82
+  "count": 143,
+  "tags": {
+   "restored": 143
+  }
  },
  {
   "id": "ped-facult-ru",
   "title": "Факультетская педиатрия",
   "subject": "Педиатрия",
+  "title_uz": "Fakultet pediatriyasi",
+  "subject_uz": "Pediatriya",
   "language": "ru",
-  "count": 100
+  "count": 100,
+  "tags": {
+   "verified": 100
+  }
+ },
+ {
+  "id": "ped-1000-uz",
+  "title": "Педиатрия — 1000 тестов",
+  "subject": "Педиатрия",
+  "title_uz": "Pediatriya — 1000 test",
+  "subject_uz": "Pediatriya",
+  "language": "uz",
+  "count": 995,
+  "tags": {
+   "verified": 995
+  }
+ },
+ {
+  "id": "ped-uz-lat",
+  "title": "Педиатрия — банк вопросов",
+  "subject": "Педиатрия",
+  "title_uz": "Pediatriya — savollar banki",
+  "subject_uz": "Pediatriya",
+  "language": "uz",
+  "count": 235,
+  "tags": {
+   "marked": 226,
+   "disputed": 9
+  }
+ },
+ {
+  "id": "ped-1000-2-uz",
+  "title": "Педиатрия — расширенный банк",
+  "subject": "Педиатрия",
+  "title_uz": "Pediatriya — kengaytirilgan bank",
+  "subject_uz": "Pediatriya",
+  "language": "uz",
+  "count": 785,
+  "tags": {
+   "verified": 776,
+   "disputed": 9
+  }
+ },
+ {
+  "id": "therapy-internal-ru",
+  "title": "Внутренние болезни",
+  "subject": "Терапия",
+  "title_uz": "Ichki kasalliklar",
+  "subject_uz": "Terapiya",
+  "language": "ru",
+  "count": 99,
+  "tags": {
+   "verified": 97,
+   "disputed": 2
+  }
+ },
+ {
+  "id": "therapy-ecg-ru",
+  "title": "Терапия — ЭКГ и кардиология",
+  "subject": "Терапия",
+  "title_uz": "Terapiya — EKG va kardiologiya",
+  "subject_uz": "Terapiya",
+  "language": "ru",
+  "count": 89,
+  "tags": {
+   "verified": 80,
+   "disputed": 9
+  }
+ },
+ {
+  "id": "therapy-ru-bank",
+  "title": "Терапия — большая база",
+  "subject": "Терапия",
+  "title_uz": "Terapiya — katta baza",
+  "subject_uz": "Terapiya",
+  "language": "ru",
+  "count": 2176,
+  "tags": {
+   "restored": 2176
+  }
+ },
+ {
+  "id": "therapy-table-ru",
+  "title": "Терапия — тесты по темам",
+  "subject": "Терапия",
+  "title_uz": "Terapiya — mavzular bo‘yicha",
+  "subject_uz": "Terapiya",
+  "language": "ru",
+  "count": 149,
+  "tags": {
+   "verified": 149
+  }
+ },
+ {
+  "id": "therapy-test-ru",
+  "title": "Терапия — факультетская",
+  "subject": "Терапия",
+  "title_uz": "Fakultet terapiyasi",
+  "subject_uz": "Terapiya",
+  "language": "ru",
+  "count": 311,
+  "tags": {
+   "verified": 311
+  }
+ },
+ {
+  "id": "therapy-1000-uz",
+  "title": "Терапия — 1000 тестов",
+  "subject": "Терапия",
+  "title_uz": "Terapiya — 1000 test",
+  "subject_uz": "Terapiya",
+  "language": "uz",
+  "count": 956,
+  "tags": {
+   "verified": 954,
+   "disputed": 2
+  }
+ },
+ {
+  "id": "surg-hospital-ru",
+  "title": "Госпитальная хирургия",
+  "subject": "Хирургия",
+  "title_uz": "Gospital xirurgiyasi",
+  "subject_uz": "Xirurgiya",
+  "language": "ru",
+  "count": 995,
+  "tags": {
+   "verified": 995
+  }
+ },
+ {
+  "id": "surg-facult-ru",
+  "title": "Факультетская хирургия",
+  "subject": "Хирургия",
+  "title_uz": "Fakultet xirurgiyasi",
+  "subject_uz": "Xirurgiya",
+  "language": "ru",
+  "count": 100,
+  "tags": {
+   "verified": 99,
+   "disputed": 1
+  }
  },
  {
   "id": "surg-1000-uz",
   "title": "Хирургия — 1000 тестов",
   "subject": "Хирургия",
+  "title_uz": "Xirurgiya — 1000 test",
+  "subject_uz": "Xirurgiya",
   "language": "uz",
-  "count": 623
+  "count": 644,
+  "tags": {
+   "verified": 623,
+   "disputed": 21
+  }
  }
 ]
