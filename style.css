@@ -408,3 +408,43 @@ h1, h2, h3 { line-height: 1.25; }
   .legend-hint { grid-column: 1 / -1; }
   .user-chip { max-width: 90px; }
 }
+
+/* ------------------------------------------------------- таблица лидеров -- */
+.board {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 18px 20px; margin-top: 6px;
+}
+.board-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 10px; flex-wrap: wrap; margin-bottom: 12px;
+}
+.board-title { margin: 0; font-size: 1.06rem; }
+.board-scope { font-size: .78rem; color: var(--text-dim); }
+.board-empty { color: var(--text-dim); font-size: .9rem; margin: 0; }
+
+.board-scroll { overflow-x: auto; }
+.board-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.board-table th {
+  text-align: left; font-size: .72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .04em; color: var(--text-dim); padding: 0 8px 8px; white-space: nowrap;
+}
+.board-table td { padding: 9px 8px; border-top: 1px solid var(--border); }
+.board-table .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.board-table .strong { font-weight: 750; color: var(--brand); }
+.board-table .dim { color: var(--text-dim); }
+.col-place { width: 34px; font-size: 1rem; text-align: center; }
+.board-table tr.me td { background: var(--brand-soft); }
+.board-table tr.me td:first-child { border-radius: 8px 0 0 8px; }
+.board-table tr.me td:last-child { border-radius: 0 8px 8px 0; }
+.board-you {
+  margin-left: 6px; font-size: .66rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: .04em; color: #fff; background: var(--brand);
+  padding: 2px 6px; border-radius: 999px;
+}
+
+@media (max-width: 520px) {
+  /* на узком экране важнее «верно» и точность, число решённых прячем */
+  .board-table .col-solved { display: none; }
+  .board { padding: 16px; }
+}

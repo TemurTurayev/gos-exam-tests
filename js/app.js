@@ -130,6 +130,7 @@ function renderWelcome() {
     }
     User.set(res.value);
     Progress.invalidate();
+    Leaderboard.remember(res.value, User.slug);
     location.hash = "#/";
     render();
   };
@@ -229,6 +230,56 @@ async function renderHome() {
     section.appendChild(list);
     app.appendChild(section);
   }
+
+  // таблица лидеров — внизу страницы
+  const board = el("section", { className: "board" });
+  app.appendChild(board);
+  renderLeaderboard(board);
+}
+
+/** Таблица лидеров: общая, если настроено хранилище, иначе по этому устройству. */
+async function renderLeaderboard(box) {
+  const { scope, rows } = await Leaderboard.rows();
+  clear(box);
+
+  box.appendChild(el("div", { className: "board-head" }, [
+    el("h2", { className: "board-title", text: `🏆 ${t("boardTitle")}` }),
+    el("span", { className: "board-scope", text: scope === "global" ? t("boardGlobal") : t("boardLocal") }),
+  ]));
+
+  if (!rows.length) {
+    box.appendChild(el("p", { className: "board-empty", text: t("boardEmpty") }));
+    return;
+  }
+
+  const table = el("table", { className: "board-table" });
+  const head = el("tr", {}, [
+    el("th", { className: "col-place", text: "#" }),
+    el("th", { text: t("boardName") }),
+    el("th", { className: "num col-solved", text: t("boardSolved") }),
+    el("th", { className: "num", text: t("boardCorrect") }),
+    el("th", { className: "num", text: t("boardAccuracy") }),
+  ]);
+  table.appendChild(el("thead", {}, [head]));
+
+  const medals = ["🥇", "🥈", "🥉"];
+  const body = el("tbody");
+  rows.slice(0, 20).forEach((r, i) => {
+    const isMe = r.name === User.name;
+    const name = el("td", {}, [
+      el("span", { text: r.name }),
+      isMe ? el("span", { className: "board-you", text: t("boardYou") }) : null,
+    ]);
+    body.appendChild(el("tr", { className: isMe ? "me" : "" }, [
+      el("td", { className: "col-place", text: medals[i] || String(i + 1) }),
+      name,
+      el("td", { className: "num col-solved", text: r.solved.toLocaleString("ru-RU") }),
+      el("td", { className: "num strong", text: r.correct.toLocaleString("ru-RU") }),
+      el("td", { className: "num dim", text: `${Math.round(r.accuracy * 100)}%` }),
+    ]));
+  });
+  table.appendChild(body);
+  box.appendChild(el("div", { className: "board-scroll" }, [table]));
 }
 
 function statChip(label, value) {
@@ -538,6 +589,7 @@ async function renderQuiz(scope, params) {
     clear(app);
     badge.hidden = true;
     document.removeEventListener("keydown", onKey);
+    Leaderboard.publish();          // в локальном режиме ничего не делает
 
     const total = questions.length;
     const pct = Math.round((state.score / total) * 100);

@@ -13,7 +13,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "gos-exam-tests-offline.html"
 
-SCRIPTS = ["js/i18n.js", "js/storage.js", "js/data.js", "js/ui.js", "js/app.js"]
+SCRIPTS = ["config.js", "js/i18n.js", "js/storage.js", "js/leaderboard.js",
+           "js/data.js", "js/ui.js", "js/app.js"]
 
 
 def main():
