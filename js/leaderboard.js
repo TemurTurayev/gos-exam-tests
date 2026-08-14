@@ -25,10 +25,11 @@ const Leaderboard = (() => {
     try { localStorage.setItem(USERS_KEY, JSON.stringify(all)); } catch { /* приватный режим */ }
   }
 
-  /** Сводка по одному профилю из его прогресса. */
-  function statsFromProgress(progress) {
+  /** Сводка по одному профилю. Наборы, убранные с сайта, очков не дают. */
+  function statsFromProgress(progress, allowed) {
     let solved = 0, correct = 0;
-    for (const answers of Object.values(progress.sets || {})) {
+    for (const [setId, answers] of Object.entries(progress.sets || {})) {
+      if (allowed && !allowed.has(setId)) continue;
       for (const value of Object.values(answers)) {
         solved++;
         if (value === 1) correct++;
@@ -37,7 +38,16 @@ const Leaderboard = (() => {
     return { solved, correct };
   }
 
-  function localRows() {
+  /** Идентификаторы наборов, которые сейчас есть на сайте. */
+  async function allowedSets() {
+    try {
+      return new Set((await Data.loadManifest()).map((s) => s.id));
+    } catch {
+      return null;
+    }
+  }
+
+  function localRows(allowed) {
     const names = registry();
     const rows = [];
     for (let i = 0; i < localStorage.length; i++) {
@@ -50,7 +60,7 @@ const Leaderboard = (() => {
       } catch {
         continue;
       }
-      const { solved, correct } = statsFromProgress(progress);
+      const { solved, correct } = statsFromProgress(progress, allowed);
       if (!solved) continue;
       rows.push({ name: names[slug] || slug, slug, solved, correct });
     }
@@ -82,7 +92,7 @@ const Leaderboard = (() => {
           console.warn("Общий рейтинг недоступен, показываем локальный:", err);
         }
       }
-      return { scope: "local", rows: rank(localRows()) };
+      return { scope: "local", rows: rank(localRows(await allowedSets())) };
     },
 
     /** Отправить свой результат в общий рейтинг (если он настроен). */
@@ -97,7 +107,7 @@ const Leaderboard = (() => {
       } catch {
         return;
       }
-      const { solved, correct } = statsFromProgress(progress);
+      const { solved, correct } = statsFromProgress(progress, await allowedSets());
       if (!solved) return;
       try {
         await fetch(url, {

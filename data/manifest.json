@@ -1,17 +1,5 @@
 [
  {
-  "id": "obgyn-ru",
-  "title": "Акушерство и гинекология",
-  "subject": "Акушерство и гинекология",
-  "title_uz": "Akusherlik va ginekologiya",
-  "subject_uz": "Akusherlik va ginekologiya",
-  "language": "ru",
-  "count": 82,
-  "tags": {
-   "verified": 82
-  }
- },
- {
   "id": "child-surg-hosp-ru2",
   "title": "Госпитальная детская хирургия — с источниками",
   "subject": "Детская хирургия",

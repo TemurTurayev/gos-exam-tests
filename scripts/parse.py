@@ -413,6 +413,15 @@ def correct_by_bold(raw, meta):
     return (meta or 0) > 0.5
 
 
+# Набор исключён из сайта по просьбе владельца: акушерство и гинекология
+# не нужны в этой подготовке. Исходник остаётся в sources/, чтобы набор можно
+# было вернуть, добавив запись обратно в FILES.
+EXCLUDED = [
+    dict(id="obgyn-ru", title="Акушерство и гинекология",
+         subject="Акушерство и гинекология", language="ru", fmt="num_star_plain",
+         file="акушерлик ва гинекология рус.doc"),
+]
+
 FILES = [
     dict(id="ped-ambulator-ru", title="Педиатрия — амбулаторно-поликлиническая",
          subject="Педиатрия", language="ru", fmt="a",
@@ -453,9 +462,6 @@ FILES = [
     dict(id="surg-hospital-ru", title="Госпитальная хирургия",
          subject="Хирургия", language="ru", fmt="a_docx",
          file="Хирургия тест.docx"),
-    dict(id="obgyn-ru", title="Акушерство и гинекология",
-         subject="Акушерство и гинекология", language="ru", fmt="num_star_plain",
-         file="акушерлик ва гинекология рус.doc"),
     dict(id="ped-facult-ru", title="Факультетская педиатрия",
          subject="Педиатрия", language="ru", fmt="num_star",
          file="педиатрия  рус.doc"),
