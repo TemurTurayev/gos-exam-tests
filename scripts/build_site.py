@@ -50,8 +50,26 @@ TITLES_UZ = {
 }
 
 
+def dedupe(questions):
+    """Убирает точные повторы: тот же вопрос с теми же вариантами и ответом.
+
+    Вопрос с тем же текстом, но другими вариантами — это другой вопрос
+    исходника, его оставляем.
+    """
+    seen, out = set(), []
+    for q in questions:
+        sig = (q["q"], tuple(q["options"]), tuple(q["correct"]))
+        if sig in seen:
+            continue
+        seen.add(sig)
+        out.append(q)
+    return out
+
+
 def main():
     sets = {**build_core(), **build_extra()}
+    for data in sets.values():
+        data["questions"] = dedupe(data["questions"])
 
     manifest = []
     totals = Counter()

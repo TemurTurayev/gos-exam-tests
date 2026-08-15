@@ -42,10 +42,10 @@
   "title_uz": "Gospital bolalar xirurgiyasi",
   "subject_uz": "Bolalar xirurgiyasi",
   "language": "uz",
-  "count": 98,
+  "count": 90,
   "tags": {
-   "verified": 94,
-   "disputed": 4
+   "verified": 87,
+   "disputed": 3
   }
  },
  {
@@ -106,9 +106,9 @@
   "title_uz": "Fakultet pediatriyasi",
   "subject_uz": "Pediatriya",
   "language": "ru",
-  "count": 100,
+  "count": 99,
   "tags": {
-   "verified": 100
+   "verified": 99
   }
  },
  {
@@ -144,9 +144,9 @@
   "title_uz": "Pediatriya — kengaytirilgan bank",
   "subject_uz": "Pediatriya",
   "language": "uz",
-  "count": 784,
+  "count": 779,
   "tags": {
-   "verified": 775,
+   "verified": 770,
    "disputed": 9
   }
  },
@@ -183,9 +183,9 @@
   "title_uz": "Terapiya — katta baza",
   "subject_uz": "Terapiya",
   "language": "ru",
-  "count": 2176,
+  "count": 2166,
   "tags": {
-   "restored": 2176
+   "restored": 2166
   }
  },
  {
@@ -195,9 +195,9 @@
   "title_uz": "Terapiya — mavzular bo‘yicha",
   "subject_uz": "Terapiya",
   "language": "ru",
-  "count": 149,
+  "count": 144,
   "tags": {
-   "verified": 149
+   "verified": 144
   }
  },
  {
@@ -207,9 +207,9 @@
   "title_uz": "Fakultet terapiyasi",
   "subject_uz": "Terapiya",
   "language": "ru",
-  "count": 311,
+  "count": 310,
   "tags": {
-   "verified": 311
+   "verified": 310
   }
  },
  {
@@ -232,9 +232,9 @@
   "title_uz": "Gospital xirurgiyasi",
   "subject_uz": "Xirurgiya",
   "language": "ru",
-  "count": 995,
+  "count": 994,
   "tags": {
-   "verified": 995
+   "verified": 994
   }
  },
  {
@@ -244,9 +244,9 @@
   "title_uz": "Fakultet xirurgiyasi",
   "subject_uz": "Xirurgiya",
   "language": "ru",
-  "count": 100,
+  "count": 96,
   "tags": {
-   "verified": 99,
+   "verified": 95,
    "disputed": 1
   }
  },
