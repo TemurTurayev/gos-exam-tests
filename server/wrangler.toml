@@ -1,0 +1,13 @@
+name = "gos-exam-board"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# Хранилище результатов. Durable Object создаётся вместе с воркером,
+# отдельный ресурс заводить не нужно.
+[[durable_objects.bindings]]
+name = "BOARD"
+class_name = "Board"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Board"]

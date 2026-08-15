@@ -28,16 +28,6 @@ function renderChrome() {
   document.getElementById("brandText").textContent = t("appName");
   document.getElementById("footerText").textContent = t("footer");
 
-  // в офлайн-сборке файл уже у пользователя — ссылка на скачивание не нужна
-  const offline = document.getElementById("offlineLine");
-  if (!window.EMBEDDED_DATA) {
-    clear(offline);
-    const link = el("a", { href: "gos-exam-tests-offline.html", text: t("offline") });
-    link.setAttribute("download", "");
-    offline.appendChild(link);
-    offline.appendChild(document.createTextNode(" " + t("offlineSub")));
-  }
-
   clear(langSwitch);
   for (const code of ["ru", "uz"]) {
     langSwitch.appendChild(el("button", {
@@ -70,12 +60,21 @@ function parseHash() {
   return { parts: path.split("/").filter(Boolean), params: new URLSearchParams(query || "") };
 }
 
+let published = false;
+
 async function render() {
   badge.hidden = true;
   renderChrome();
   clear(app);
 
   if (!User.name) return renderWelcome();
+
+  // один раз за визит отправляем накопленный результат в общий рейтинг:
+  // иначе он попадёт туда только после завершённого теста
+  if (!published) {
+    published = true;
+    Leaderboard.publish();
+  }
 
   const { parts, params } = parseHash();
   try {

@@ -1,23 +1,18 @@
-// Загрузка банков вопросов. В офлайн-сборке данные вшиты в страницу
-// (window.EMBEDDED_DATA), поэтому сеть не нужна и файл работает с диска.
+// Загрузка банков вопросов с сервера.
 
 const Data = (() => {
   const cache = new Map();
   let manifest = null;
 
-  const embedded = () => (typeof window !== "undefined" ? window.EMBEDDED_DATA : null);
-
   async function loadManifest() {
     if (manifest) return manifest;
-    const emb = embedded();
-    manifest = emb ? emb.manifest : await (await fetch("data/manifest.json")).json();
+    manifest = await (await fetch("data/manifest.json")).json();
     return manifest;
   }
 
   async function loadSet(id) {
     if (cache.has(id)) return cache.get(id);
-    const emb = embedded();
-    const data = emb ? emb.sets[id] : await (await fetch(`data/${id}.json`)).json();
+    const data = await (await fetch(`data/${id}.json`)).json();
     cache.set(id, data);
     return data;
   }

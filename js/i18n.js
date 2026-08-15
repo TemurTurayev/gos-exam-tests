@@ -105,8 +105,6 @@ const I18N = (() => {
       boardAccuracy: "Точность",
       boardYou: "вы",
       footer: "Тренажёр для подготовки к госэкзамену. Прогресс хранится в вашем браузере.",
-      offline: "Скачать версию для компьютера",
-      offlineSub: "— один файл, работает без интернета.",
     },
 
     uz: {
@@ -203,8 +201,6 @@ const I18N = (() => {
       boardAccuracy: "Aniqlik",
       boardYou: "siz",
       footer: "Davlat imtihoniga tayyorgarlik trenajyori. Natijalar brauzeringizda saqlanadi.",
-      offline: "Kompyuter uchun versiyani yuklab olish",
-      offlineSub: "— bitta fayl, internetsiz ishlaydi.",
     },
   };
 
