@@ -41,16 +41,19 @@ cd server && npx wrangler deploy        # обновить обработчик
 npx wrangler secret put ADMIN_TOKEN     # задать ключ очистки таблицы
 ```
 
-Очистить таблицу перед новым потоком:
+Очистить таблицу перед новым потоком либо убрать одного участника:
 
 ```bash
 curl -X DELETE https://gos-exam-board.temurturayev7822.workers.dev/scores \
+  -H "x-admin-token: <ваш ключ>"
+curl -X DELETE https://gos-exam-board.temurturayev7822.workers.dev/scores/temur \
   -H "x-admin-token: <ваш ключ>"
 ```
 
 Адрес сервера задаётся в `config.js`. API: `GET /scores` возвращает
 `[{name, solved, correct, updated}, …]`, `POST /scores {name, solved, correct}`
-сохраняет результат, `DELETE /scores` с ключом очищает таблицу.
+сохраняет результат, `DELETE /scores` с ключом очищает таблицу, `DELETE /scores/<имя>` убирает
+одного участника, не трогая остальных.
 
 ## Сборка
 

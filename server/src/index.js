@@ -1,7 +1,8 @@
 /**
  * Общий рейтинг сайта тестов — Cloudflare Worker.
  *
- *   DELETE /scores  (заголовок x-admin-token) -> очистить таблицу
+ *   DELETE /scores        (заголовок x-admin-token) -> очистить таблицу
+ *   DELETE /scores/<slug> (заголовок x-admin-token) -> убрать участника
  *
  * Результаты хранит Durable Object: отдельный ресурс создавать не нужно,
  * хранилище появляется вместе с самим воркером.
@@ -46,6 +47,13 @@ export class Board {
     }
 
     if (request.method === "DELETE") {
+      // /scores/<slug> — убрать одного участника, /scores — очистить таблицу
+      const slug = new URL(request.url).pathname.replace(/^\/scores\/?/, "").trim();
+      if (slug) {
+        const existed = Boolean(await this.state.storage.get(slug));
+        await this.state.storage.delete(slug);
+        return json({ ok: true, removed: slug, existed });
+      }
       await this.state.storage.deleteAll();
       return json({ ok: true, cleared: true });
     }
