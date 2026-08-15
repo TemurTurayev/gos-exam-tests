@@ -60,21 +60,12 @@ function parseHash() {
   return { parts: path.split("/").filter(Boolean), params: new URLSearchParams(query || "") };
 }
 
-let published = false;
-
 async function render() {
   badge.hidden = true;
   renderChrome();
   clear(app);
 
   if (!User.name) return renderWelcome();
-
-  // один раз за визит отправляем накопленный результат в общий рейтинг:
-  // иначе он попадёт туда только после завершённого теста
-  if (!published) {
-    published = true;
-    Leaderboard.publish();
-  }
 
   const { parts, params } = parseHash();
   try {
@@ -238,6 +229,9 @@ async function renderHome() {
 
 /** Таблица лидеров: общая, если настроено хранилище, иначе по этому устройству. */
 async function renderLeaderboard(box) {
+  // сначала отправляем свой результат и дожидаемся ответа, иначе таблица
+  // успеет загрузиться раньше и новый участник не увидит себя в списке
+  await Leaderboard.publish();
   const { scope, rows } = await Leaderboard.rows();
   clear(box);
 
