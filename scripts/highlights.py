@@ -103,6 +103,10 @@ def finalize(questions):
         text = " ".join(q["q"].split())
         if len(text) < 12 or not (2 <= len(opts) <= 6) or len(set(opts)) != len(opts):
             continue
+        # вариант с двоеточием на конце — это хвост неверно разрезанного
+        # вопроса, а не ответ
+        if any(o.rstrip().endswith((":", "?")) for o in opts):
+            continue
         marks = {i: v for i, v in q["marked"].items() if i < len(opts)}
         item = {"q": text, "options": opts}
         if not marks:

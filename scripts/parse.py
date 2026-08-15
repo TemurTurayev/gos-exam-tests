@@ -292,6 +292,10 @@ def finalize(questions, min_options=2, max_options=12):
             continue
         if len(new_correct) >= len(opts):        # «правильно всё» — тоже мусор
             continue
+        # вариант, заканчивающийся двоеточием или вопросительным знаком, —
+        # это хвост неверно разрезанного вопроса, а не ответ
+        if any(o.rstrip().endswith((":", "?")) for o in opts):
+            continue
 
         out.append({"q": " ".join(q["q"].split()),
                     "options": opts,

@@ -6,9 +6,9 @@
   "title_uz": "Gospital bolalar xirurgiyasi — manbalari bilan",
   "subject_uz": "Bolalar xirurgiyasi",
   "language": "ru",
-  "count": 196,
+  "count": 162,
   "tags": {
-   "restored": 196
+   "restored": 162
   }
  },
  {
@@ -18,9 +18,9 @@
   "title_uz": "Bolalar xirurgiyasi",
   "subject_uz": "Bolalar xirurgiyasi",
   "language": "ru",
-  "count": 97,
+  "count": 96,
   "tags": {
-   "verified": 97
+   "verified": 96
   }
  },
  {
@@ -30,9 +30,9 @@
   "title_uz": "Bolalar xirurgiyasi — savollar ro‘yxati",
   "subject_uz": "Bolalar xirurgiyasi",
   "language": "ru",
-  "count": 465,
+  "count": 424,
   "tags": {
-   "ai": 465
+   "ai": 424
   }
  },
  {
@@ -55,9 +55,9 @@
   "title_uz": "Bolalar xirurgiyasi — savollar banki",
   "subject_uz": "Bolalar xirurgiyasi",
   "language": "uz",
-  "count": 493,
+  "count": 492,
   "tags": {
-   "marked": 306,
+   "marked": 305,
    "ai": 183,
    "disputed": 4
   }
@@ -94,9 +94,9 @@
   "title_uz": "Pediatriya — manbalari bilan",
   "subject_uz": "Pediatriya",
   "language": "ru",
-  "count": 143,
+  "count": 155,
   "tags": {
-   "restored": 143
+   "restored": 155
   }
  },
  {
@@ -118,9 +118,9 @@
   "title_uz": "Pediatriya — 1000 test",
   "subject_uz": "Pediatriya",
   "language": "uz",
-  "count": 995,
+  "count": 993,
   "tags": {
-   "verified": 995
+   "verified": 993
   }
  },
  {
@@ -144,9 +144,9 @@
   "title_uz": "Pediatriya — kengaytirilgan bank",
   "subject_uz": "Pediatriya",
   "language": "uz",
-  "count": 785,
+  "count": 784,
   "tags": {
-   "verified": 776,
+   "verified": 775,
    "disputed": 9
   }
  },
@@ -170,9 +170,9 @@
   "title_uz": "Terapiya — EKG va kardiologiya",
   "subject_uz": "Terapiya",
   "language": "ru",
-  "count": 89,
+  "count": 88,
   "tags": {
-   "verified": 80,
+   "verified": 79,
    "disputed": 9
   }
  },
@@ -219,9 +219,9 @@
   "title_uz": "Terapiya — 1000 test",
   "subject_uz": "Terapiya",
   "language": "uz",
-  "count": 956,
+  "count": 953,
   "tags": {
-   "verified": 954,
+   "verified": 951,
    "disputed": 2
   }
  },
@@ -257,10 +257,10 @@
   "title_uz": "Xirurgiya — 1000 test",
   "subject_uz": "Xirurgiya",
   "language": "uz",
-  "count": 644,
+  "count": 643,
   "tags": {
    "verified": 623,
-   "disputed": 21
+   "disputed": 20
   }
  }
 ]

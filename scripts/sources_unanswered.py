@@ -4,6 +4,12 @@
 Возвращает вопросы в том же виде, что и основной парсер, но без ключа:
 {"q": ..., "options": [...]}. Ключ добавляется отдельно — переносом из
 проверенной базы, правилом «верен первый вариант» или ответом ИИ.
+
+Главная сложность этих PDF — переносы строк. Длинный вопрос занимает две
+строки, и без склейки его «хвост» превращается в отдельный вариант ответа
+(а по правилу «верен первый вариант» ещё и становится правильным). Строки
+склеиваются по правому краю: если строка дотянулась до края текстового
+блока, следующая строка — её продолжение.
 """
 import re
 import sys
@@ -16,10 +22,56 @@ from parse import ROOT, lines_of, convert_doc_to_docx, bold_ratio
 
 NO_ANS = ROOT / "sources" / "without_answers"
 
+# на сколько пунктов строка может не дотянуть до правого края и всё ещё
+# считаться «полной» (перенос по словам редко оставляет больше)
+WRAP_TOLERANCE = 20
+
+
+def page_lines(page):
+    """Строки страницы: (x0, x1, текст)."""
+    out = []
+    for block in page.get_text("dict")["blocks"]:
+        for line in block.get("lines", []):
+            text = "".join(s["text"] for s in line["spans"]).strip()
+            if text:
+                out.append((line["bbox"][0], line["bbox"][2], text))
+    return out
+
+
+def join_wrapped(lines, margin):
+    """Склеивает перенесённые строки: полная строка + продолжение = одна."""
+    joined = []
+    for x0, x1, text in lines:
+        if joined and joined[-1][1] >= margin - WRAP_TOLERANCE:
+            prev_x0, _, prev_text = joined[-1]
+            joined[-1] = (prev_x0, x1, prev_text + " " + text)
+        else:
+            joined.append((x0, x1, text))
+    return joined
+
+
+def right_margin(pages, percentile=0.95):
+    """Правый край текста по всему документу.
+
+    Берём не максимум, а 95-й процентиль: в этих PDF попадаются одиночные
+    строки заметно правее основного текста (колонтитулы, длинные заголовки),
+    и по максимуму настоящий край текста определяется неверно.
+    """
+    xs = sorted(x1 for lines in pages for _, x1, _ in lines)
+    if not xs:
+        return 0
+    return xs[min(len(xs) - 1, int(len(xs) * percentile))]
+
 
 def pdf_lines(path):
+    """Плоский список строк документа с уже склеенными переносами."""
     doc = fitz.open(str(path))
-    return lines_of("\n".join(p.get_text() for p in doc))
+    pages = [page_lines(page) for page in doc]
+    margin = right_margin(pages)
+    out = []
+    for lines in pages:
+        out += [t for _, _, t in join_wrapped(lines, margin)]
+    return out
 
 
 def _clean(items, min_opts=2, max_opts=6):
@@ -30,6 +82,10 @@ def _clean(items, min_opts=2, max_opts=6):
         if len(text) < 12 or not (min_opts <= len(opts) <= max_opts):
             continue
         if len(set(opts)) != len(opts):
+            continue
+        # вариант, заканчивающийся двоеточием или вопросительным знаком, —
+        # это не ответ, а хвост неправильно разрезанного вопроса
+        if any(o.rstrip().endswith((":", "?")) for o in opts):
             continue
         out.append({"q": text, "options": opts})
     return out
@@ -59,10 +115,8 @@ def parse_dash(path):
 def parse_number_line(path):
     """Номер вопроса отдельной строкой либо в начале строки с текстом.
 
-    В этом PDF первые ~100 вопросов пронумерованы отдельной строкой, а дальше
-    номер стоит на одной строке с вопросом — обрабатываем оба варианта.
-    Вариантов ответа всегда четыре, поэтому последние четыре строки блока и
-    есть варианты.
+    После склейки переносов в блоке остаются вопрос и ровно четыре варианта,
+    поэтому последние четыре строки блока и есть варианты.
     """
     blocks, cur, last = [], None, 0
     for l in pdf_lines(path):
@@ -81,26 +135,48 @@ def parse_number_line(path):
     for b in blocks:
         if len(b) < 5 or len(b) > 9:
             continue
-        out.append({"q": " ".join(b[:-4]), "options": b[-4:]})
+        # если вопрос занял две строки, он заканчивается двоеточием или
+        # вопросительным знаком — иначе считаем, что вариантов ровно четыре
+        end = next((i for i, l in enumerate(b) if l.rstrip().endswith((":", "?"))), None)
+        if end is None or end > len(b) - 2:
+            end = len(b) - 5
+        out.append({"q": " ".join(b[:end + 1]), "options": b[end + 1:]})
     return _clean(out)
 
 
+HEADER = re.compile(r"^№\s*\d|Уровень сложности|Источник|Глава\s*[–-]|стр[-\s]*\d")
+
+
 def parse_header_block(path):
-    """«№N … Уровень сложности – X», затем вопрос и варианты."""
-    out, cur, wait = [], None, False
-    header = re.compile(r"^№\s*\d|Уровень сложности|Источник|Глава\s*[–-]|стр[-\s]*\d")
+    """«№N … Уровень сложности – X», затем вопрос и варианты.
+
+    Заголовок опознаётся по тексту, а не по отступу: в разных файлах он то
+    сдвинут, то стоит вровень с вопросом.
+    """
+    blocks, cur = [], None
     for l in pdf_lines(path):
-        if header.search(l):
+        if HEADER.search(l):
             if cur:
-                out.append(cur)
-            cur, wait = None, True
+                blocks.append(cur)
+            cur = []
             continue
-        if wait:
-            cur, wait = {"q": l, "options": []}, False
-        elif cur is not None:
-            cur["options"].append(l)
+        if cur is not None:
+            cur.append(l)
     if cur:
-        out.append(cur)
+        blocks.append(cur)
+
+    out = []
+    for b in blocks:
+        if len(b) < 3:
+            continue
+        # вопрос заканчивается строкой с двоеточием или вопросительным знаком;
+        # если её нет — считаем, что вариантов четыре
+        end = next((i for i, l in enumerate(b) if l.rstrip().endswith((":", "?"))), None)
+        if end is None or end > len(b) - 2:
+            if not (5 <= len(b) <= 8):
+                continue
+            end = len(b) - 5
+        out.append({"q": " ".join(b[:end + 1]), "options": b[end + 1:]})
     return _clean(out)
 
 
@@ -157,5 +233,6 @@ def load_all():
 
 if __name__ == "__main__":
     for spec in SOURCES:
-        qs = (NO_ANS / spec["file"]).exists() and spec["parser"](NO_ANS / spec["file"]) or []
+        path = NO_ANS / spec["file"]
+        qs = spec["parser"](path) if path.exists() else []
         print(f"{spec['id']:22s} {len(qs):5d}  <- {spec['file']}")
