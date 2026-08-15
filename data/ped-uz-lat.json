@@ -3067,6 +3067,3620 @@
     1
    ],
    "tag": "disputed"
+  },
+  {
+   "q": "Kichik yoshdagi bolalarda o'tkir bronxitni davolashda antibakterial davo necha kun davom etadi?",
+   "options": [
+    "3-4 kun",
+    "5-6 kun",
+    "8-10 kun",
+    "12-14 kun"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Rentgenogrammada bronxial astmaning xarakterli o'zgarishni ko'rsating:",
+   "options": [
+    "o'pka to'qimasida xavolikni oshishi",
+    "infiltrativ soya",
+    "bronxoektaz",
+    "o'pka ildiz suratini ko'chayishi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Inspirator nafas bo'zilishi ko'zatiladi:",
+   "options": [
+    "Krup sindromi",
+    "bronxial astma",
+    "pnevmoniya",
+    "ko'k yo'tal"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bir yoshda bo'lgan bolalarda qanday antibiotiklar ishlatilmaydi?",
+   "options": [
+    "gentamitsin, penitsillin",
+    "sefalosporinlar",
+    "levomitsetin suktsinat",
+    "tetratsiklin, monomitsin, kanamitsin"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Pnevmoniyada rentgenologik o'zgarishlar:",
+   "options": [
+    "o'pkaning umumiy shishi",
+    "qontomir rasmining o'zgarishi",
+    "o'pkaning umumiy tiniqligini ko'chayishi",
+    "o'choqli va sigmentar infiltratsiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "10 yoshli bolada o'tkir pnevmoniya fonida terisi rangi yersimon, sianoz, yopishqoq ter chiqishi. Nafas yetishmovchiligi darajasini aniqlang:",
+   "options": [
+    "Nafas yetishmovchiligi yo’q",
+    "1 daraja",
+    "1-2 daraja",
+    "3 daraja"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "9 oylik bolani uyga tez yordam chaqirish. Bir kun oldin burni oqayotgan, harorati 37,2 ° S bo'lgan. Kechasi u to'satdan uyg'onib ketdi va bezovta bo'ldi. Qattiq yo'tal bor edi, u bo'g'ilib qoldi. Harorat 38 ° C ko'tarildi. Sizning dastlabki tashxisingiz:",
+   "options": [
+    "Obstruktiv bronxit",
+    "ORVI fonida soxta krup rivojlangan",
+    "Bronxiolit",
+    "Difteriya - haqiqiy krup"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Statsionar davolanayotgan 8 yoshli bolada ertalab nafas chiqarishda qiyinchilik, tez-tez quruq yo'tal bilan astma xuruji paydo bo'ldi; nafas shovqinli, uzoqdan hushtak tovushlari eshitiladi. Sizning vaqtinchalik tashxisingiz:",
+   "options": [
+    "O'tkir bronxit",
+    "Bronxial astma xuruji",
+    "Nafas olish yetishmovchiligi",
+    "Pnevmoniya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bronxial astma xurujini to'xtatish uchun quyidagi preparatlar qo'llaniladi.",
+   "options": [
+    "Salbutamol ingalyatsiyada",
+    "Salbutamol + beklazon v ingalyatsii",
+    "Adrenalin",
+    "Eufilin v/v"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Spazmofiliyaning nerv-reflektor qo'zg'alishi belgilariga kirmaydi:",
+   "options": [
+    "Bezovtalik",
+    "Pay reflekslarini kuchayishi",
+    "Xvostek, Trusso, Lyust, Erba, Maslov simptomlarini musbatligi",
+    "Mushak gipotoniyasi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Spazmofiliyada parxez printsiplarini sanab o'ting.",
+   "options": [
+    "Suv –choy tanaffusi 6-12 soat",
+    "Nordonlashtiruvchi parxezterapiya",
+    "Sut maxsulotlarini ma'n etish",
+    "Kaltsiyga boy maxsulotlarni belgilash"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Anemiyali bolalarning dispanser nazorati davomiyligi qancha?",
+   "options": [
+    "3 oy",
+    "6 oy",
+    "12 oy",
+    "1,5 yil"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bola 1 yoshu 7 oylik. Onaning shikoyatlari: to'satdan yo'tal, keyin nafas olish qiyinlishuvi 15 daqiqadan so'ng tugadi. Tekshiruv davomida: tana harorati normal, bola faol. Auskultatsiya paytida chap o'pkaning yuqori qismida nafas chiqarganda xushtaksimon xirillash aniqlandi, perkussiyada qutisimon tovush kuzatiladi. Dastlabki tashxis:",
+   "options": [
+    "bronxialnaya astma",
+    "obstruktiv bronxit",
+    "bronxda yod modda",
+    "bronxiolit"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bola 3 yoshda. Shikoyatlari: yo'tal, 38C dan yuqori isitma, intoksikatsiya, xansirash. Tashxis quying:",
+   "options": [
+    "O’tkir bronxit",
+    "Bronxiolit",
+    "Pnevmoniya",
+    "Respirator allergoz"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "4 yoshli bolada tez-tez yo'tal bor. Axvoli o'rtacha og'irlikda. qanday belgilar o'tkir bronxit haqida ma'lumot beradi:",
+   "options": [
+    "Xansirash, quruq xirillash",
+    "Quruq, nam o'rta pufakchali xirillashlar",
+    "Intoksikatsiya",
+    "Ko'krak og'riqi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolada ko'krak qafasi rentgenogrammasi o'tkazildi. O'tkir bronxitni qanday belgilar ko'rsatishini aniqlang:",
+   "options": [
+    "qorayish o'choqlari",
+    "o'pkaning ildiz qismi suvratining simmetrik zo'riqishi",
+    "o'pkaning diafragma burchaklari konturlarini zo'riqishi",
+    "yumshoq o'choqli qorayishlar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O'pka to'qimasining destruktsiyasiga olib keluvchi faktor bo'lib xisoblanadi:",
+   "options": [
+    "Umumiy axvolining og'irligi",
+    "Turg'un subfebrilitet",
+    "Taxikardiya",
+    "Lobar pnevmonik infiltrati"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Pnevmoniyaning kechishi cho'ziluvchan hisoblanadi:",
+   "options": [
+    "1-2 oygacha",
+    "1,5-8 oygacha",
+    "8-12 oygacha",
+    "4-6 oygacha"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Xlamidiyali va mikoplazmali pnevmoniyada asosiy antibiotic hisoblanadi:",
+   "options": [
+    "kefzol, sefolizin",
+    "makrolidlar (djozamitsin, rulid va boshqalar)",
+    "aminoglikozlar (gentamitsin va boshqalar)",
+    "nitrofuranlar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ko'rsatilgan qaysi simptomlar surunkali pnevmoniyaga xos:",
+   "options": [
+    "2 xaftagacha baland temperatura",
+    "1 oy davomidagi yo'tal",
+    "ertalabki xo'l yo'tal",
+    "kechasi xurujsimon yo'tal 1 oy davomida"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bronxial astma xurujiga klinik simptom:",
+   "options": [
+    "Nafasning qiyinlashishi, ekspirator tipdagi xansirash",
+    "Vegetativ distoniya",
+    "Yo'tal, balgam ko'chishi",
+    "Temperaturaning balandligi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Pnevmoniya qaysi kasalliklar bilan solishtiriladi?",
+   "options": [
+    "o'tkir bronxitlar, bronxial astma",
+    "revmatizm",
+    "plevritlar",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali zotiljam sababi",
+   "options": [
+    "Aorta stenozi",
+    "Tugunli atelektaz",
+    "O'tkir zotiljamdan keyin",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolaga Ko'krak qafasi rentgenografiyasi qilindi. qanday belgilar o'tkir bronxitga xos xisoblanadi:",
+   "options": [
+    "O'choqli soyalar",
+    "O'pka ildizlari rasmlarini simmetrik kuchayishi",
+    "Diafragma burchaklari konturlarini kuchayishi",
+    "Yumshoq O'choqli soyalar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolada surunkali pnevmoniya. Bu kasalliknng asosiy klinik belgilari nimadan iborat:",
+   "options": [
+    "Jismoniy rivojlanishning normadaligi",
+    "Yiringli balgam ko'chishi bilan kechadigan doimiy yo'tal",
+    "Ko'krak qafasi deformatsiyasi",
+    "Perkussiyada o'pka tovushini lokal qisqarishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "10 yoshli bolada karditning asosiy auskultativ belgilarini sanab o'ting:",
+   "options": [
+    "yurak tonlari kuchayishi, diastolik shovqin",
+    "2 ton susayishi, sistola-diastolik shovqin",
+    "«Koshache murlikaniye», golop ritmi",
+    "yurak tonlari bo'g'iqligi, taxikardiya, aritmiya, 1 ton susayishi, sistolik shovqin"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Skarlatina fonida qanday asoratlar rivojlanishi mumkin?",
+   "options": [
+    "Miokardit, Glomerulonefritning gematurik shakli",
+    "Pielonefrit",
+    "Enterokolit",
+    "Endokrin organlar zararlanishi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Mashq paytida taxikardiya va xansirash, 10 daqiqadan so'ng dastlabki holatga qaytishi nimaning belgisi xisoblanadi:",
+   "options": [
+    "NK0",
+    "NK1",
+    "NK2A",
+    "NK2B"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bola 7 yoshda, maktabga boradi. O'qituvchining ta'kidlashicha, so'nggi bir hafta ichida bola yig'loq, sinfda yuzlarini qiyshaytiradi va yozuvi o'zgargan. Dastlabki tashxisingiz:",
+   "options": [
+    "Surunkali yuvenil artrit",
+    "Surunkali reaktiv artrit",
+    "Revmatik ataka, kichik xoreya",
+    "Nervno-artritik diatez"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Revmatoid artrit davosida qaysi antibiotik asosiy xisoblanadi:",
+   "options": [
+    "Antibiotik qo'llanilmaydi",
+    "Linkomitsin",
+    "Streptomitsin",
+    "Gentamitsin"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Norevmatik karditda exokardiografik tekshiruvlar quyidagini aniqlaydi:",
+   "options": [
+    "Mitral klapanning nisbiy yetishmovchiligini",
+    "Mitral klapanning chegaralangan yetishmovchiligini",
+    "Uch tabaqali klapan nisbiy yetishmovchiligi",
+    "Uch tabaqali klapanning chegaralangan yetishmovchiligi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Norevmatik karditning ko'proq qo'zg'atadi:",
+   "options": [
+    "YeSNO, Koksaki viruslari",
+    "bakteriyalar",
+    "zamburug'lar",
+    "pnevmokokklar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oriqcha vaznini davolashda qo'llanilmaydi:",
+   "options": [
+    "Parxez ovkatlanishni etapli olib borish",
+    "Xarakatlanish rejimini tashkil kilish",
+    "Ishtaxani pasaytiruvchi preparatlar berish",
+    "Muntazam ravishda toza xavoda bo'lish"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ovqat ratsioniga kaysi maxsulot ko'shilganda seliakiyaning klinik belgilari rivojlanadi?",
+   "options": [
+    "Maniy bo'tkasi",
+    "Bug'doy unli aralashma",
+    "Suli (ovsyanka bo'tkasi)",
+    "Moslashtirilgan sutli aralashmalar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda kaysi gelmintlar ko'prok uchraydi?",
+   "options": [
+    "Gijja (ostritsa)",
+    "Askaridalar",
+    "Pakana gijja (karlikoviy sepen)",
+    "Vlasoglav"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Istisnosiz ona sutida bo'lgan bolada allergiya holati sezilsa qanday tavsiya berasiz?",
+   "options": [
+    "Ona suti bilan emizishni davom ettirib, ona ovkatiga o'zgartirish kiritish kerak",
+    "Sun'iy ovkatlantirishga o'tish kerak",
+    "Kisman ona suti bilan emizib, sun'iy aralashmalar bera boshlash.",
+    "Emizishni to'xtatib, gipoallergen sun'iy aralashmalarni berish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolada o'tkir diareya fonida o'rtacha suvsizlanish bo'lsa, 4 soatda kancha oral regidratatsiya vositasi belgilanadi:",
+   "options": [
+    "75 ml/kg",
+    "50 ml/kg",
+    "100 ml/kg",
+    "150 ml/kg"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Seliakiya kasalligining tipik shakliga xos emas:",
+   "options": [
+    "doimiy oshqozon-ichak disfunktsiyalari",
+    "surunkali ovqatlanish buzilishi",
+    "surunkali bronx-o'pka kasalliklar",
+    "raxitsimon deformatsiyalar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Davolovchi aralashmalar oziqlanish buzilishining qaysi darajasida qo'llaniladi?",
+   "options": [
+    "I darajali BEN",
+    "II darajali BEN",
+    "III darajali BEN",
+    "Marazm"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Mukovistsidoz mavjudligini tasdiqlovchi ishonchli fakt:",
+   "options": [
+    "mukovistsidozning ijobiy oilaviy tarixi",
+    "baraban tayog'chalarining mavjudligi",
+    "Cl ionlarining terdagi konwentratsiyasi 70 mek/ml dan ortiq",
+    "rentgenda bronxoektazni aniqlash"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali enterokolit uchun qanday parhez buyuriladi?",
+   "options": [
+    "4-sonli parhez jadvali",
+    "1-sonli parhez jadvali",
+    "2-sonli parhez stoli",
+    "3-sonli parhez jadvali"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "OEE 2 darajasida asosiy davo usuli?",
+   "options": [
+    "Davolovchi ozuqa",
+    "Vitaminlar",
+    "Ferment",
+    "Parenteral ovqatlantirish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Sigir suti oqsilini xazm qilolmaganda qanday mahsulotlar tavsiya qilinadi?",
+   "options": [
+    "Ona suti, zardob oqsili gidrolizatiga asoslangan aralashmalar",
+    "Kefir, biolakt, Orom.",
+    "Bazaviy sun'iy aralashmalar.",
+    "Sut va tvorogni ko'paytirish."
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Epigastral soxada pulsatsiyaning ko'rinishi quyidagi xollarda uchraydi:",
+   "options": [
+    "chap qorincha gipertrofiyasi",
+    "o'ng qorincha gipertrofiyasi",
+    "jigar pulsatsiyasi",
+    "aorta pulsatsiyasi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda laktaza yetishmovchiligining asosiy belgilari:",
+   "options": [
+    "ichak disfunktsiyasi, ichak kolikasi, bezovtalik",
+    "charchoq, meteorizm.",
+    "axlatining suyuq, ko'piksimon, ko'p kelishi, ichak sanchiqlari",
+    "diareya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ichak lyambliozida qanday dorilar ishlatiladi?",
+   "options": [
+    "antibiotiklar, biopreperetlar",
+    "sulfanilamidlar, Antibiotiklar",
+    "furazolidon, makmiror, Zentel",
+    "biopreperetlar, Sulfanilamidlar, Antibiotiklar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Mukovistsidoz (mmol/l) uchun xarakterli xloridlari darajasini belgilang:",
+   "options": [
+    "60 dan ortiq",
+    "20-30",
+    "30-40",
+    "40-60"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolada uretra strikturasi sababli surunkali ikkilamchi piyelonefrit bo'lsa, sizning davolash taktikangiz qanday bo'ladi?",
+   "options": [
+    "Antibakterial terapiya",
+    "Spazmolitik preparatlari",
+    "Immunomodulyatorlar",
+    "Operativ davo uchun planli ravishda ixtisoslashgan bo'limga o'tkazish"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Siydik yo'li infektsiyasi uchun kaysi belgi xos emas?",
+   "options": [
+    "Tez-tez va og'riqli siydik chikarish",
+    "Umumiy axvolning sezilarli yomonlashuvi",
+    "Tashki jinsiy organlarda maxalliy yalliglanish belgilari",
+    "Leykotsituriya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Nordon-peshob diatezida peshobda aniqlanishi mumkin:",
+   "options": [
+    "Urat tuzlari miqdorining ko'payishi",
+    "Yuqori udelniy ves",
+    "Limfacitoz",
+    "Leykotsitlar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Poliklinikada irsiy nefritli bolalarni qo'shimcha qaysi tekshiruvlardan o'tkaziladi?",
+   "options": [
+    "Peshobning klinik analizi",
+    "Nechiporenko sinamasi",
+    "Qonning klinik taxlili",
+    "Barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O'tkir piyelonefritning asosiy klinik sindromlari qanday?",
+   "options": [
+    "Og'riqli sindrom, dizurik buzilishlar sindromi, mochevoy sindrom: leykotsituriya, bakteriuriya",
+    "Shish sindromi, mochevoy sindrom – proteinuriya, gematuriya",
+    "Og'riqli sindrom, mochevoy sindrom –gipostenuriya, proteinuriya, oliguriya, qovuq usti soxasida og'riq, dizurik simptomlar, xira+shilliq aralash peshob",
+    "Gematuriya, og'riq sindromi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Birlamchi nefrotik sindrom quyidagilar xosdir:",
+   "options": [
+    "Oilaviy nefrotik sindrom",
+    "Birlamchi surunkali glomerulonefritning nefrotik shakli",
+    "Genuin nefrotik sindromi",
+    "Barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Sistit diagnostikasi uchun yeng muhim paraklinik tekshiruvlar qanday?",
+   "options": [
+    "Uroleykogramma, bakteriuriya darajasini aniqlash",
+    "3-chashka namunasi",
+    "Sistoskopiya",
+    "Barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Sistit uchun ishlatiladigan diuretik o'tlarni nomlang:",
+   "options": [
+    "Mojjevelnik",
+    "Petrushka",
+    "Polevoy xvosh",
+    "Barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Interstitsial nefritning siydik sindromida quyidagilar namoyon bo'ladi:",
+   "options": [
+    "Mikroeritrotsituriya",
+    "Izolyatsiya qilingan proteinuriya",
+    "Mikroeritrotsituriya proteinuriya bilan birga",
+    "Barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ona nefrotik sindromli bolani olib keldi. Bolada kasallikning o'tkir davri. Davolash Tamoyillarini tushuntiring:",
+   "options": [
+    "Yotoq rejim, bel soxasini issiq tutish, diuretiklar",
+    "Umumiy rejim, uglevodlarni cheklash",
+    "Suyuqlikni cheklash bilan tuzsiz diyeta",
+    "Ko'p suyuqlik ichish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ikki yoshli bola 2 hafta oldin AKDS bilan emlangan. Bir kechada butun tanasida shish paydo bo'ldi. Anasarka. Kam siydik chiqargan. Taxminiy tashxis:",
+   "options": [
+    "Lipoid nefrozning nefrotik sindromi",
+    "Postvaktsinal asorat",
+    "Postvaktsinal reaktsiya",
+    "O'tkir glomerulonefrit"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Anamnezdagi qaysi belgilar bolada «mochekisliy diatez» rivojlanish extimollarini ko'rsatadi?",
+   "options": [
+    "Qarindoshlarida bronxial astma kuzatilsa",
+    "Tug'ilgan vaznining kattaligi",
+    "Oilada podagra, siydiy tosh kasalligi keng tarkalganligi",
+    "Xomiladorlikda onada virus infektsiyasi bo'lganligi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali ikkilamchi piyelonefritda qo'llaniladigan uzilishli antibiotik terapiyaning davomiyligini aniklang.",
+   "options": [
+    "1 oy",
+    "6 oy",
+    "8 oy",
+    "10 oy"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O'tkir ikkilamchi piyelonefritda qo'llaniladigan uzluksiz antibiotik terapiyaning davomiyligini aniklang.",
+   "options": [
+    "1 oy",
+    "6 oy",
+    "8 oy",
+    "2 xafta"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Irsiy nefritda dispanser nazorat davomiyligini aniklang:",
+   "options": [
+    "1 yil",
+    "2 yil",
+    "3yil",
+    "Xisobdan o'chirilmaydi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Irsiy nefritli bolani maxalliy pediatr necha marotaba ko'rikdan o'tkazadi?",
+   "options": [
+    "Xaftada 1 marta",
+    "Bir oyda 1 marta",
+    "3 oyda 1 marta",
+    "6 oyda 1 marta"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Metabolik atsidozni korrektsiyasida qo'llaniladi:",
+   "options": [
+    "4%li natriy bikarbonat eritmasi",
+    "5%li glyukoza eritmasi",
+    "0,9%li Na xlor eritmasi",
+    "20%li glyukoza"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Mochekisliy diatezda peshobda nimalar aniqlanadi:",
+   "options": [
+    "Uratlar mikdorini oshishi.",
+    "Udelniy ves (nisbiy og'irligini. yuqori bo'lishi)",
+    "Nisbiy og'irligini. yukori bo'lishi.",
+    "Makrogematuriya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Nefrotik sindromning o'tkir davrida bolaga bir kunlik suyuqlikning kancha kismini berish mumkin:",
+   "options": [
+    "100-150 ml/kg xisobida",
+    "oldingi kundagi diurez + 15 ml/kg xisobida",
+    "bir kunda 2 litrgacha",
+    "200 ml/kg xisobida"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "1 yoshgacha bo'lgan bolalarni yemlashda vaktsina qo'llanilmaydi:",
+   "options": [
+    "XIB",
+    "VGV",
+    "BTSJ",
+    "KPK"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Poliomiyelitga qarshi yemlash bolaga berilishi kerak:",
+   "options": [
+    "Ovqatdan 3 soat oldin",
+    "Ovqatdan 1 soat oldin",
+    "Ovqat paytida",
+    "Ertalab och qoringa"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qizamiq, qizilcha, epid.parotitga qarshi yemlashdan keyin reaktsiyalarni kutish mumkin:",
+   "options": [
+    "48-72soatdan keyin.",
+    "4-12 kundan boshlab",
+    "2-3 haftadan boshlab",
+    "1 oydan keyin"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "AKDS vaktsinasi bilan yemlashga qarshi ko'rsatmalar:",
+   "options": [
+    "asab tizimining progressiv kasalliklari",
+    "perinatal entsefalopatiya",
+    "erta tug'ilish",
+    "surunkali kasalliklar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Yemlashdan keyingi asoratlarni rivojlanishining sababi:",
+   "options": [
+    "antigistaminlarni qo'llash",
+    "tananing reaktivligining o'zgarishi",
+    "monovaktsinani kiritish",
+    "bir necha vaktsinalarni birga yuvorish"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Barcha vaktsinalarni qo'llash uchun mutloq karshilik:",
+   "options": [
+    "vaktsinaning dastlabki yoki takroriy qo'llanilishiga kuchli reaktsiya",
+    "surunkali kasalliklar",
+    "ikkilamchi immunitet tanqisligi sharoitlari",
+    "saratonlar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Xamirturushga alergiya bo'lgan bolaga qaysi vaktsina mumkin emas:",
+   "options": [
+    "qizamiq",
+    "pnevmokokk",
+    "gepatit B ga qarshi rekombinant",
+    "difteriya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qizamiqqa qarshi yemlashdan keyingi immunitetni shakllantirishni tekshirish usuli:",
+   "options": [
+    "serologik",
+    "virusologik",
+    "allergologik",
+    "molekulyar genetik"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Aminoglikozidlarga alergiya bo'lgan bolaga qaysi vaktsina mumkin emas:",
+   "options": [
+    "qizamiq",
+    "pnevmokokk",
+    "gepatit V ga qarshi rekombinant",
+    "difteriya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Yemlashdan keyingi asorat tashxisi qo'yilganda yoki unga shubha tug'ilganda, tibbiyot xodimi darhol:",
+   "options": [
+    "tibbiy tashkilot rahbariga xabar beradi",
+    "sanitariya-epidemiologiya xizmati rahbariga xabar beradi",
+    "emlangan odamni ish yoki o'qish joyida xabardor qiladi",
+    "emlanganlarning qarindoshlariga xabar beradi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Aholida jamoaviy immunitetning keskinligini baholash amalga oshiriladi:",
+   "options": [
+    "har yili",
+    "oylik",
+    "har uch yilda bir marta",
+    "har ikki yilda bir marta"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Kataral sindromlar ko'rinishidagi postvaktsinal reaktsiyalar qays vaktsinadan keyin rivojlanishi mumkin:",
+   "options": [
+    "qizamiqqa qarshi emlash",
+    "poliomiyelitga qarshi emlash",
+    "BTSJ vaktsinasi",
+    "VPCh qarshi emlash"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "AKDS vaktsinasi kiritilgandan bir oy o'tgach rivojlangan entsefalit:",
+   "options": [
+    "emlashdan keyingi davrda preparatni qo'llash bilan bog'liq bo'lmagan noxush hodisa",
+    "preparatni qo'llash uchun emlashdan keyingi asorat",
+    "preparatni qo'llash bilan bog'liq emlashdan keyingi davrning salbiy hodisasi",
+    "qattiq zo'ravonlikning emlashdan keyingi reaktsiyasi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Emlashdan keyin vaktsinaning in'ektsiya joyida diametri 4 mm bo'lgan giperemiya sodir bo'ldi, bu quyidagicha qaralishi mumkin:",
+   "options": [
+    "mahalliy postvaktsinal reaktsiya",
+    "umumiy postvaktsinal reaktsiya",
+    "postvaktsinal asorat",
+    "allergik reaktsiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Emlashdan 2 soat o'tgach, bolaning harorati 37,5 C ga ko'tarildi, bu quyidagicha qaralishi mumkin:",
+   "options": [
+    "emlashdan keyingi umumiy reaktsiya",
+    "emlashdan keyingi asorat",
+    "interkurrent kasallikni ilova",
+    "emlashdan keyingi mahalliy reaktsiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Emlashdan 4 hafta o'tgach BTSJ vaktsinasi in'ektsiya joyida bolada \"sovuq\" abtsess qayd etilgan:",
+   "options": [
+    "vaktsina yuborish texnikasini buzilishi",
+    "vaktsinani nurda saqlash",
+    "vaktsinani xona haroratida saqlash",
+    "vaktsinani boshqa vaktsinalar bilan bir vaqtda yuborish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ichak ta'sirlanish sindromi tashxislash uchun quyidagi turdagi tadqiqotlarni o'tkazish kerak",
+   "options": [
+    "Gijja tuxumiga najas taxlili",
+    "Umumiy qon taxlili",
+    "Irrigografiya",
+    "Endoskopiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ichakning ta'sirlanish sindromidan kelib chiqqan ich qotishi uchun tavsiya etiladi",
+   "options": [
+    "o'simlik tolasini iste'mol qilish",
+    "yangi meva va sabzavotlarni cheklash",
+    "suyuqlik iste'molini cheklash",
+    "yog'larni cheklash"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Diareya ustun bo'lgan ichakning tez ta'sirlanish sindromi uchun tavsiya etiladi",
+   "options": [
+    "oziq-ovqat ratsionda o'simlik xun (klechatka) tolasini iste'mol qilish",
+    "oziq-ovqat tarkibidagi yog' mikdorini ko'payishi",
+    "suyuqlik iste'molini ko'paytirish",
+    "yangi meva va sabzavotlarni cheklash"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "4 oylik qiz bola, ona suti bilan boqilmoqda. Jismoniy rivojlanishda ortda qolmoqda. 2 oylik paytidan boshlab ovqat ratsioniga meva sharbatlari kiritilgandan so'ng, najasning ko'payishi, qusish, meteorizm kuzatilgan. Sizning taxminingiz qanday?",
+   "options": [
+    "birlamchi disaxaridaza etishmovchiligi",
+    "Mukovistsidoz ichak shakli",
+    "seliakiya",
+    "birlamchi ekssudativ enteropatiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Seliakiyada ingichka ichak shilliq qavatining biopsiyasi natijasi qanday baxolanadi?",
+   "options": [
+    "shilliq qavat atrofiyasi",
+    "donador shilliq qavat",
+    "shilliq qavatining giperplaziyasi",
+    "yuzaki yara va eroziyalar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Seliakiya kasalligini qanday kasalliklar bilan farqlash kerak",
+   "options": [
+    "Kron kasalligi",
+    "Laktaza yetishmovchiligi",
+    "Nomatlub yarali kolit sindromi",
+    "Disbakterioz"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oshqozon-ichak shilliq qavatining kimyoviy himoyasi uchun kaysi ozukalarni ovqat ratsiondan chiqarib tashlash tavsiya etiladi?",
+   "options": [
+    "Ziravorlar va ziravorlar",
+    "Organik kislotalar",
+    "Efir moylari",
+    "Yuqorida aytilganlarning barchasi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oshqozon-ichak traktining shilliq qavatining mexanik zararlantiruvchi ozuqa nima xisoblanadi?",
+   "options": [
+    "Tolali maxsulotlar",
+    "Hayvonot mahsulotlarining biriktiruvchi to'qimasi",
+    "Parchalanmagan oziq-ovqat",
+    "Yuqorida aytilganlarning barchasi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Funktsional oshqozon kasalliklarini davolashning umumiy tamoyillariga quyidagilar kiradi",
+   "options": [
+    "ovqatlanish tartibiga rioya qilib, oz-ozdan tez tez iste'mol qilish",
+    "psixoterapevtik davolash",
+    "fizioterapevtik davolash",
+    "yuqorida aytilganlarning barchasi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "14 yoshli bola. 3 yildan beri kasal. Vaqti-vaqti bilan qorin og'rig'i, ko'ngil aynishi, yog'li ovqatdan iste'mol qilgandag so'ng qusish bezovta qiladi. So'nggi bir bor yog'li ovqatni ko'p miqdorda iste'mol qilgandan so'ng, bemorda kamarsimon og'riq, qusish, qon aralashmasisiz ich ketishi kuztildi. Ob'ektiv ko'rikda: piloroduodenal soxada qorinni palpatsiya qilish paytidagi og'riq. Kacha, Meyo-Robson simptomlaring ijobiy ekanligi aniqlandi. Najas shilimshiq, yog'li. Umumiy qon taxlilida – neytrofilez, leykotsitoz, Eritrotsitlar cho'kishi tezligini oshishi kuzatilgan. Qon biokimyo taxlilda esa -amilazaning ko'tarilishi aniqlandi. Extimol qilingan tashxisni ko'rsating:",
+   "options": [
+    "oshqozon yara kasalligi, zo'riqish davri",
+    "o't qopi diskineziyasi",
+    "surunkali xoletsistit, zo'riqish davri",
+    "surunkali pankreatit, zo'riqish davri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Birinchi bo'lib qaysi qo'shimcha ovqat (prikorm) berish tavsiya etiladi?",
+   "options": [
+    "Bo'tqa (kasha)",
+    "Meva, sabzavotli pyure",
+    "Sharbat",
+    "Mevali pyure"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bir yoshgacha bola vazni necha kg qo'shadi?",
+   "options": [
+    "3-4 kg",
+    "5-6 kg",
+    "7-8 kg",
+    "10 kg"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Sun'iy ovqatlanishdagi bolaga qanday mikdorda suyuqlik zarur (ml)?",
+   "options": [
+    "20-30 ml",
+    "40-50 ml",
+    "80-100 ml",
+    "150 ml"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda vitamin S yetishmaganda qanday alomatlar va belgilar kuzatiladi?",
+   "options": [
+    "Kasallikka moyillik ortadi, xolsizlik, tez-tez charchashlik, burun va milklar qonashi",
+    "Oshqozon-ichak faoliyatining buzilishi, muskullarda og'riq paydo bo'lishi",
+    "Markaziy nerv sistemasi faoliyatining buzilishi, dermatitlar",
+    "Raxit va kamkonlik belgilari"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Spazmofiliya qaysi preparatlar bilan davolanadi?",
+   "options": [
+    "Kaltsiy, sudorogaga qarshi preparatlari",
+    "Adrenalin",
+    "vitaminlar",
+    "Gormoni"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qonda leykotsitar formulaning ikkinchi perekrest vaqti:",
+   "options": [
+    "6-8 oy -1 yosh",
+    "4-5 yosh",
+    "6-7 yosh",
+    "10 yosh"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Fosforning qon zardobidagi o'rtacha miqdori (mol/l):",
+   "options": [
+    "0,5-0,9",
+    "1,0-1,6",
+    "1,6-2,0",
+    "2,0-2,5"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bola tug'ilgandagi uzunligini qaysi yoshda ikki baravar ko'paytiradi?",
+   "options": [
+    "2 yoshda",
+    "4 yoshda",
+    "6 shda",
+    "1 yoshda"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ona 2 yoshli bolaning najasining suyuq kelishi haqida shikoyatlar bilan shifokorga bordi, vazn yo'qotish, ko'p terlash qayd etildi, najasi yopishqoq, yog'li. Tashxisi va ovqatlanishi qanday bo'ladi?",
+   "options": [
+    "Mukovistsidozning ichak shakli. Ovqat ratsionida xayvon yog'lari va uglevodlarni cheklash",
+    "Disbioz. Ovqat ratsionida yog'larni cheklash.",
+    "Seliakiya. Glyutensiz parhez.",
+    "Laktaza yetishmovchiligi. Laktozasiz parhez"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Agar bolada o'tkir diareya fonida og'ir suvsizlanish bulsa, 6 soatda v/i qancha miqdorda suyuqlik yuboriladi:",
+   "options": [
+    "100 ml/kg",
+    "75 ml/kg",
+    "200 ml/kg",
+    "50 ml/kg"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Alimentar diareya va o'tkir ichak infektsiyasining differentsial diagnostikasida kata rol o'ynaydi:",
+   "options": [
+    "Epidemiologik anamnez",
+    "Toksikoz simptomlari, kaprogrammada leykotsitlar, eritrotsitlar va shillik ko'p mikdorda",
+    "Qonni mikrobiologik tekshiruvi natijalari",
+    "Barcha sanab o'tilganlar"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oriqcha vaznni kelib chiqish sabablari",
+   "options": [
+    "Uglevodlarni me'yoridan ortiq iste'mol qilish",
+    "Oksilni me'yoridan ortiq iste'mol kilish",
+    "Yog'larni me'yoridan ortiq iste'mol kilish",
+    "Vitaminlarni me'yoridan ortiq iste'mol kilish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Girshprung kasalligidan funktsional kabziyatni farklash uchun eng axamiyatli anamnestik ma'lumot",
+   "options": [
+    "Xaftasiga 1 marotaba defekatsiya",
+    "Faqat bulgalab kuyadigan najasi",
+    "Chaqaloqning birinchi xaftasidan ich kelishining kechikishi",
+    "To'g'ri ichakning tushishi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Jigarda noto'g'ri bilirubinni to'g'ri bilirubinga aylantiradigan ferment:",
+   "options": [
+    "Glyukuronil transferaza",
+    "Ishkoriy fosfataza",
+    "Transaminaza",
+    "Glyukuronil 6-fosfataza"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "5 yoshli bolaga surunkali enterokolit tashxisi ko'yildi. Qanday parxez stoli belgilanadi?",
+   "options": [
+    "Parxez stol № 4",
+    "Parxez stol № 1",
+    "Parxez stol № 2",
+    "Parxez stol № 3"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qanday kasalliklarda parxez ovqatlanish asosiy davolovchi usul hisoblanadi:",
+   "options": [
+    "Enzimopatiya",
+    "Yurak kasalliklari",
+    "Alimentar bog'lik kasalliklar",
+    "Endokrin kasalliklari"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oqsil-energiya yetishmovchiligi yengil darajasida ovkatlantirish qaysi vazn xisobidan amalga oshiriladi:",
+   "options": [
+    "Bo'lishi kerak bo'lgan vazn bilan",
+    "O'rtacha vazn bilan",
+    "Xisoblash amalga oshirilmaydi",
+    "Taxminiy bo'lishi kerak bo'lagn vazn bilan."
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ichak disbakteriozini davolashda qo'llaniladi:",
+   "options": [
+    "ichak antiseptiklari",
+    "probiotiklar",
+    "prebiotiklar",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Febril lixoradka – bu tana xaroratining ko'tarilishi",
+   "options": [
+    "370 S",
+    "380 S",
+    "390 S",
+    "400 S"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Birinchi yordam to'plamida bo'lishi kerak bo'lgan antigistamin preparatlar:",
+   "options": [
+    "mezaton, dopamin, norepinefrin",
+    "prednizon, deksametazon, gidrokortizon",
+    "suprastin, tavegil",
+    "salbutamol"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bemorga antibiotiklarni buyurishda teri testlarini o'tkazish kerakmi?",
+   "options": [
+    "faqat bemorning iltimosiga binoan",
+    "allergiya haqida shubha mavjud bo'lsa kerak",
+    "agar bemorda dori intolerantlik ko'rsatkichlari bo'lmasa, unda teri testlari o'tkazilmaydi",
+    "har qanday vaziyatda zarur"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Yurak-o'pka reanimatsiyasi paytida ko'krak qafasini siqish qanday chastotada amalga oshiriladi?",
+   "options": [
+    "daqiqada 30 siqilish",
+    "daqiqada 80 siqilish",
+    "daqiqada 100 -120 siqish",
+    "daqiqada 50 siqish"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Anafilaktik shokda, gemodinamik kasalliklardan tashqari, namoyon bo'lishi mumkin",
+   "options": [
+    "gastrointestinal alomatlar (qorin og'rig'i, ko'ngil aynishi, qusish, diareya)",
+    "nafas olish buzilishi",
+    "teri belgilari (urticaria va boshqa toshmalar)",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "0,1 yoshdan katta bolaga vena ichiga yuborish orqali anafilaktik shokni davolashda 12% adrenalin gidroxlorid eritmasining dozasi",
+   "options": [
+    "1,0 ml",
+    "0,3 ml",
+    "0,15 ml",
+    "0,5 ml"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Anafilaktik shok kechishi",
+   "options": [
+    "shokning ikkinchi to'lqini aloxida davrda - bir necha kun yoki soat ichida namoyon bo'lishi mumkin",
+    "retsediv bo'lishi mumkin",
+    "ikkinchi zarba to'lqini 4-8 soat ichida namoyon bo'lishi mumkin",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Agar birinchi in'ektsiya yordam bermasa, anafilaktik shokda adrenalin in'ektsiyasini qaysi vaqtdan keyin takrorlash mumkin?",
+   "options": [
+    "1 daqiqadan keyin",
+    "4 soatdan keyin",
+    "1 soatdan keyin",
+    "5 - 15 daqiqadan keyin"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Anafilaktik shokda antigistamin preparatlarni qo'llash haqida",
+   "options": [
+    "glyukokortiqoidlar bilan bir xil shpritsda qo'llaniladi",
+    "ishlatilmaydi",
+    "adrenalin yuborilgandan keyin ishlatiladi",
+    "davolashni antigistaminlar bilan boshlash kerak"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Dori allergiyasi uchun ko'rsatmalar bilan provokatsion testlar o'tkaziladi",
+   "options": [
+    "anafilaktik shok rivojlanishi bilan shoshilinch yordam ko'rsatishga tayyorlik holatida",
+    "qat'iy ko'rsatmalarga muvofiq",
+    "allergolog-immunolog tomonidan",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Tibbiy markazning qaysi xonalarida shokga qarshi birinchi yordam to'plami bo'lishi kerak?",
+   "options": [
+    "muolaja xonasida",
+    "bemorlarga dori preparatlar yuboriladigan barcha xonalarda",
+    "reanimatsiya bo'limlarida",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bemorning aytishicha, bolada analginga reaktsiya bo'lgan. Quyida sanab o'tilgan analgetiklardan qaysi biri bu bemor uchun xavf tug'dirmaydi?",
+   "options": [
+    "baralgin M",
+    "paratsetamol",
+    "baralgetas",
+    "metamizol natriy"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Shokka qarshi holat",
+   "options": [
+    "bola yonboshlab yotibdi",
+    "bola boshini ko'targan holda gorizontal yotadi",
+    "bola o'tiribdi",
+    "bola oyog'larini ko'targan holda gorizontal yotadi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bemorning dori allergiyasi haqidagi yozuv qayerda qayd qilinadi?",
+   "options": [
+    "List naznacheniyada",
+    "Krovat orqa tomonida",
+    "Navbatchilikni topshirish daftarida",
+    "Kasallik tarixining sarlavha sahifasida va list naznacheniyada"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Reflyuks gastrit quyidagicha tasniflanadi",
+   "options": [
+    "surunkali gastrit A",
+    "surunkali gastrit B",
+    "surunkali gastrit C",
+    "surunkali gastrit D"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "6 yoshdan 12 yoshgacha bo'lgan bolaga vena ichiga yuborish orqali anafilaktik shokni davolashda 0,1% adrenalin gidroxlorid eritmasining dozasi",
+   "options": [
+    "0,5 ml",
+    "1,0 ml",
+    "0,05 ml",
+    "0,3 ml"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Allergen qabul qilingan paytdan boshlab anafilaktik shok belgilari paydo bo'lishigacha qancha vaqt ketishi mumkin?",
+   "options": [
+    "30 daqiqadan ortiq emas",
+    "bir necha daqiqadan bir necha yoki undan ortiq soatgacha",
+    "bir kundan ortiq",
+    "30 daqiqadan oldin"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Shokka qrshi yordam to'plamida bo'lishi kerak bo'lgan pressor aminlar",
+   "options": [
+    "adrenalin, norepinefrin",
+    "suprastin, tavegil",
+    "salbutamol",
+    "eufillin"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Preparatni qo'llagandan keyin bemorlarni necha daqiqa kuzatish kerak?",
+   "options": [
+    "10 minut",
+    "30 minut",
+    "5 minut",
+    "Kuzatuv shart emas"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Anafilaktik shok",
+   "options": [
+    "bu o'tkir hayot uchun xavfli yuqori sezuvchanlik reaktsiyasi;",
+    "barcha muhim organlarda qon aylanish yetishmovchiligi va gipoksiyaga olib keladi;",
+    "sistolik qon bosimining 90 mm.rt.st. dan past yoki boshlang'ich darajadan 30% gacha pasayishi bilan namoyon bo'ladi;",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Anafilaktik shokni davolashda adrenalinning ta'sir qilish mexanizmi",
+   "options": [
+    "qon tomirlarining adrenoretseptorlariga ta'sir qiladi, ularning torayishiga hissa qo'shadi, qon tomir ichida bosim oshadi va qon oqimi tiklanadi",
+    "bazofillar va semiz hujayralariga ta'sir qiladi, gistaminning qon tomirlari devorlariga ta'sirini kamaytiradi",
+    "bronxlarning adrenoretseptorlarini stimullaydi va nafas yetishmovchiligini yo'q qiladi",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "6 yoshgacha bo'lgan bolaga vena ichiga yuborish orqali anafilaktik shokni davolashda 0,1% adrenalin gidroxlorid eritmasining dozasi",
+   "options": [
+    "1. 0 ml",
+    "0. 15 ml",
+    "0. 5 ml",
+    "0. 05 ml"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Perekrest allergiya",
+   "options": [
+    "burga chaqishidan allergiya",
+    "kechiktirilgan turdagi (zamedlennogo) tipallergiyaning maxsus turi",
+    "agar preparatlar o'xshash kimyoviy formulaga ega bo'lsa rivojlanadi",
+    "o'simliklar guliga allergiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Shokga qarshi birinchi yordam to'plamida bo'lishi kerak bo'lgan Steroid preparatlar",
+   "options": [
+    "mezaton, dopamin, norepinefrin",
+    "suprastin, tavegil",
+    "eufillin",
+    "prednizon, deksametazon, gidrokortizon"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Safara usuli boshlanadi",
+   "options": [
+    "boshni yon tomonga burishdan",
+    "og'zini ochishdan",
+    "boshni orqaga tashlashdan",
+    "og'iz bo'shlig'ini begona jismlardan ozod qilishdan"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Dori terapiyasi paytida anafilaktik shok xavfi ortishi ehtimolini ko'rsatadigan allergik xarakterdagi kasalliklar",
+   "options": [
+    "oziq-ovqat allergiyasi",
+    "atopik dermatit",
+    "bronxial astma",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Anafilaktik shokda adrenalindan foydalanish to'g'risidagi muxokama",
+   "options": [
+    "anafilaktik shok rivojlanishida adrenalin yuborishning eng tezkor usuli bu sonning oldilateral yuzasi o'rtasiga mushak orasiga yuborishdir",
+    "anafilaktik shok rivojlanishi bilan adrenalinni qancha erta yuborish mumkin bo'lsa, uning prognozi shunchalik yaxshi bo'ladi",
+    "anafilaktik shokda adrenalin 0,3-0,5 ml 0,1% li eritma dozasida yuboriladi",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "VSDning gipertonik turini rivojlanishida o'smirlarda qyidagi belgilar kuzatiladi:",
+   "options": [
+    "tez-tez bosh og'riqi",
+    "o'rganilgan materialni yodlash bilan bog'liq qiyinchiliklar",
+    "yotish qiyinligi",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "VSDning gipotonik turida miya qon ta'minoti yetishmovchiligining quyidagi belgilari birinchi o'ringa chiqadi:",
+   "options": [
+    "yig'loqilik, kayfiyatning tez o'zgarishi",
+    "bosh aylanishi va mushaklarning kuchsizligi",
+    "doimiy uyquchanlik va apatiya",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda vegetativ-qon tomir distoniyasi sabablari",
+   "options": [
+    "kasallikni og'ir o'tkazganligi",
+    "organizmning gormonal o'zgarishlari",
+    "ba'zi vitaminlar va minerallarning yetishmasligi, ratsional ovqatlanmaslik",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalar va o'smirlarda VSD sindromlari",
+   "options": [
+    "kardial sindrom",
+    "nevrotik sindrom",
+    "respirator sindrom",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Kardial sindrom xarakterlanadi:",
+   "options": [
+    "yurakda xurujsimon og'riq",
+    "arterial gipertenziya",
+    "arterial gipotoniya",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Nevrotik sindrom xarakterlanadi:",
+   "options": [
+    "uyquning buzilishi, charchoq va charchoq hissi",
+    "kontsentratsiya va xotira bilan bog'liq muammolar",
+    "bosh og'riqi, bosh aylanish xurujlari, orintatsiyaning buzilishi",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Respirator sindrom xarakterlanadi:",
+   "options": [
+    "davriy chuqur nafas olishda nafas qisilishi, havo yetishmasligi hissi",
+    "termoregulyatsiyaning buzilishi, titroq, sovuq qotish",
+    "muayyan iqlim omillariga yuqori sezuvchanlik (issiqlik, sovuq, tiqilish)",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda vegetativ qon tomir distoniyasi diagnostikasi va davolash pediatr nazorati ostida va quyidagi ixtisoslashgan shifokorlar ishtirokida amalga oshiriladi:",
+   "options": [
+    "nevrolog",
+    "kardiolog",
+    "endokrinolog",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "VSDni instrumental tekshiruv usullari:",
+   "options": [
+    "EKG",
+    "EEG",
+    "REG",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "VSD medikamentoz davolash:",
+   "options": [
+    "neyroprotektor; nootrop; analgetik; spazmolitik",
+    "miyada qon aylanishini stimullovchi preparatlar",
+    "qon bosmini meyorlashtiruvchi preparatlar; polivitamin kompleks",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "VSD nomedikamentoz davolash:",
+   "options": [
+    "fizioterapi seanslari",
+    "massaj",
+    "LFK",
+    "barcha javoblar to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qaysi yoshda bola bo’y uzunligi 2 marta ortadi?",
+   "options": [
+    "2 yoshida",
+    "4 yoshida",
+    "6 yoshida",
+    "1 yoshida"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda bronxiolitga xos klinik belgi:",
+   "options": [
+    "kuchli obstruktsiya sindromi",
+    "kataral xolat",
+    "perkutor tovush tumtok",
+    "rentgenogrammada O'choqli soyalar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Shifoxona ichi pnevmoniyasida qaysi kuzgatuvchi etiologik rol uynaydi? .",
+   "options": [
+    "Pnevmokokk",
+    "Polirezistent stafilokokk",
+    "Vulgar protey",
+    "Exinokokk"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Kardit sabablariga kiradi:",
+   "options": [
+    "Viruslar, Bakteriyalar",
+    "Zamburug'lar",
+    "Noaniq etiologiya",
+    "Gipoksiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Vaktsinani saqlashning harorat rejimi:",
+   "options": [
+    "+2˚S +8˚S",
+    "0˚S - +8˚S;",
+    "2˚S +6˚S;",
+    "-2˚S – 0˚S"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda surunkali kolitning zo'riqish davridan so'ng profilaktik emlashlar:",
+   "options": [
+    "1 oydan oldin emas",
+    "6 oydan oldin emas",
+    "qarshi ko'rsatma yo'q",
+    "barcha emlashlar bekor qilinadi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Gepatit V emlashga qarshi ko'rsatmalar:",
+   "options": [
+    "surunkali gepatit C",
+    "AKDSga qarshi yemlash uchun gipertermik reaktsiya",
+    "yuqumli kasallikning o'tkir bosqichi",
+    "Anemiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qaysi preparat vaktsina emas:",
+   "options": [
+    "BTSJ",
+    "AKDS",
+    "Oddiy inson immunoglobulini",
+    "Infanriks"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Barcha tirik vaktsinalarni qo'llash uchun qarshi ko'rsatmalar:",
+   "options": [
+    "birlamchi immunitet tanqisligi holati",
+    "OIV infektsiyasi",
+    "bronxial astma",
+    "asab tizimining progressiv kasalligi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qaysi biri tirik vaktsina emas:",
+   "options": [
+    "poliomiyelitga qarshi inaktiv vaktsina",
+    "poliomiyelitga qarshi oral vaktsina",
+    "qizamiqqa qarshi vaktsina",
+    "BTSJ vaktsinasi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Virusli gepatit V ga qarshi v birinchi emlash qachon amalga oshiriladi:",
+   "options": [
+    "hayotning 3-7 kunida",
+    "hayotning birinchi 24 soati",
+    "1 oy ichida",
+    "hayotning birinchi 12 soati"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Profilaktik emlashlarni qamrab olish:",
+   "options": [
+    "99 %",
+    "75 %",
+    "95 %",
+    "62 %"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qanday holatlarda ko'k yo'talga qarshi emlash amalga oshirilmaydi:",
+   "options": [
+    "1,5 yil oldin o'tkazilgan virusli gepatitning kasallik ko'rsatkichi anamnezida",
+    "suvchechak bilan kasallangan bemor bilan aloqa qilish",
+    "ilgari ko'k yo'tal o'tkazish",
+    "anamnezda 2 oy oldin appenditsit uchun operatsiyasi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Immunizatsiyaning immunologik samaradorligi baholanadi:",
+   "options": [
+    "infektsiyaning klinik kechishiga ta'siri bilan",
+    "yuqumli kasallikning oldini olish munosabati bilan xarajatlarni tejash orqali",
+    "antitellarning \"himoya\" darajasiga ega bo'lgan shaxslarning foiziga ko'ra",
+    "umuman kasallanishni kamaytirish orqali"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Rejalashtirilgan tanlab emlash amalga oshiriladi:",
+   "options": [
+    "bolalar muassasasiga hujjat olayotgan bolalar uchun",
+    "tegishli yoshga yetgan bolalar uchun",
+    "ish faoliyatining xarakteri tufayli infektsiya xavfi bo'lgan odamlar uchun",
+    "yuqumli kasalliklar o'choqlarida"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Sovuqlik zanjirning 1-darajasida jonli virusli vaktsinalarni saqlash uchun eng mos sharoit:",
+   "options": [
+    "morozil kamera (-15 – (-25) °C)",
+    "termostat",
+    "xona haroratida saqlash",
+    "maishiy muzlatgich (0 -/ +8 °C)"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Vaktsinani 18% yoki undan ko'p hollarda kiritishga kuchli va o'rtacha reaktsiyalarni qayd etishda quyidagilar zarur:",
+   "options": [
+    "emlashni bekor qiling va vaktsinalarning boshqa seriyasini oling",
+    "vaktsinani past dozada yuboring",
+    "ushbu seriyali vaktsinani joriy qilishni davom yeting",
+    "antigistaminlar fonida emlash"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "JSST tavsiyalarini hisobga olgan holda, xavf guruhlarida grippga qarshi profilaktik vaktsinalarni qamrab olish kamida _ _ _ % bo'lishi kerak:",
+   "options": [
+    "75,0",
+    "80,0",
+    "90,0",
+    "100,0"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Kollektiv immunitet kamida profilaktik emlashlar bilan aholini himoya qilishni ta'minlash uchun yetarli deb hisoblanadi_____ %:",
+   "options": [
+    "95,0",
+    "55,0",
+    "70,0",
+    "85,0"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "IgE assotsirlangan reaktsiyalarga quyidagilar kiradi:",
+   "options": [
+    "Gastrointestinal simptomlar",
+    "Eshak yemi – toshma, angio shishlar",
+    "Rinokonyuktivit, astma",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarni sut aralashmalari bilan oziqlantirish qanday oqibatlarga olib kelishi mumkin?",
+   "options": [
+    "Sigir suti oqsiliga kech sezuvchanlik",
+    "Oshqozon-ichak traktida yallig'lanishining paydo bo'lishi",
+    "Sigir suti oqsiliga erta sezuvchanlik",
+    "Diareya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Rim IV mezonlariga ko'ra, yuqoridagilardan qaysi biri funktsional ovqat hazm qilish kasalliklariga mos keladi",
+   "options": [
+    "chaqaloq ruminatsiyasi sindromi",
+    "chaqaloq disxeziyasi",
+    "chaqaloq regurgitatsiyasi",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Quyidagi alomatlardan qaysi biri organik patologiya extimolini ko'rsatadi",
+   "options": [
+    "kechasi klinik alomatlarni namoyon bo’lishi",
+    "qon aralashmasi bilan qusish",
+    "defekatsiya paytida yuzning qizarishi",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Antireflyuks aralashmalariga quyidagilar kiradi",
+   "options": [
+    "Nestogen",
+    "Nutrilon AR",
+    "Similak Komfort",
+    "Friso"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Funktsional qabziyatda medikamentoz terapiya quyidagilarni o'z ichiga oladi",
+   "options": [
+    "makrogol",
+    "laktuloza",
+    "pankreatin",
+    "smekta"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ichak sanchig'i paytida og'riqni yengillashtirish uchun quyidagilar qo'llaniladi",
+   "options": [
+    "Qorin bo'shlig'ida issiqlik",
+    "Qorinni soat yo'nalishi bo'yicha silash va qorinni massaj qilish",
+    "Tananing holatini o'zgartirish, qoringa yotqizish",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Pankreatit kasalligida qonda qaysi ko'rsatkichning miqdori oshadi",
+   "options": [
+    "amilaza",
+    "lipaza",
+    "saxaroza",
+    "glyukoza 6 fosfat"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Qorin bo'shlig'ining funktsional og'rig'i bo'lgan bemorlarda shikoyatlarning paydo bo'lishiga olib keladigan omillarni ko'rsatib o'ting",
+   "options": [
+    "antroduodenal koordinatsiyaning buzilishi",
+    "oshqozon harakatining buzilishi",
+    "oshqozon devorining retseptorlarini ushbu a'zoning cho'zilishiga sezgirligini oshishi",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ichakning tez ta'sirlanish sindromining dastlabki tashxisi qo'yilgan bemorni tekshirishda qanday instrumental tadqiqot usullari majburiy xisoblanadi?",
+   "options": [
+    "kolonoskopiya",
+    "fibroezofagogastroduodenoskopiya",
+    "qorin bo'shlig'i organlarining ultratovush tekshiruvi",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Katta yoshdagi bolalarda funktsional qabziyat uchun xavf omillarini ko'rsating.",
+   "options": [
+    "gipodinamiya",
+    "ruhiy shikastlanish yoki stress",
+    "ichak mikroflorasining buzilishi",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "3 yoshdan katta bolalarda qabziyatga xos belgilarni ko'rsating.",
+   "options": [
+    "qattiq najas",
+    "najasni 36 soatdan ko'p vaqt davomida kelmasligi",
+    "qorinning dam bo'lishi",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda ovqat hazm qilish tizimining funktsional buzilishlarini medikamentoz davolash quyidagilarni o'z ichiga oladi",
+   "options": [
+    "Prokinetiklar",
+    "Surgi vositalari",
+    "Spazmolitiklar",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda ichak harakatiga ta'sir qiluvchi ozuqalar.",
+   "options": [
+    "Sho'r taomlar",
+    "Asal, murabbo, siroplar, shirin taomlar",
+    "Sovuq ovqatlar",
+    "Meva va sabzavotlar"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Yosh bolalarda yo'g'on ichakning kattalarga nisbatan farqini ko'rsating.",
+   "options": [
+    "ko'richak yuqorida joylashgan",
+    "tushayotgan yo'g'on ichak torroq",
+    "sigmasimon ichak yuqorida joylashgan, harakatchan",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Yosh bolalarda funktsional qabziyatda foydalanish uchun tavsiya etilagan preparatlarni ko'rsating",
+   "options": [
+    "probiotik",
+    "laktuloza",
+    "morfin",
+    "bisakodil"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Agarda ona suti bilan ovqatlanayotgan 6 oylik bolada allergiya xolati sezilsa qanday tavsiya berasiz?",
+   "options": [
+    "Ona suti bilan emizishni davom ettirib, ona ovqatiga o'zgartirish kiritish kerak",
+    "Sun'iy ovqatlantirishga o'tish kerak",
+    "Qisman ona suti bilan emizib, sun'iy aralashmalar beraboshlash.",
+    "Emizishni to'xtatib, gipoallergen sun'iy aralashmalarni berish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ona bilan bog'liq oshqozon-ichak tizimining funktsional buzilishlarining sabablari",
+   "options": [
+    "akusherlik anamnezining og'irligi",
+    "emizikli onaning ovqatlanish tartibiga rioya qilmasligi",
+    "ayolning hissiy qobiliyati va oiladagi stressli muhitlar",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Yosh bolalarda ich qotishining yuzaga kelishini xavf omillari",
+   "options": [
+    "bolaning suv iste'moli yetarli emas",
+    "homiladorlik va tug'ilishdagi patologik o'zgarishlar",
+    "sut aralashmalarini noto'g'ri tayyorlash",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda xavfli xolatlarni istisno qilish uchun zarur diagnostika choralari",
+   "options": [
+    "Umumiy peshob taxlili",
+    "Umumiy qon taxlili",
+    "Axlatdagi yashirish qon taxlili",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Mukovistsidozni davolashda bular ko'rsatilmagan",
+   "options": [
+    "fermentoterapiya",
+    "antibiotiklar",
+    "mukolitiklar",
+    "gormonlar"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali gastritni yuzaga kelishining asosiy sababi",
+   "options": [
+    "oziq-ovqat allergiyalari",
+    "virusli nafas olish yo'llari infektsiyalari",
+    "ratsionda vitamin va oqsil yetishmasligi",
+    "helicobacter pylori"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali gastritning yuzaga kelishi yuzaga kelishining ning endogen sabablari quyidagilardan iborat",
+   "options": [
+    "duodeno-gastral reflyuks",
+    "helicobacter pylori",
+    "oziq-ovqat tarkibidagi vitaminlar va oqsillarning yetishmasligi",
+    "achchiq ovqatni ko'p iste'mol qilish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali gastritda og'riqlar asosan quyidagi soxalarda joylashadi",
+   "options": [
+    "kindik atrofida",
+    "epigastral soxa",
+    "o'ng qovurg'a ostida",
+    "qorinning pastki qismida"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oshqozon gipersekretsiyasini bartaraf etish uchun quyidagilar buyuriladi",
+   "options": [
+    "Antatsidlar",
+    "Antigistaminlar",
+    "Antibiotiklar",
+    "Culfanilamidlar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali gastritni sanatoriya sharoitida davolash kasallikning qaysi davrida o'tkazilinadi",
+   "options": [
+    "zo'riqish davrida",
+    "sanatoriya sharoitida davolashga qarshi ko'rsatmalar mavjud davrida",
+    "remissiya",
+    "to'liq bo'lmagan remissiya"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda oshqozon yarasida me'da shirasining nordonligi",
+   "options": [
+    "pasaygan",
+    "nolga teng",
+    "normada",
+    "ko'tarilgan"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Moynigan ritmi og'rig'i bu:",
+   "options": [
+    "ochlik-og'riq-ovqatlanish-tinchlanish",
+    "ovqatdan keyingi og'riq",
+    "og'riq oziq-ovqat bilan bog'liq emas",
+    "ovqatlanish-og'riq-ochlik-tinchlanish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Mendel simptomi musbat bo'lsa, quyidagilar uchun xosdir",
+   "options": [
+    "gastroduodenit",
+    "ezofagit",
+    "xoletsistit",
+    "oshqozon yarasi kasalligi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda o'n ikki barmoqli ichak yara kasalligida og'riq xurujlari paydo bo'lishi davri",
+   "options": [
+    "ovqatdan 15-30 daqiqa o'tgach",
+    "nonushtadan keyin",
+    "kechqurun",
+    "ovqatdan 1 soat o'tgach"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Ezafagogastroduodenoskopiya jarayonida me'da shilliq qavatida yaqqol qizarish va shish bilan birga atrofik yallig'langan va fibrin bilan qoplangan yara mavjudligi aniqlandi. Kasallikning bosqichini baholang",
+   "options": [
+    "yangi yara davri",
+    "yaraning tuzalishga o'tish davri",
+    "chandiq bosqichi",
+    "remissiya bosqichi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oshqozon yarasi kasalligini davolash uchun quyidagilardan birini tanlang",
+   "options": [
+    "no-shpa",
+    "platifillin",
+    "gastrofarm",
+    "De nol"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "13 yoshli bolada o'ng qovurg'a ostida og'riqlar, haroratning tez-tez 37,5- 38°C gacha ko'tarilishi, Merfi va Ortner simptomining ijobiy belgilari, o'rtacha leykotsitoz, eritrotsitlar cho'kishi tezligini ko'tarilishi, ultratovushda o't pufagining devorlarini qalinlashganligi mavjudligi aniqlandi. Bu kaysi xolat ga xos",
+   "options": [
+    "xoletsistit",
+    "o't qopi diskineziyasi",
+    "oshqozon yarasi kasalligi",
+    "gastrit"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O't yo'llari anomaliyasini aniqlashning aniq usuli sifatida qo'llanilinadi",
+   "options": [
+    "o'n ikki barmoqli ichakni tekshirish",
+    "ob'ektiv tadqiqot",
+    "endoskopik tekshirish",
+    "ultratovush tekshiruvi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda o't yo'llarining gipomotor diskineziyasida o'ng qovurg'a ostida qaysi xarakterdagi og'riq kuzatilinadi",
+   "options": [
+    "xurujsimon",
+    "sust",
+    "xanjarsimon",
+    "och qoringa"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalik davrida eng keng tarqalgan o't yo'llari patologiyasini ko'rsatib o'ting",
+   "options": [
+    "o't yo'llarining diskineziyasi",
+    "xoletsistit",
+    "xolangit",
+    "o't toshlari kasalligi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O't yo'llarining gipomotor diskineziyasida og'riq sindromi kaysi sabablar orqali yuzaga keladi:",
+   "options": [
+    "oddi sfinkterini yopilishi orqali",
+    "o't pufagining kattalashishi",
+    "safro tarkibining o'zgarishi",
+    "lutkens sfinkterining yopilishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Proton nasosi ingibitorlariga quyidagilar kiradi",
+   "options": [
+    "famosan",
+    "ranitidin",
+    "gastrofarm",
+    "lansoprazol"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "N2- gistamin retseptorlari blokatorlari quyidagilarni o'z ichiga oladi",
+   "options": [
+    "omeprazol",
+    "kordinoks",
+    "gastrotsepin",
+    "kvamatel"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Gastro-ezofagial reflyuks kasalligida oshqozon-ichak traktining motor- evakuator funktsiyasining normallashtirish uchun qo'llaniladi?",
+   "options": [
+    "ranitidin",
+    "A vitamini",
+    "motilium",
+    "vikalin"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali gastritda qorin og'rig'ining joylashishi kaysi bo'limda kuzatilinadi?",
+   "options": [
+    "kindik atrofida",
+    "epigastriyada",
+    "o'ng qovurg'a ostida",
+    "qorinning pastki qismida"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Epigastral sohada palpatsiya paytida kuchli bo'lmagan og'riq quyidagi hollarda kuzatiladi",
+   "options": [
+    "funktsional oshqozon buzilishi",
+    "xoletsistit",
+    "pankreatit",
+    "surunkali gastrit"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "12 yoshli bemorni ikki hafta davomida epigastral soxasidagi och qoringa va tungi og'riqlar bezovta qiladi. So'nggi 2-3 kun ichida esa bemor epigastral soxasidagi og'riqlarga shikoyat qila boshladi, ogriqlar ovqatdan so'ng kamayadi va 1,5-2 soatdan keyin yana davom etadi, meteorizm, shilimshiq najas, ishtahaning pasayishi, ozgina vazn yo'qotishi xam kuzatilinadi. Tekshiruvda: til soxasi qalin oq-sariq karash bilan qoplangan, epigastral soxada mushaklarning taranglashishi va palpatsiyada sezgirligi oshganligi, qorin damligi aniqlandi. Sizning dastlabki tashxisingiz qanday?",
+   "options": [
+    "surunkali pankreatit",
+    "surunkali xoletsistit",
+    "o't pufagi diskineziyasi",
+    "oshqozon yarasi kasalligi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "12 yoshli bemorni ikki hafta davomida epigastral soxasidagi och qoringa va tungi og'riqlar bezovta qiladi. So'nggi 2-3 kun ichida esa bemor epigastral soxasidagi og'riqlarga shikoyat qila boshladi, ogriqlar ovqatdan so'ng kamayadi va 1,5-2 soatdan keyin yana davom etadi, meteorizm, shilimshiq najas, ishtahaning pasayishi, ozgina vazn yo'qotishi xam kuzatilinadi. Tekshiruvda: til soxasi qalin oq-sariq karash bilan qoplangan, epigastral soxada mushaklarning taranglashishi va palpatsiyada sezgirligi oshganligi, qorin damligi aniqlandi. Tashxisni tasdiqlash uchun qanday tekshiruvlar o'tkazilishi lozim?",
+   "options": [
+    "rektoromanoskopiya",
+    "qorin bo'shlig'i organlarining ultratovush tekshiruvi",
+    "xolettsistografiya",
+    "ezofagogastroduodenoskopiya"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "12 yoshli bolaga O'n ikki barmoqli ichak yarasi, \"yangi yara\" bosqichida tashxisi quyilgan. Davolash taktikasini aniqlash uchun qanday tekshiruvlar o'tkazish kerak?",
+   "options": [
+    "helicobacter pyloriga tahlil o'tkazish",
+    "laktoza metabolizmining genetikasini o'rganish",
+    "siydik taxlilida diastaza tekshiruvi",
+    "gliadinga qarshi antitanachalarni tekshirish"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Sovuq bo'lsa, pichan isitmasi bo'lgan bemorga:",
+   "options": [
+    "paratsetamol",
+    "aspirin",
+    "asal",
+    "analgin"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oziq-ovqat allergiyasining namoyon bo'lishi quyidagilarga bog'liq:",
+   "options": [
+    "Mahsulot sifatidan",
+    "Mahsulotlar birikmasidan",
+    "Ovqat pishirish turidan",
+    "Mahsulot miqdoridan"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Eng kuchli oziq-ovqat allergenlari:",
+   "options": [
+    "Baliq",
+    "Sigir suti",
+    "Tovuq tuxumlari",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oziq-ovqat allergiyasining rivojlanishiga quyidagi endogen omillar sabab bo'ladi:",
+   "options": [
+    "Atopiyaga irsiy moyillik",
+    "Ovqat hazm qilish traktining ferment tizimlarining etishmovchiligi",
+    "Ovqat hazm qilish tizimining surunkali kasalliklari",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oziq-ovqat allergiyasining rivojlanishi uchun xavf guruhiga quyidagilar kiradi:",
+   "options": [
+    "Jigar kasalligi bilan",
+    "Oshqozon-ichak traktining surunkali yallig'lanish kasalliklari bilan",
+    "Atopiyaning og'ir tarixi bilan",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Sekretor immunoglobulin A:",
+   "options": [
+    "Oziq-ovqat allergenlariga darhol allergik reaktsiyaning rivojlanishiga sabab bo'ladi",
+    "Oziq-ovqat allergenlariga kechikkan allergik reaktsiyaning rivojlanishini keltirib chiqaradi",
+    "Oziq-ovqat allergenlariga immun kompleks reaktsiyasini rivojlanishini keltirib chiqaradi",
+    "Oziq-ovqat allergenlariga allergik reaktsiyaning rivojlanishini oldini oladi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oziq-ovqat allergiyasining eng tipik klinik ko'rinishlari:",
+   "options": [
+    "Oshqozon-ichak tutilishi va teri ko'rinishlari",
+    "Ovqat hazm qilish va yurak-qon tomir kasalliklari",
+    "Terining namoyon bo'lishi va migrenga o'xshash bosh og'rig'i",
+    "Uchta klinik sindrom: oshqozon-ichak, teri va nafas olish"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oziq-ovqat allergiyasining oldini olish quyidagilardan iborat:",
+   "options": [
+    "Bolalarni uzoq muddat emizishda",
+    "Hipoalerjenik parhezlardan foydalanishda",
+    "Oshqozon-ichak trakti kasalliklarini tuzatishda",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Odatda emlash jarayoni quyidagilar bilan tavsiflanadi:",
+   "options": [
+    "Surunkali infektsiyalarning kuchayishi",
+    "Interkurrent infektsiyaning kirishi",
+    "Urticaria ko'rinishi",
+    "Qisqa muddatli bir xil reaktsiyalarning paydo bo'lishi, jonli vaktsinalar uchun"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "BCG vaktsinasiga allergik reaktsiyalar quyidagilardan iborat:",
+   "options": [
+    "Mahalliy reaksiyaning kuchayishi",
+    "Urticaria, Kvinke shishishi",
+    "Mintaqaviy limfadenit",
+    "Kvinke shishishi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Tegishli DPT preparatiga toksik xususiyatlar eng xosdir:",
+   "options": [
+    "Difteriya toksoidi",
+    "Qoqshol toksoidi",
+    "Vaksinaning ko'k yo'tal komponenti",
+    "Ko'kyo'tal komponentidan tashqari hammasi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolaning anamnezida surunkali chap tomonlama pastki bo'lak pnevmoniyasi bor. Kontrastli bronxografiya o'tkazilganda o'pkaning zararlangan qismi kontrast bilan to'lmaganligi, atrofdagi qismlari kontrast bilan to'lganligi qayd qilinadi. Eng ehtimolli tashxis:",
+   "options": [
+    "O’pka sekvestrlari",
+    "Bronxolegochnaya displaziya",
+    "Mukovistsedoz",
+    "Bronxogennaya kista"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "8 yoshli bolada surunkali nonspesifik pnevmoniya tashxisi quyilgan. Rentgenogrammada ko'krak qafasi suvrati kuchaygan, diafragma pastga tushgan. Ko'krak qafasi bochkasimon, to'sh suyagi turtib turibdi. qovurg'alar aro bo'shliq kengaygan, ko'krakda qutisimon tovush, quruq xushtaksimon xirillashlar, xannsirash. Aniqlang:",
+   "options": [
+    "o'pka emfizemasi",
+    "atelektaz",
+    "abstsess",
+    "corpulmonale"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "1-darajali revmatoid artritning bo'g'im shaklida qanday dorilar qo'llaniladi:",
+   "options": [
+    "NPVS",
+    "sitostatiklar",
+    "glyukokortiqoidlar",
+    "immunodepressantlar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "VSDning gipertonik turini davolash:",
+   "options": [
+    "gipotenziv terapiya",
+    "trankvilizatorlar",
+    "vitaminlar",
+    "sedativ preparatlar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Katta yoshdagi bolalarda revmatik karditga xos shikoyatlar:",
+   "options": [
+    "Tez charchash, yurak soxasida og'riq, xansirash, yurak urib ketishi",
+    "Kamxollik, ishtaxasining pastligi, tez charchash",
+    "Bo'g'imlarda og'riq, bosh og'riqi, ozib ketish",
+    "Yuzida va tanasida shish, astsit"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Sintetik xoleretiklarga qaysi dori vositalari kiradi?",
+   "options": [
+    "alloxol",
+    "xologon",
+    "xolenzim",
+    "oksafenamid"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalardagi duodenitning yetakchi belgilari",
+   "options": [
+    "och qoringa og'riq",
+    "Diareya",
+    "Qabziyat",
+    "Oshqozon dispepsiyasi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Xoletsistit uchun antibakterial preparat sifatida ishlatilinadi",
+   "options": [
+    "nitrofuranlar",
+    "antigistaminlar",
+    "analgetiklar",
+    "antiagregantlar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Xoleretik ta'sir ko'rsatadi",
+   "options": [
+    "atsetilsalitsil kislota",
+    "sorbitol",
+    "geparin",
+    "dipiridamol"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O'tkir pankreatit kuyidagi klinik belgilar bilan boshlanadi",
+   "options": [
+    "bel og'rig'i",
+    "haroratning pasayishi bilan",
+    "sovuq, konvulsiv tayyorgarlik",
+    "piloroduodenal zonada simillovchi og'riqlar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Oshqozon osti bezi dumining proyektsiyasi sohasidagi og'riq nuqtasi qaysi simptom deb ataladi",
+   "options": [
+    "Ortner tomonidan",
+    "Meyo-Robson tomonidan",
+    "Kera",
+    "Dejardena"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O'tkir pankreatitda kasallikning dastlabki ikki kunida qaysi parhez tavsiya etiladi?",
+   "options": [
+    "sut mahsulotlari",
+    "o'simlik ovqatlari",
+    "ochlik",
+    "sho'rvalar"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Pankreatitning o'tkir davrida qo'llanilishi mumkin bo'lgan dori vositalarini tanlang",
+   "options": [
+    "strofantin, digoksin",
+    "kontrikal",
+    "pankreatin",
+    "fitoterapiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Pankreatitni davolashda uchun ferment yetishmovchiligini qoplash uchun tavsiya qilinadi",
+   "options": [
+    "oshqozon shirasi",
+    "pepsin",
+    "gastrin",
+    "pankreatin"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Surunkali me'da ichak tizimi kasalligini kelib chiqishida Xelikobakter piloro infektsiyasining o'rni qaysi kasallikda isbotlangan",
+   "options": [
+    "surunkali ezofagit",
+    "surunkali gastrit",
+    "qo'zg'aluvchan ichak sindromi",
+    "surunkali xoletsistit"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Helicobacter pylori yashaydigan eng maqbul joy, bu",
+   "options": [
+    "Oshqozonning antral qismi",
+    "Oshqozon osti bezi",
+    "Ingichka ichak",
+    "O't pufagi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda oshqozon yarasining asoratlaridan biri quyidagilar bo'lishi mumkin",
+   "options": [
+    "xoletsistit",
+    "yaraning teshilishi",
+    "gepatosplenomegaliya",
+    "yaqqol anemiya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda Helicobacter pylori infektsiyasi bilan assotsiatsiyadagi surunkali gastroduodenitda eradikatsiyaning eng samarali usuli bu:",
+   "options": [
+    "bitta komponentli",
+    "simptomatik",
+    "ikki komponentli",
+    "uch komponentli"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bolalarda Helicobacter pylori infektsiyasining tashxislash uchun \"oltin standart\" deb qabul qilingan diagnostika usulini ko'rsating",
+   "options": [
+    "ureazani aniqlash",
+    "biokimyoviy",
+    "gistologik",
+    "bakteriologik"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Davolashdan so'ng Helicobacter pylori infektsiyasini bartaraf etilganligini nazorat qilishning eng maqbul vaqtini ko'rsating",
+   "options": [
+    "antibiotik terapiyasi kursini tugatgandan so'ng darhol",
+    "4-6 hafta ichida",
+    "1-2 hafta ichida",
+    "6 oydan keyin"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Proton nasos ingibitorlariga kaysi dori vositalari kiradi?",
+   "options": [
+    "roksatidin",
+    "gastrotsepin",
+    "famotidin",
+    "pantoprozol"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O't yo'llari disfunktsiyasining shakllanishininng asosiy patogenetik omilini ko'rsating:",
+   "options": [
+    "noto'g'ri ovqatlanish tartibi",
+    "gormonal muvozanatni buzilishi",
+    "vegetonevroz",
+    "nasl"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "O't pufagining qisqarishida ishtirok etuvchi gormonni ko'rsating:",
+   "options": [
+    "xoletsistokinin",
+    "glyukagon",
+    "kaltsitonin",
+    "pankreozimin"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Quyidagi semptomokompleks: o'ng qovurg'a ostidagi xurujsimon og'riq, o'ng yelka va kurak soxasiga tarqaladi, kaysi xolat uchun xosdir:",
+   "options": [
+    "o't pufagi giperkinezi va sfinkter gipertenziyasi",
+    "o't pufagi giperkinezi va sfinkter gipotenziyasi",
+    "o't pufagi gipokineziyasi va sfinkter gipotenziyasi",
+    "o't pufagi gipokineziyasi va sfinkter gipertenziyasi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Doimiy ravishda intensiv va kuchli bo'lmagan, o'ng qovurg'a ostidagi og'riq, vakti vaqti bilan ushbu soxada og'irlik va tortish hissi mavjud. Yuqorida ko'rsatib o'tilgan ushbu og'riq sindromi qaysi xolat uchun mos keladi",
+   "options": [
+    "o't pufagi giperkinezi va sfinkter gipertenziyasi",
+    "o't pufagi giperkinezi va sfinkter gipotenziyasi",
+    "o't pufagi gipokineziyasi va sfinkter gipotenziyasi",
+    "o't pufagi gipokineziyasi va sfinkter gipertenziyasi"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Immunitet tizimini baholash quyidagi shartlarni o'z ichiga oladi:",
+   "options": [
+    "B-tizim immuniteti",
+    "T-tizim immuniteti",
+    "fagotsitoz va komplement tizimlari",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Gumoral immunitetni baholash usullari:",
+   "options": [
+    "B-limfotsitlar soni",
+    "immunoglobulin A, M, G ni aniqlash",
+    "immunoglobulin E ni aniqlash",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Komplement tizimi:",
+   "options": [
+    "qon zardobidagi oʻzaro taʼsir qiluvchi oqsil va glikoproteinlarning katta guruhidir",
+    "yalligʻlanish reaksiyalarida ishtirok etadi",
+    "oʻziga xos boʻlmagan himoya omili",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Immunoglobulinlar - asosan sinfga tegishli zardob oqsillari:",
+   "options": [
+    "a-globulinlar",
+    "b-globulinlar",
+    "albumin",
+    "gamma-globulinlar"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Immunoglobulinlar quyidagilarda sintezlanadi:",
+   "options": [
+    "T-limfotsitlar",
+    "polimorf yadroli leykotsitlar",
+    "makrofaglar",
+    "plazma hujayralari"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Immunoglobulin E:",
+   "options": [
+    "darhol allergik reaktsiyalarning shakllanishi",
+    "immun kompleks allergik reaktsiyalar",
+    "kechikkan tipdagi yuqori sezuvchanlik",
+    "kechikkan tipdagi yuqori sezuvchanlik reaktsiyalarining shakllanishi"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Uydagi allergenlarga quyidagilar kiradi:",
+   "options": [
+    "neisseria",
+    "staphylococcus aureus",
+    "candida",
+    "uy changi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bakterial infektsiyalarda immunogrammadagi o'zgarishlar asosan quyidagilarga taalluqli bo'lishi mumkin:",
+   "options": [
+    "hujayra immuniteti",
+    "fagotsitlarning funksional faolligi, immunoglobulinlar",
+    "immunoglobulinlar",
+    "tabiiy qotil hujayralar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "ASIT imkoniyatlari:",
+   "options": [
+    "til osti",
+    "og'zaki",
+    "endonazal",
+    "barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "To'liq ASIT kursining o'rtacha davomiyligi:",
+   "options": [
+    "1 yil",
+    "2 yil",
+    "3-5 yil",
+    "2-3 oy."
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Yuqumli bo'lmagan ekzoallergenlarga quyidagilar kiradi:",
+   "options": [
+    "uy changi",
+    "zamburug'li mog'or",
+    "mog'or",
+    "staphylococcus aureus"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "CD4 retseptorlarini tashuvchi limfotsitlar:",
+   "options": [
+    "T-yordamchilar",
+    "T-bostiruvchi-sitotoksik",
+    "T-faollashtirilgan",
+    "tabiiy qotillar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Asosan hujayra darajasidagi immunitet tanqisligi uchun quyidagilar xarakterlidir:",
+   "options": [
+    "Virusli infektsiyalar yiliga kamida 4 marta",
+    "Og'iz bo'shlig'ining takroriy kandidozi",
+    "Takroriy furunkuloz",
+    "Takroriy pnevmoniya"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "CD 8 li limfotsitlarga quyidagilar kiradi:",
+   "options": [
+    "T - yordamchilar",
+    "T - bostiruvchi – sitotoksik",
+    "T - faollashtirilgan",
+    "B - limfotsitlar"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Immunologik tanqislikning II darajasi me'yorga nisbatan immunologik ko'rsatkichlarning pasayishi bilan tavsiflanadi:",
+   "options": [
+    "1-33%",
+    "33-50%",
+    "33-66%",
+    "40%"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "T-suppressorlar tarkibining o'rtacha ko'payishi va T-helpers testlari tarkibining o'rtacha pasayishi:",
+   "options": [
+    "Etil spirti bilan zaharlanish",
+    "Immunitet tanqisligi holati",
+    "Otoimmün sindrom",
+    "Allergik sindrom"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Virusli va qo'ziqorin infektsiyalariga yuqori sezuvchanlik bilan immunitet tanqisligi holati. Immunitet tizimining asosiy nuqsoni disfunktsiya sifatida tavsiflanadi:",
+   "options": [
+    "Makrofaglar",
+    "T-limfotsitlar",
+    "B-limfotsitlar",
+    "Komplement tizimlari"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bemorning immunitet tanqisligi holati kuyish kasalligi fonida paydo bo'ldi. Immunitet tizimining asosiy nuqsoni quyidagilarning buzilishi bilan belgilanadi:",
+   "options": [
+    "T-tizim immuniteti",
+    "B-tizim immuniteti",
+    "To'ldiruvchi tizimlar",
+    "Fagotsitoz"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bakterial bo'lmagan allergenlar bilan teri testlari natijalari quyidagicha:",
+   "options": [
+    "5 daqiqada",
+    "10 daqiqada",
+    "20 daqiqada",
+    "60 daqiqada"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Bemorlarda allergik teri testlarini o'tkazish kerak:",
+   "options": [
+    "har qanday kasallik bilan",
+    "surunkali rinit bilan",
+    "surunkali tonzillit bilan",
+    "surunkali gastrit bilan"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Teri allergiyasi testlari o'tkazilmaydi:",
+   "options": [
+    "3 yoshgacha",
+    "Allergiyaning kuchayishi paytida",
+    "Antigistaminlarni qabul qilgandan keyin.",
+    "Barchasi to’g’ri"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Provokatsion burun tekshiruvi o'tkaziladi:",
+   "options": [
+    "Allergik rinitning kuchayishida",
+    "Vazomotor rinitning kuchayishi bilan",
+    "Istalgan vaqtda",
+    "Klinik remissiya davrida"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Pichan isitmasi sababi:",
+   "options": [
+    "oʻsimlik changlari",
+    "mogʻor sporalari",
+    "o'simlik ovqatlari",
+    "bakteriyalar"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Polen allergik kon'yunktivit yomonlashadi:",
+   "options": [
+    "butun yil davomida",
+    "sovuq mavsumda mavsumiy",
+    "bahor va yozda mavsumiy",
+    "faqat nam havoda"
+   ],
+   "correct": [
+    2
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Polen astma yomonlashadi:",
+   "options": [
+    "fasldan qat’iy nazar yil davomida",
+    "mavsumiy bahor-yoz davri",
+    "sovuq mavsumda",
+    "yilning istalgan vaqtida faqat hipotermiya bilan"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Polen astma ko'pincha quyidagilar bilan bog'liq:",
+   "options": [
+    "allergik kontakt dermatit bilan",
+    "rinit, konyunktivit bilan",
+    "allergik gastrit bilan",
+    "migren bilan"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Somon isitmasi bilan dori allergiyasi eng ko'p uchraydi:",
+   "options": [
+    "ursolga",
+    "romashka uchun",
+    "sulfat preparatlariga",
+    "streptomitsinga"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Pollinoz bilan allergik reaktsiya mahalliy qo'llanilganda yuzaga kelishi mumkin:",
+   "options": [
+    "lanolinli krem",
+    "vazelin",
+    "bolalar kremi",
+    "kalendula kremi"
+   ],
+   "correct": [
+    3
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "DTP vaktsinasi bilan emlashdan keyin allergik reaktsiyalar quyidagilarni o'z ichiga oladi:",
+   "options": [
+    "Gipertermiya va intoksikatsiya",
+    "Urticaria, Astma sindromi",
+    "Xo'ppoz",
+    "Astma sindromi"
+   ],
+   "correct": [
+    1
+   ],
+   "tag": "ai"
+  },
+  {
+   "q": "Vaksinaga darhol allergik reaktsiyalar quyidagilardan iborat:",
+   "options": [
+    "Urticaria va angioedema, Anafilaktik shok",
+    "Poliartralgiya",
+    "Anafilaktik shok",
+    "Ensefalopatiya"
+   ],
+   "correct": [
+    0
+   ],
+   "tag": "ai"
   }
  ],
  "title_uz": "Pediatriya — savollar banki",

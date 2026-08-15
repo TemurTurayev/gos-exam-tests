@@ -55,9 +55,10 @@
   "title_uz": "Bolalar xirurgiyasi — savollar banki",
   "subject_uz": "Bolalar xirurgiyasi",
   "language": "uz",
-  "count": 310,
+  "count": 493,
   "tags": {
    "marked": 306,
+   "ai": 183,
    "disputed": 4
   }
  },
@@ -129,9 +130,10 @@
   "title_uz": "Pediatriya — savollar banki",
   "subject_uz": "Pediatriya",
   "language": "uz",
-  "count": 235,
+  "count": 513,
   "tags": {
    "marked": 226,
+   "ai": 278,
    "disputed": 9
   }
  },
