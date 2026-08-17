@@ -7,3 +7,4 @@ scripts/*.tmp
 .DS_Store
 __pycache__/
 scripts/_pending.json
+.venv/

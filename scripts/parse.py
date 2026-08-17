@@ -264,6 +264,66 @@ def parse_format_g(path):
     return questions
 
 
+# При переводе документов в текст у части вариантов пропал перенос строки,
+# и следующий вариант приклеился к предыдущему вместе со своей меткой:
+#   «+айрисимон безининг гиперплазияси B . гепатомегалия»
+# Отдельного варианта «гепатомегалия» в наборе при этом не остаётся, а
+# правильный ответ показывается склеенным из двух разных. Метка второго
+# варианта — единственный след разрыва, по ней и разрезаем.
+GLUE_LABELS = "АБВГДЕСABCDE"
+GLUE = re.compile(rf"(?<=\S)\s+([{GLUE_LABELS}])\s*[.)]\s+(?=\S)")
+# «гепатит С», «витамин В», «гипервитаминоз С» — здесь буква часть названия,
+# и при разрезании она должна остаться с первой половиной
+GLUE_CARRIER = re.compile(r"(?:гепатит|гипервитаминоз|витамин|vitamin|gepatit)\w*\s*$", re.I)
+
+
+def split_glued(options, correct):
+    """Разрезает склеенные варианты. Возвращает (варианты, индексы ответов)."""
+    new_options, new_correct = [], []
+    for i, opt in enumerate(options):
+        parts, pos = [], 0
+        for m in GLUE.finditer(opt):
+            head = opt[pos:m.start()]
+            if GLUE_CARRIER.search(head):        # «гепатит С.» — не метка
+                continue
+            parts.append(head)
+            pos = m.end()
+        parts.append(opt[pos:])
+        parts = [p.strip() for p in parts if p.strip()]
+        if not parts:
+            continue
+        # правильным остаётся только первый кусок: знак «+» стоял перед ним
+        if i in correct:
+            new_correct.append(len(new_options))
+        new_options.extend(parts)
+    return new_options, sorted(new_correct)
+
+
+# Обратная беда: первый вариант приклеился к тексту вопроса —
+#   «Лериш синдроми - бу: А. брахиоцефал носпецифик артериит»
+# Отрезаем только после двоеточия, иначе пострадают вопросы вида
+# «Б. исмли 6 ёш бола…», где буква — имя ребёнка.
+QUESTION_TAIL = re.compile(rf":\s*[{GLUE_LABELS}]\s*[.)]\s+(\S.*)$")
+# номер следующего вопроса внутри варианта — два вопроса слиплись в один
+QUESTION_NUMBER_IN_OPTION = re.compile(r"\d{2,4}\s*[.)]\s*[А-ЯA-ZЎҚҒҲ]")
+
+
+def unglue_question(text, options, correct):
+    """Возвращает вопрос без приклеенного варианта и обновлённые варианты."""
+    m = QUESTION_TAIL.search(text)
+    if not m or len(options) < 2:
+        return text, options, correct
+    tail = m.group(1).strip()
+    # звёздочка в конце — тот самый знак «правильный», уехавший вместе с текстом
+    is_correct = tail.endswith("*")
+    tail = tail.rstrip("*").strip()
+    if not tail:
+        return text, options, correct
+    options = [tail] + list(options)
+    correct = ([0] if is_correct else []) + [i + 1 for i in correct]
+    return text[:m.start() + 1], options, sorted(correct)
+
+
 def finalize(questions, min_options=2, max_options=12):
     """Отбрасывает мусор разбора и перенумеровывает ответы после чистки вариантов.
 
@@ -277,6 +337,15 @@ def finalize(questions, min_options=2, max_options=12):
             continue
         options = q["options"]
         if max(correct) >= len(options):
+            continue
+
+        question, options, correct = unglue_question(q["q"], options, correct)
+        options, correct = split_glued(options, correct)
+        if not correct:
+            continue
+        # в варианте виден номер следующего вопроса: два вопроса слиплись,
+        # разобрать их надёжно нельзя — такой вопрос не публикуем
+        if any(QUESTION_NUMBER_IN_OPTION.search(o) for o in options):
             continue
 
         kept = [(i, o.strip()) for i, o in enumerate(options) if o.strip()]
@@ -297,7 +366,7 @@ def finalize(questions, min_options=2, max_options=12):
         if any(o.rstrip().endswith((":", "?")) for o in opts):
             continue
 
-        out.append({"q": " ".join(q["q"].split()),
+        out.append({"q": " ".join(question.split()),
                     "options": opts,
                     "correct": new_correct})
     return out

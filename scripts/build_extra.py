@@ -8,14 +8,13 @@
   ai        — ключа нет и правило не работает, ответ выбран моделью;
   disputed  — разметка исходника противоречива.
 """
-import hashlib
 import json
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from parse import DATA, ROOT
-from matching import key
+from matching import key, qhash
 import sources_unanswered as SU
 from highlights import parse_with_highlights, finalize as finalize_marks, NO_ANS
 
@@ -28,11 +27,6 @@ HIGHLIGHTED = {
     "ped-uz-lat": "Pediatriya javob 98%aniq 99.pdf",
     "child-surg-uz-lat": "102-bol-hirurgia-test-sajt-uzb-495 (1).pdf",
 }
-
-
-def qhash(text):
-    """Стабильный идентификатор вопроса — переживает переразбор файла."""
-    return hashlib.md5(key(text).encode("utf-8")).hexdigest()[:10]
 
 
 def load_ai_answers():

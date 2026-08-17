@@ -35,11 +35,16 @@ def annot_rects(annot):
     return [annot.rect]
 
 
+def area(rect):
+    """Площадь прямоугольника: имя метода в PyMuPDF менялось от версии к версии."""
+    return abs(rect.width * rect.height)
+
+
 def overlap_ratio(line_rect, mark_rect):
     inter = line_rect & mark_rect
     if not inter or inter.is_empty:
         return 0.0
-    return inter.get_area() / max(line_rect.get_area(), 1e-6)
+    return area(inter) / max(area(line_rect), 1e-6)
 
 
 def parse_with_highlights(path, min_overlap=0.25):

@@ -5,6 +5,7 @@
 ответом, где-то без. Часть узбекских файлов набрана кириллицей, часть —
 латиницей, поэтому оба варианта приводятся к общему латинскому виду.
 """
+import hashlib
 import re
 from difflib import SequenceMatcher
 
@@ -73,3 +74,8 @@ def resolve(options, answer_keys):
                 hits.append(i)
                 break
     return hits
+
+
+def qhash(text):
+    """Стабильный идентификатор вопроса — переживает переразбор файла."""
+    return hashlib.md5(key(text).encode("utf-8")).hexdigest()[:10]

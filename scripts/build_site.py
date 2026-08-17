@@ -13,6 +13,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from parse import DATA, build_core
 from build_extra import build as build_extra
+from fixes import apply_all as apply_fixes
 
 TAG_ORDER = ["verified", "marked", "restored", "ai", "disputed"]
 
@@ -71,6 +72,14 @@ def main():
     for data in sets.values():
         data["questions"] = dedupe(data["questions"])
 
+    # ручные правки ответов поверх разбора (data/answer_fixes.json)
+    report = apply_fixes(sets)
+    if report["проблемы"]:
+        print("ПРАВКИ НЕ ПРИМЕНИЛИСЬ:")
+        for line in report["проблемы"]:
+            print("  " + line)
+        sys.exit(1)
+
     manifest = []
     totals = Counter()
     for sid, data in sets.items():
@@ -96,6 +105,7 @@ def main():
         print(f"{m['id']:24s} {m['language']}  {m['count']:5d}  {m['tags']}")
     print(f"\nВсего вопросов: {sum(m['count'] for m in manifest)}")
     print("По тегам:", {t: totals[t] for t in TAG_ORDER if totals[t]})
+    print("Ручные правки:", {k: v for k, v in report.items() if k != "проблемы"})
 
 
 if __name__ == "__main__":

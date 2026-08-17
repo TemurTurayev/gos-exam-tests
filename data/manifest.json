@@ -44,8 +44,8 @@
   "language": "uz",
   "count": 90,
   "tags": {
-   "verified": 87,
-   "disputed": 3
+   "verified": 86,
+   "disputed": 4
   }
  },
  {
@@ -71,8 +71,8 @@
   "language": "uz",
   "count": 99,
   "tags": {
-   "verified": 96,
-   "disputed": 3
+   "verified": 95,
+   "disputed": 4
   }
  },
  {
@@ -118,9 +118,10 @@
   "title_uz": "Pediatriya — 1000 test",
   "subject_uz": "Pediatriya",
   "language": "uz",
-  "count": 993,
+  "count": 990,
   "tags": {
-   "verified": 993
+   "verified": 979,
+   "disputed": 11
   }
  },
  {
@@ -207,9 +208,10 @@
   "title_uz": "Fakultet terapiyasi",
   "subject_uz": "Terapiya",
   "language": "ru",
-  "count": 310,
+  "count": 309,
   "tags": {
-   "verified": 310
+   "verified": 308,
+   "disputed": 1
   }
  },
  {
@@ -219,10 +221,10 @@
   "title_uz": "Terapiya — 1000 test",
   "subject_uz": "Terapiya",
   "language": "uz",
-  "count": 953,
+  "count": 950,
   "tags": {
-   "verified": 951,
-   "disputed": 2
+   "verified": 949,
+   "disputed": 1
   }
  },
  {
@@ -257,10 +259,10 @@
   "title_uz": "Xirurgiya — 1000 test",
   "subject_uz": "Xirurgiya",
   "language": "uz",
-  "count": 643,
+  "count": 642,
   "tags": {
    "verified": 623,
-   "disputed": 20
+   "disputed": 19
   }
  }
 ]
