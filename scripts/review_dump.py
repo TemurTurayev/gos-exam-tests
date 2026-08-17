@@ -12,6 +12,7 @@
 """
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -20,7 +21,9 @@ from fixes import load as load_fixes, load_reviewed
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-CHECK_TAGS = {"ai", "disputed"}
+# порядок проверки: сначала то, где ключа в документе не было вовсе,
+# потом ключ из документа — его тоже проверяем, он бывает ошибочным
+TAG_ORDER = ["disputed", "ai", "restored", "marked", "verified"]
 
 
 def pending(only_set=None):
@@ -36,12 +39,11 @@ def pending(only_set=None):
             continue
         done = {**fixes.get(data["id"], {}), **reviewed.get(data["id"], {})}
         for q in data["questions"]:
-            if q["tag"] not in CHECK_TAGS:
-                continue
             h = qhash(q["q"])
             if h in done:
                 continue
             out.append((data["id"], h, q))
+    out.sort(key=lambda item: (TAG_ORDER.index(item[2]["tag"]), item[0]))
     return out
 
 
@@ -54,9 +56,10 @@ def main():
     limit = int(args[0]) if args else 40
 
     items = pending(only)
-    print(f"# осталось проверить: {len(items)}\n")
+    left = Counter(q["tag"] for _, _, q in items)
+    print(f"# осталось проверить: {len(items)}  {dict(left)}\n")
     for sid, h, q in items[:limit]:
-        print(f"{sid} {h}")
+        print(f"{sid} {h} [{q['tag']}]")
         print(f"В: {q['q']}")
         for i, opt in enumerate(q["options"]):
             print(f"  {'*' if i in q['correct'] else ' '}{i} {opt}")

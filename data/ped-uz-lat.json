@@ -2951,7 +2951,6 @@
     "gemofil tayog'chasi"
    ],
    "correct": [
-    0,
     1
    ],
    "tag": "disputed"
@@ -2965,7 +2964,6 @@
     "Disaxaridaznaya nedostatochnost"
    ],
    "correct": [
-    0,
     1
    ],
    "tag": "disputed"
@@ -2979,8 +2977,7 @@
     "xurujning sekin rivojlanishi"
    ],
    "correct": [
-    0,
-    2
+    0
    ],
    "tag": "disputed"
   },
@@ -2993,8 +2990,7 @@
     "Past sistolik bosim"
    ],
    "correct": [
-    0,
-    1
+    0
    ],
    "tag": "disputed"
   },
@@ -3007,8 +3003,7 @@
     "Barchasi to’g’ri"
    ],
    "correct": [
-    2,
-    3
+    0
    ],
    "tag": "disputed"
   },
@@ -3021,7 +3016,6 @@
     "barcha javoblar to’g’ri"
    ],
    "correct": [
-    0,
     3
    ],
    "tag": "disputed"
@@ -3035,8 +3029,7 @@
     "Nok"
    ],
    "correct": [
-    0,
-    1
+    0
    ],
    "tag": "disputed"
   },
@@ -3049,7 +3042,6 @@
     "6 mln"
    ],
    "correct": [
-    0,
     2
    ],
    "tag": "disputed"
@@ -3063,8 +3055,7 @@
     "Lyamblioz"
    ],
    "correct": [
-    0,
-    1
+    0
    ],
    "tag": "disputed"
   },
