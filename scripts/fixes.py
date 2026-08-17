@@ -32,6 +32,23 @@ from matching import qhash
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXES = ROOT / "data" / "answer_fixes.json"
+REVIEWED = ROOT / "data" / "reviewed.json"
+
+
+def load_reviewed():
+    """Хеши вопросов, у которых ответ проверен вручную и оказался верным."""
+    if not REVIEWED.exists():
+        return {}
+    return json.loads(REVIEWED.read_text(encoding="utf-8"))
+
+
+def mark_reviewed(sid, hashes, note):
+    data = load_reviewed()
+    bucket = data.setdefault(sid, {})
+    for h in hashes:
+        bucket[h] = note
+    REVIEWED.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    return sum(len(v) for v in data.values())
 
 
 def norm(text):

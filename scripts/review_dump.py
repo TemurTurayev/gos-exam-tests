@@ -16,7 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from matching import qhash
-from fixes import load as load_fixes
+from fixes import load as load_fixes, load_reviewed
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -25,14 +25,16 @@ CHECK_TAGS = {"ai", "disputed"}
 
 def pending(only_set=None):
     fixes = load_fixes()
+    reviewed = load_reviewed()
     out = []
     for path in sorted(DATA.glob("*.json")):
-        if path.name in ("manifest.json", "ai_answers.json", "answer_fixes.json"):
+        if path.name in ("manifest.json", "ai_answers.json",
+                         "answer_fixes.json", "reviewed.json"):
             continue
         data = json.loads(path.read_text(encoding="utf-8"))
         if only_set and data["id"] != only_set:
             continue
-        done = fixes.get(data["id"], {})
+        done = {**fixes.get(data["id"], {}), **reviewed.get(data["id"], {})}
         for q in data["questions"]:
             if q["tag"] not in CHECK_TAGS:
                 continue
