@@ -1029,6 +1029,192 @@
     "Tashhis qo’yilgandan so’ng"
    ],
    "why": "варикоцеле оперируют по установлении диагноза"
+  },
+  "743ba131e9": {
+   "correct": [
+    "bola doimiy yig’laydi"
+   ],
+   "why": "самый ранний и постоянный признак инвагинации — приступообразное беспокойство"
+  },
+  "1560b915ec": {
+   "correct": [
+    "ingichka-ingichka ichak invaginatsiyasi"
+   ],
+   "why": "пальпация затруднена при тонко-тонкокишечной инвагинации"
+  },
+  "b361121617": {
+   "correct": [
+    "«yolg’on buyrak» simptomi"
+   ],
+   "why": "при продольном сканировании — симптом «псевдопочки», «мишень» видна при поперечном"
+  },
+  "b9ec3485eb": {
+   "correct": [
+    "shoshilinch operatsiya"
+   ],
+   "why": "тонкокишечная инвагинация у ребёнка 6 лет — только операция"
+  },
+  "470b23ce74": {
+   "correct": [
+    "Invaginatni rezeksiya qilish, ileostomiya qo’yish"
+   ],
+   "why": "при некрозе с перитонитом накладывают илеостому"
+  },
+  "751b4bb1e2": {
+   "correct": [
+    "embrional churra"
+   ],
+   "why": "эмбриональная грыжа кровотечения не даёт"
+  },
+  "3047eff835": {
+   "correct": [
+    "Upkaabssessi"
+   ],
+   "why": "абсцесс лёгкого не относится к поздним осложнениям аппендэктомии"
+  },
+  "9a79466d4d": {
+   "correct": [
+    "embrional churra"
+   ],
+   "why": "эмбриональная грыжа на аппендицит не похожа"
+  },
+  "120e7e405c": {
+   "correct": [
+    "Oshqozon ichak trakti passaji"
+   ],
+   "why": "пассаж бария при инвагинации не применяют"
+  },
+  "45af725b1b": {
+   "correct": [
+    "Embrional churra"
+   ],
+   "why": "эмбриональная грыжа к непроходимости не предрасполагает"
+  },
+  "7843c0f7c4": {
+   "correct": [
+    "Axlat toshlari"
+   ],
+   "why": "каловые камни дают обтурацию, а не паралитическую непроходимость"
+  },
+  "a4ca5a2ab3": {
+   "correct": [
+    "suyako steoperforatsiyasi"
+   ],
+   "why": "при остром остеомиелите выполняют остеоперфорацию"
+  },
+  "816431b126": {
+   "correct": [
+    "piemik o’choqlar"
+   ],
+   "why": "пиемические очаги бывают при септикопиемической форме, а не при токсической"
+  },
+  "a12d751e07": {
+   "correct": [
+    "osteoperforatsiya"
+   ],
+   "why": "остеоперфорация — метод острого остеомиелита, при хроническом не применяется"
+  },
+  "844a1e766d": {
+   "correct": [
+    "yumshoq to’qimalarning shishishi, zararlangan oyoq-qo’llarning qalinlashishi, oqmalar va chandiqlar, yiring ajralib turishi"
+   ],
+   "why": "хронический остеомиелит — свищи, рубцы, утолщение конечности"
+  },
+  "62375bb1f3": {
+   "correct": [
+    "osteoporoz uchoqlari, yaqqol osteoskleroz, sekvestrlar"
+   ],
+   "why": "рентген хронического остеомиелита: остеосклероз и секвестры"
+  },
+  "ae10fc8d61": {
+   "correct": [
+    "yashin tezligidagi turi"
+   ],
+   "why": "смерть за двое суток — молниеносное течение"
+  },
+  "8f7fc2f297": {
+   "correct": [
+    "limfangioma"
+   ],
+   "why": "лимфангиома с эпифизарным остеомиелитом не схожа"
+  },
+  "bf379b8de0": {
+   "correct": [
+    "suyak ichidagi bosimni o’lchash"
+   ],
+   "why": "ранняя достоверная диагностика — измерение внутрикостного давления"
+  },
+  "e6caf747eb": {
+   "correct": [
+    "o’pka absessi"
+   ],
+   "why": "полость с уровнем жидкости в доле лёгкого — абсцесс"
+  },
+  "3af4b2bd85": {
+   "correct": [
+    "piotoraks"
+   ],
+   "why": "тотальное затемнение со смещением в здоровую сторону — пиоторакс"
+  },
+  "7b9cd7db86": {
+   "correct": [
+    "o’pka atelektazi"
+   ],
+   "why": "смещение средостения в больную сторону бывает при ателектазе"
+  },
+  "91ecbc2b9a": {
+   "correct": [
+    "Mayda o’chog’li destruksiya"
+   ],
+   "why": "к лёгочным формам относится мелкоочаговая деструкция, пиопневмоторакс — лёгочно-плевральная"
+  },
+  "5f56a6a69f": {
+   "correct": [
+    "Timpanit va nafas o’tmasligi"
+   ],
+   "why": "при пневмотораксе тимпанит и отсутствие дыхания"
+  },
+  "5f1006c55d": {
+   "correct": [
+    "o’pka bakterial destruksiyasini bullez shakli"
+   ],
+   "why": "тонкостенные полости на неизменённом фоне — буллёзная форма"
+  },
+  "1e24542b5b": {
+   "correct": [
+    "Aerogen"
+   ],
+   "why": "первичная деструкция лёгких — аэрогенный путь"
+  },
+  "1fd26fc501": {
+   "correct": [
+    "Plevra bo’shlig’ida total qorayish, ko’ks oralig’i sog’ tomonga siljigan"
+   ],
+   "why": "напряжённый пиоторакс смещает средостение в здоровую сторону"
+  },
+  "2d55d14bbd": {
+   "correct": [
+    "O’pka to’qimasida yumaloq yorishish"
+   ],
+   "why": "буллы на рентгене — округлые просветления"
+  },
+  "051fd35887": {
+   "correct": [
+    "Qorin parda qin o’simtasini bitmasligi"
+   ],
+   "why": "паховая грыжа — незаращение влагалищного отростка брюшины"
+  },
+  "fb56d0b62e": {
+   "correct": [
+    "Toksik, septikopiemik, mahalliy"
+   ],
+   "why": "формы острого гематогенного остеомиелита"
+  },
+  "53391c5ba8": {
+   "correct": [
+    "Kontrast sistografiya"
+   ],
+   "why": "травму мочевого пузыря выявляет контрастная цистография"
   }
  },
  "ped-uz-lat": {
