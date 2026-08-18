@@ -72,6 +72,7 @@ def apply_all(sets):
     fixes = load()
     applied = missed = same = 0
     problems = []
+    matched, unmatched = set(), {}
 
     dropped = 0
     for sid, data in sets.items():
@@ -97,8 +98,12 @@ def apply_all(sets):
             wanted = {norm(t) for t in fix["correct"]}
             idx = sorted(i for i, o in enumerate(q["options"]) if norm(o) in wanted)
             if len(idx) != len(wanted):
-                problems.append(f"{sid} {qhash(q['q'])}: вариант не найден — {fix['correct']}")
+                # один и тот же вопрос может встречаться в наборе дважды
+                # с разными вариантами: правка относится к той копии,
+                # где нужный вариант есть
+                unmatched.setdefault((sid, qhash(q["q"])), fix)
                 continue
+            matched.add((sid, qhash(q["q"])))
             if idx == q["correct"] and fix.get("tag", q["tag"]) == q["tag"]:
                 same += 1
             else:
@@ -108,6 +113,10 @@ def apply_all(sets):
                 q["tag"] = fix["tag"]
         missed += len([h for h in by_hash
                        if h not in seen and not by_hash[h].get("drop")])
+
+    for key, fix in unmatched.items():
+        if key not in matched:
+            problems.append(f"{key[0]} {key[1]}: вариант не найден — {fix['correct']}")
 
     return {"исправлено": applied, "уже совпадало": same, "снято": dropped,
             "вопрос не найден": missed, "проблемы": problems}
