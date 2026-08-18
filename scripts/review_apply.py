@@ -117,6 +117,9 @@ def main():
     REVIEWED.write_text(json.dumps(reviewed, ensure_ascii=False, indent=1), encoding="utf-8")
     total = sum(len(v) for v in reviewed.values())
     print(f"подтверждено: {ok}, исправлено: {changed}, проверено всего: {total}")
+
+    import progress            # PROGRESS.md — чтобы за ходом работы было видно
+    progress.main()
     return 0
 
 
