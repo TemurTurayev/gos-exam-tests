@@ -48,6 +48,8 @@ def main():
     if "--batch" in sys.argv:
         from review_dump import pending
         size = int(sys.argv[sys.argv.index("--batch") + 1])
+        # окно берём до применения правок: правка убирает вопрос из очереди,
+        # и в хвост партии иначе попадают ещё не прочитанные вопросы
         window = [(sid, h) for sid, h, _ in pending()[:size]]
 
     for line in sys.stdin:
@@ -110,7 +112,7 @@ def main():
         for sid, h in window:
             bucket = reviewed.setdefault(sid, {})
             if h not in bucket:
-                bucket[h] = "проверено, ответ верный"
+                bucket[h] = "проверено в партии, ответ верный"
                 ok += 1
 
     save_fixes(fixes)
