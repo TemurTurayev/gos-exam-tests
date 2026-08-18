@@ -42,6 +42,14 @@ def main():
     ok = changed = 0
     problems = []
 
+    # --batch N: подтвердить первые N вопросов очереди, кроме перечисленных.
+    # Так на партию в двести вопросов уходит несколько строк вместо двухсот.
+    window = None
+    if "--batch" in sys.argv:
+        from review_dump import pending
+        size = int(sys.argv[sys.argv.index("--batch") + 1])
+        window = [(sid, h) for sid, h, _ in pending()[:size]]
+
     for line in sys.stdin:
         line = line.strip()
         if not line or line.startswith("#"):
@@ -59,6 +67,13 @@ def main():
         if rest.strip() == "ok":
             reviewed.setdefault(sid, {})[h] = "проверено, ответ верный"
             ok += 1
+            continue
+
+        if rest.startswith("drop"):
+            why = rest[4:].strip(" |") or "вопрос испорчен в исходнике"
+            fixes.setdefault(sid, {})[h] = {"drop": True, "why": why}
+            reviewed.setdefault(sid, {})[h] = "снят: " + why
+            changed += 1
             continue
 
         if not rest.startswith("="):
@@ -90,6 +105,13 @@ def main():
         for p in problems:
             print("  " + p)
         return 1
+
+    if window is not None:
+        for sid, h in window:
+            bucket = reviewed.setdefault(sid, {})
+            if h not in bucket:
+                bucket[h] = "проверено, ответ верный"
+                ok += 1
 
     save_fixes(fixes)
     REVIEWED.write_text(json.dumps(reviewed, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -73,14 +73,25 @@ def apply_all(sets):
     applied = missed = same = 0
     problems = []
 
+    dropped = 0
     for sid, data in sets.items():
         by_hash = fixes.get(sid, {})
         if not by_hash:
             continue
+        # вопросы, которые нельзя починить: текст потерян или правильного
+        # варианта в списке не осталось — их лучше не показывать вовсе
+        keep = []
+        for q in data["questions"]:
+            if by_hash.get(qhash(q["q"]), {}).get("drop"):
+                dropped += 1
+                continue
+            keep.append(q)
+        data["questions"] = keep
+
         seen = set()
         for q in data["questions"]:
             fix = by_hash.get(qhash(q["q"]))
-            if not fix:
+            if not fix or fix.get("drop"):
                 continue
             seen.add(qhash(q["q"]))
             wanted = {norm(t) for t in fix["correct"]}
@@ -95,9 +106,10 @@ def apply_all(sets):
             q["correct"] = idx
             if fix.get("tag"):
                 q["tag"] = fix["tag"]
-        missed += len(set(by_hash) - seen)
+        missed += len([h for h in by_hash
+                       if h not in seen and not by_hash[h].get("drop")])
 
-    return {"исправлено": applied, "уже совпадало": same,
+    return {"исправлено": applied, "уже совпадало": same, "снято": dropped,
             "вопрос не найден": missed, "проблемы": problems}
 
 
