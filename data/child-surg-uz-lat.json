@@ -1144,7 +1144,7 @@
     "yo’g’on ichak bo’ylab o’smasimon hosilaning mavjudligi"
    ],
    "correct": [
-    3
+    0
    ],
    "tag": "marked"
   },
@@ -1170,7 +1170,7 @@
     "yon bosh-chambar ichak invaginatsiyasida"
    ],
    "correct": [
-    3
+    2
    ],
    "tag": "marked"
   },
@@ -1222,7 +1222,7 @@
     "Invagiant tashqi silindrini qalinlashishi"
    ],
    "correct": [
-    0
+    1
    ],
    "tag": "marked"
   },
@@ -1261,7 +1261,7 @@
     "shoshilinch operatsiya"
    ],
    "correct": [
-    2
+    3
    ],
    "tag": "marked"
   },
@@ -1274,7 +1274,7 @@
     "laparostomiya"
    ],
    "correct": [
-    3
+    1
    ],
    "tag": "marked"
   },
@@ -1365,7 +1365,7 @@
     "Eozinofilligastroenteropatiya"
    ],
    "correct": [
-    3
+    1
    ],
    "tag": "marked"
   },
@@ -1430,7 +1430,7 @@
     "Ventral churra"
    ],
    "correct": [
-    2
+    1
    ],
    "tag": "marked"
   },
@@ -1456,7 +1456,7 @@
     "adenovirusli infeksiya"
    ],
    "correct": [
-    3
+    2
    ],
    "tag": "marked"
   },
@@ -1469,7 +1469,7 @@
     "To’g’ri ichakni rektal tekshiruv"
    ],
    "correct": [
-    3
+    1
    ],
    "tag": "marked"
   },
@@ -1508,7 +1508,7 @@
     "Ichak tutqichi anomaliyasi"
    ],
    "correct": [
-    3
+    1
    ],
    "tag": "marked"
   },
@@ -1547,7 +1547,7 @@
     "Antixolinergik vositalarini qo’llash"
    ],
    "correct": [
-    1
+    2
    ],
    "tag": "marked"
   },
@@ -1703,7 +1703,7 @@
     "suyako steoperforatsiyasi"
    ],
    "correct": [
-    1
+    3
    ],
    "tag": "marked"
   },
@@ -1742,7 +1742,7 @@
     "piemik o’choqlar"
    ],
    "correct": [
-    2
+    3
    ],
    "tag": "marked"
   },
@@ -1755,7 +1755,7 @@
     "suyak bo’shlig’ini qoshiq bilan tozalash"
    ],
    "correct": [
-    2
+    0
    ],
    "tag": "marked"
   },
@@ -1768,7 +1768,7 @@
     "qizarish, shish, krepitatsiya"
    ],
    "correct": [
-    0
+    2
    ],
    "tag": "marked"
   },
@@ -1781,7 +1781,7 @@
     "igna ko’rinishidagi periostit"
    ],
    "correct": [
-    0
+    1
    ],
    "tag": "marked"
   },
@@ -1820,7 +1820,7 @@
     "cho’zilgan kechish turi"
    ],
    "correct": [
-    1
+    2
    ],
    "tag": "marked"
   },
@@ -1833,7 +1833,7 @@
     "flegmona"
    ],
    "correct": [
-    3
+    1
    ],
    "tag": "marked"
   },
@@ -1859,7 +1859,7 @@
     "yumshoq to’qimalarni diagnostik punksiyasi"
    ],
    "correct": [
-    3
+    2
    ],
    "tag": "marked"
   },
@@ -1885,7 +1885,7 @@
     "piopnevmotoraks"
    ],
    "correct": [
-    0
+    2
    ],
    "tag": "marked"
   },
@@ -1898,7 +1898,7 @@
     "pnevmotoraks"
    ],
    "correct": [
-    3
+    1
    ],
    "tag": "marked"
   },
@@ -1911,7 +1911,7 @@
     "piotoraks"
    ],
    "correct": [
-    0
+    2
    ],
    "tag": "marked"
   },
@@ -1963,7 +1963,7 @@
     "Mayda o’chog’li destruksiya"
    ],
    "correct": [
-    1
+    3
    ],
    "tag": "marked"
   },
@@ -1976,7 +1976,7 @@
     "Bo’g’iqlashish va nafas o’tmasligi"
    ],
    "correct": [
-    0
+    2
    ],
    "tag": "marked"
   },
@@ -2002,7 +2002,7 @@
     "o’pka bakterial destruksiyasini bullez shakli"
    ],
    "correct": [
-    1
+    3
    ],
    "tag": "marked"
   },
@@ -2028,7 +2028,7 @@
     "Osteogen"
    ],
    "correct": [
-    0
+    1
    ],
    "tag": "marked"
   },
@@ -2067,7 +2067,7 @@
     "Plevra bo’shlig’ida total qorayish, ko’ks oralig’i sog’ tomonga siljigan"
    ],
    "correct": [
-    0
+    3
    ],
    "tag": "marked"
   },
@@ -2080,7 +2080,7 @@
     "O’pka to’qimasida ko’plab yumaloq qorayishlar"
    ],
    "correct": [
-    1
+    0
    ],
    "tag": "marked"
   },
@@ -2119,7 +2119,7 @@
     "Qorin parda qin o’simtasini bitmasligi"
    ],
    "correct": [
-    2
+    3
    ],
    "tag": "marked"
   },
@@ -2197,7 +2197,7 @@
     "Umumiy, mahalliy, dinamik"
    ],
    "correct": [
-    3
+    0
    ],
    "tag": "marked"
   },
@@ -2314,7 +2314,7 @@
     "ekskretor urografiya"
    ],
    "correct": [
-    3
+    2
    ],
    "tag": "marked"
   },
@@ -2639,7 +2639,7 @@
     "Statsionar sharoitida bemor kuzatuvga olinadi"
    ],
    "correct": [
-    0
+    3
    ],
    "tag": "marked"
   },
@@ -3289,7 +3289,7 @@
     "Bronx gakistaning yorilishi va sog’lom o’pkaga aspiratsiya"
    ],
    "correct": [
-    3
+    1
    ],
    "tag": "marked"
   },
