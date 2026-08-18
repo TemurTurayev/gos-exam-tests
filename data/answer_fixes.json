@@ -1233,6 +1233,18 @@
     "Kontrast sistografiya"
    ],
    "why": "травму мочевого пузыря выявляет контрастная цистография"
+  },
+  "20f74aed7c": {
+   "correct": [
+    "Statsionar sharoitida bemor kuzatuvga olinadi"
+   ],
+   "why": "ненарастающая подкапсульная гематома лечится наблюдением в стационаре, а не операцией"
+  },
+  "07db9c43ed": {
+   "correct": [
+    "Plevra bo’shlig’i gakistaning yorilishi"
+   ],
+   "why": "анафилактический шок даёт прорыв кисты в плевральную полость"
   }
  },
  "ped-uz-lat": {
