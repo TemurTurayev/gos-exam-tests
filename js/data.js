@@ -66,6 +66,7 @@ const Data = (() => {
         index: item.index,
         text: item.q.q,
         tag: item.q.tag,
+        note: item.q.note || "",
         options: mix.map((i) => item.q.options[i]),
         correct: mix
           .map((orig, pos) => (item.q.correct.includes(orig) ? pos : -1))

@@ -246,6 +246,16 @@ h1, h2, h3 { line-height: 1.25; }
 }
 @media (prefers-color-scheme: dark) { .multi-hint { color: var(--brand); } }
 
+/* пояснение автора теста — появляется после ответа */
+.question-note {
+  margin-top: 14px; padding: 10px 12px; font-size: .88rem; line-height: 1.5;
+  background: var(--surface-2); border-left: 3px solid var(--brand);
+  border-radius: 0 8px 8px 0; color: var(--text);
+}
+.question-note .note-label { font-weight: 650; color: var(--brand-dark); }
+@media (prefers-color-scheme: dark) { .question-note .note-label { color: var(--brand); } }
+.review-item .question-note { margin-top: 8px; font-size: .84rem; }
+
 .option-list { display: grid; gap: 8px; }
 .option-btn {
   display: flex; align-items: flex-start; gap: 11px; width: 100%;

@@ -13,6 +13,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from parse import DATA, build_core
 from build_extra import build as build_extra
+from parse_medx import build as build_medx
 from fixes import apply_all as apply_fixes
 
 TAG_ORDER = ["verified", "marked", "restored", "ai", "disputed"]
@@ -44,6 +45,7 @@ TITLES_UZ = {
     "therapy-table-ru": "Terapiya — mavzular bo‘yicha",
     "therapy-test-ru": "Fakultet terapiyasi",
     "therapy-ru-bank": "Terapiya — katta baza",
+    "therapy-medx-uz": "Terapiya — ordinatura (MedXAcademy)",
     "surg-facult-ru": "Fakultet xirurgiyasi",
     "surg-hospital-ru": "Gospital xirurgiyasi",
     "surg-1000-uz": "Xirurgiya — 1000 test",
@@ -68,7 +70,7 @@ def dedupe(questions):
 
 
 def main():
-    sets = {**build_core(), **build_extra()}
+    sets = {**build_core(), **build_extra(), **build_medx()}
     for data in sets.values():
         data["questions"] = dedupe(data["questions"])
 

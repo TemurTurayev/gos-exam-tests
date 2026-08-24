@@ -567,6 +567,14 @@ async function renderQuiz(scope, params) {
         else if (chosen.includes(i)) b.classList.add("wrong");
       });
 
+      // пояснение автора теста — показываем только после ответа
+      if (q.note && !card.querySelector(".question-note")) {
+        card.appendChild(el("div", { className: "question-note" }, [
+          el("span", { className: "note-label", text: t("noteLabel") }),
+          el("span", { text: q.note }),
+        ]));
+      }
+
       updateBadge();
       primary.disabled = false;
       primary.textContent = idx === questions.length - 1 ? t("toResults") : t("next");
@@ -627,6 +635,12 @@ async function renderQuiz(scope, params) {
           className: "review-correct",
           text: `${t("correctAnswer")}: ` + q.correct.map((i) => q.options[i]).join("; "),
         }),
+        q.note
+          ? el("div", { className: "question-note" }, [
+              el("span", { className: "note-label", text: t("noteLabel") }),
+              el("span", { text: q.note }),
+            ])
+          : null,
         el("span", { className: `tag tiny ${meta.cls}`, text: `${meta.icon} ${t(meta.label)}` }),
       ]));
     }

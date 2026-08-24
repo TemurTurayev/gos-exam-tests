@@ -228,6 +228,19 @@
   }
  },
  {
+  "id": "therapy-medx-uz",
+  "title": "Терапия — ординатура (MedXAcademy)",
+  "subject": "Терапия",
+  "title_uz": "Terapiya — ordinatura (MedXAcademy)",
+  "subject_uz": "Terapiya",
+  "language": "uz",
+  "count": 674,
+  "tags": {
+   "marked": 673,
+   "disputed": 1
+  }
+ },
+ {
   "id": "surg-hospital-ru",
   "title": "Госпитальная хирургия",
   "subject": "Хирургия",
