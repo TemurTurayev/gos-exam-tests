@@ -15,6 +15,7 @@ from parse import DATA, build_core
 from build_extra import build as build_extra
 from parse_medx import build as build_medx
 from parse_gos_dent import build as build_dent
+from parse_toifa import build as build_toifa
 from fixes import apply_all as apply_fixes
 
 TAG_ORDER = ["verified", "marked", "restored", "ai", "disputed"]
@@ -49,6 +50,7 @@ TITLES_UZ = {
     "therapy-ru-bank": "Terapiya — katta baza",
     "therapy-medx-uz": "Terapiya — ordinatura (MedXAcademy)",
     "dent-gos-uz": "Stomatologiya — davlat imtihoni",
+    "therapy-toifa-ru": "Terapiya — toifa",
     "surg-facult-ru": "Fakultet xirurgiyasi",
     "surg-hospital-ru": "Gospital xirurgiyasi",
     "surg-1000-uz": "Xirurgiya — 1000 test",
@@ -81,7 +83,7 @@ RETIRED = {
 
 
 def main():
-    sets = {**build_core(), **build_extra(), **build_medx(), **build_dent()}
+    sets = {**build_core(), **build_extra(), **build_medx(), **build_dent(), **build_toifa()}
     for sid in RETIRED:
         sets.pop(sid, None)
     for data in sets.values():

@@ -215,6 +215,18 @@
   }
  },
  {
+  "id": "therapy-toifa-ru",
+  "title": "Терапия — тоифа",
+  "subject": "Терапия",
+  "title_uz": "Terapiya — toifa",
+  "subject_uz": "Terapiya",
+  "language": "ru",
+  "count": 668,
+  "tags": {
+   "verified": 668
+  }
+ },
+ {
   "id": "therapy-test-ru",
   "title": "Терапия — факультетская",
   "subject": "Терапия",
