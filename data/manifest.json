@@ -241,31 +241,6 @@
   }
  },
  {
-  "id": "surg-hospital-ru",
-  "title": "Госпитальная хирургия",
-  "subject": "Хирургия",
-  "title_uz": "Gospital xirurgiyasi",
-  "subject_uz": "Xirurgiya",
-  "language": "ru",
-  "count": 994,
-  "tags": {
-   "verified": 994
-  }
- },
- {
-  "id": "surg-facult-ru",
-  "title": "Факультетская хирургия",
-  "subject": "Хирургия",
-  "title_uz": "Fakultet xirurgiyasi",
-  "subject_uz": "Xirurgiya",
-  "language": "ru",
-  "count": 96,
-  "tags": {
-   "verified": 95,
-   "disputed": 1
-  }
- },
- {
   "id": "surg-1000-uz",
   "title": "Хирургия — 1000 тестов",
   "subject": "Хирургия",

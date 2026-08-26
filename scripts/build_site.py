@@ -69,8 +69,18 @@ def dedupe(questions):
     return out
 
 
+# Наборы, снятые с публикации. Разбор и исходники остаются на месте — чтобы
+# вернуть набор, достаточно убрать его отсюда и пересобрать сайт.
+RETIRED = {
+    "surg-hospital-ru": "материал неактуален (просьба от 26.08.2026)",
+    "surg-facult-ru": "материал неактуален (просьба от 26.08.2026)",
+}
+
+
 def main():
     sets = {**build_core(), **build_extra(), **build_medx()}
+    for sid in RETIRED:
+        sets.pop(sid, None)
     for data in sets.values():
         data["questions"] = dedupe(data["questions"])
 
