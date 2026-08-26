@@ -152,6 +152,19 @@
   }
  },
  {
+  "id": "dent-gos-uz",
+  "title": "Стоматология — госэкзамен",
+  "subject": "Стоматология",
+  "title_uz": "Stomatologiya — davlat imtihoni",
+  "subject_uz": "Stomatologiya",
+  "language": "uz",
+  "count": 1381,
+  "tags": {
+   "verified": 1380,
+   "marked": 1
+  }
+ },
+ {
   "id": "therapy-internal-ru",
   "title": "Внутренние болезни",
   "subject": "Терапия",
